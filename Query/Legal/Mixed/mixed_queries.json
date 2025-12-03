@@ -1,0 +1,278 @@
+[
+  {
+    "sql": "SELECT verdict, MIN(case_number) AS min_case_number FROM Legal WHERE plaintiff_current_status != 'Activist' GROUP BY verdict;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter1_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 1,
+        "agg": 1
+      },
+      "tables": [
+        "Legal"
+      ],
+      "filter_subcategory": 1,
+      "filter_metadata": {
+        "filter_combination": "single",
+        "num_filters": 1,
+        "predicates": [
+          "plaintiff_current_status != 'Activist'"
+        ],
+        "selectivity_ratios": [
+          0.012738853503184714
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "MIN",
+          "attribute": "case_number",
+          "alias": "min_case_number"
+        }
+      ],
+      "group_by_attributes": [
+        "verdict"
+      ],
+      "selected_attributes": [
+        "verdict"
+      ],
+      "combination_name": "filter1_agg1"
+    }
+  },
+  {
+    "sql": "SELECT nationality_for_applicant, MAX(case_number) AS max_case_number FROM Legal WHERE defendant_current_status != 'Company' AND legal_basis_num >= 1 GROUP BY nationality_for_applicant;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter2_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 2,
+        "agg": 1
+      },
+      "tables": [
+        "Legal"
+      ],
+      "filter_subcategory": 2,
+      "filter_metadata": {
+        "filter_combination": "AND",
+        "num_filters": 2,
+        "predicates": [
+          "defendant_current_status != 'Company'",
+          "legal_basis_num >= 1"
+        ],
+        "selectivity_ratios": [
+          0.251953125,
+          0.25
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "case_number",
+          "alias": "max_case_number"
+        }
+      ],
+      "group_by_attributes": [
+        "nationality_for_applicant"
+      ],
+      "selected_attributes": [
+        "nationality_for_applicant"
+      ],
+      "combination_name": "filter2_agg1"
+    }
+  },
+  {
+    "sql": "SELECT nationality_for_applicant, MAX(legal_basis_num) AS max_legal_basis_num FROM Legal WHERE verdict != 'Dismissed' OR first_judge != 0 GROUP BY nationality_for_applicant;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter3_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 3,
+        "agg": 1
+      },
+      "tables": [
+        "Legal"
+      ],
+      "filter_subcategory": 3,
+      "filter_metadata": {
+        "filter_combination": "OR",
+        "num_filters": 2,
+        "predicates": [
+          "verdict != 'Dismissed'",
+          "first_judge != 0"
+        ],
+        "selectivity_ratios": [
+          0.6736842105263158,
+          0.25
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "legal_basis_num",
+          "alias": "max_legal_basis_num"
+        }
+      ],
+      "group_by_attributes": [
+        "nationality_for_applicant"
+      ],
+      "selected_attributes": [
+        "nationality_for_applicant"
+      ],
+      "combination_name": "filter3_agg1"
+    }
+  },
+  {
+    "sql": "SELECT verdict, MIN(legal_basis_num) AS min_legal_basis_num FROM Legal WHERE legal_fees = '3265' AND defendant != 'Construction, Forestry, Mining and Energy Union' AND legal_fees != '2000' GROUP BY verdict;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter4_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 4,
+        "agg": 1
+      },
+      "tables": [
+        "Legal"
+      ],
+      "filter_subcategory": 4,
+      "filter_metadata": {
+        "filter_combination": "AND",
+        "num_filters": 3,
+        "predicates": [
+          "legal_fees = '3265'",
+          "defendant != 'Construction, Forestry, Mining and Energy Union'",
+          "legal_fees != '2000'"
+        ],
+        "selectivity_ratios": [
+          0.014492753623188406,
+          0.008849557522123894,
+          0.028985507246376812
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "MIN",
+          "attribute": "legal_basis_num",
+          "alias": "min_legal_basis_num"
+        }
+      ],
+      "group_by_attributes": [
+        "verdict"
+      ],
+      "selected_attributes": [
+        "verdict"
+      ],
+      "combination_name": "filter4_agg1"
+    }
+  },
+  {
+    "sql": "SELECT nationality_for_applicant, MAX(case_number) AS max_case_number FROM Legal WHERE first_judge != 0 OR evidence < 1 OR defendant = 'Secretary, Department of Employment and Workplace Relations' GROUP BY nationality_for_applicant;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter5_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 5,
+        "agg": 1
+      },
+      "tables": [
+        "Legal"
+      ],
+      "filter_subcategory": 5,
+      "filter_metadata": {
+        "filter_combination": "OR",
+        "num_filters": 3,
+        "predicates": [
+          "first_judge != 0",
+          "evidence < 1",
+          "defendant = 'Secretary, Department of Employment and Workplace Relations'"
+        ],
+        "selectivity_ratios": [
+          0.25,
+          0.5,
+          0.0035398230088495575
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "case_number",
+          "alias": "max_case_number"
+        }
+      ],
+      "group_by_attributes": [
+        "nationality_for_applicant"
+      ],
+      "selected_attributes": [
+        "nationality_for_applicant"
+      ],
+      "combination_name": "filter5_agg1"
+    }
+  },
+  {
+    "sql": "SELECT case_type, SUM(legal_basis_num) AS sum_legal_basis_num FROM Legal WHERE (judgment_year = 2009 AND plaintiff != 'Telstra Corporation Limited') OR (verdict != 'Others' AND counsel_for_applicant = 'Dr J G Azzi') GROUP BY case_type;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter6_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 6,
+        "agg": 1
+      },
+      "tables": [
+        "Legal"
+      ],
+      "filter_subcategory": 6,
+      "filter_metadata": {
+        "filter_combination": "AND_OR_mixed",
+        "num_filters": 4,
+        "predicates": [
+          "judgment_year = 2009",
+          "plaintiff != 'Telstra Corporation Limited'",
+          "verdict != 'Others'",
+          "counsel_for_applicant = 'Dr J G Azzi'"
+        ],
+        "selectivity_ratios": [
+          0.1,
+          0.0035460992907801418,
+          0.1280701754385965,
+          0.004618937644341801
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "SUM",
+          "attribute": "legal_basis_num",
+          "alias": "sum_legal_basis_num"
+        }
+      ],
+      "group_by_attributes": [
+        "case_type"
+      ],
+      "selected_attributes": [
+        "case_type"
+      ],
+      "combination_name": "filter6_agg1"
+    }
+  }
+]

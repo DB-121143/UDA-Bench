@@ -1,0 +1,666 @@
+[
+  {
+    "sql": "SELECT epidemiology, risk_factors, etiology FROM disease WHERE risk_factors != 'infection';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "epidemiology",
+        "risk_factors",
+        "etiology"
+      ],
+      "where_clause": "risk_factors != 'infection'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "risk_factors != 'infection'"
+      ],
+      "selectivity_ratios": [
+        0.04854368932038835
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT sequelae, diagnostic_methods, affected_organs FROM disease WHERE affected_organs = 'ligaments';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "sequelae",
+        "diagnostic_methods",
+        "affected_organs"
+      ],
+      "where_clause": "affected_organs = 'ligaments'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "affected_organs = 'ligaments'"
+      ],
+      "selectivity_ratios": [
+        0.00909090909090909
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT treatment_challenges, disease_type, risk_factors FROM disease WHERE disease_type != 'others';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "treatment_challenges",
+        "disease_type",
+        "risk_factors"
+      ],
+      "where_clause": "disease_type != 'others'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "disease_type != 'others'"
+      ],
+      "selectivity_ratios": [
+        0.05027932960893855
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT affected_organs, pathogenesis, treatments FROM disease WHERE treatments = 'stem cell transplantation';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "affected_organs",
+        "pathogenesis",
+        "treatments"
+      ],
+      "where_clause": "treatments = 'stem cell transplantation'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "treatments = 'stem cell transplantation'"
+      ],
+      "selectivity_ratios": [
+        0.004878048780487805
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT diagnosis_challenges, preventive_measures, disease_type FROM disease WHERE preventive_measures != 'exercise' AND common_symptoms != 'nausea';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "diagnosis_challenges",
+        "preventive_measures",
+        "disease_type"
+      ],
+      "where_clause": "preventive_measures != 'exercise' AND common_symptoms != 'nausea'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "preventive_measures != 'exercise'",
+        "common_symptoms != 'nausea'"
+      ],
+      "selectivity_ratios": [
+        0.014705882352941176,
+        0.017110266159695818
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT diagnostic_methods, prognosis, affected_organs FROM disease WHERE prognosis = 'high_mortality' AND drugs = 'phenytoin';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "diagnostic_methods",
+        "prognosis",
+        "affected_organs"
+      ],
+      "where_clause": "prognosis = 'high_mortality' AND drugs = 'phenytoin'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "prognosis = 'high_mortality'",
+        "drugs = 'phenytoin'"
+      ],
+      "selectivity_ratios": [
+        0.1223021582733813,
+        0.007168458781362007
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT risk_factors, prognosis, treatments FROM disease WHERE risk_factors != 'chronic pain' AND prognosis != 'asymptomatic';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "risk_factors",
+        "prognosis",
+        "treatments"
+      ],
+      "where_clause": "risk_factors != 'chronic pain' AND prognosis != 'asymptomatic'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "risk_factors != 'chronic pain'",
+        "prognosis != 'asymptomatic'"
+      ],
+      "selectivity_ratios": [
+        0.009708737864077669,
+        0.014388489208633094
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT treatments, affected_organs, etiology FROM disease WHERE affected_organs != 'cervix' AND epidemiology = 'occurs most often among Caucasian women';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "treatments",
+        "affected_organs",
+        "etiology"
+      ],
+      "where_clause": "affected_organs != 'cervix' AND epidemiology = 'occurs most often among Caucasian women'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "affected_organs != 'cervix'",
+        "epidemiology = 'occurs most often among Caucasian women'"
+      ],
+      "selectivity_ratios": [
+        0.004545454545454545,
+        0.006944444444444444
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT diagnostic_methods, pathogenesis, drugs FROM disease WHERE diagnostic_methods != 'screening' OR drugs != 'acyclovir';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "diagnostic_methods",
+        "pathogenesis",
+        "drugs"
+      ],
+      "where_clause": "diagnostic_methods != 'screening' OR drugs != 'acyclovir'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "diagnostic_methods != 'screening'",
+        "drugs != 'acyclovir'"
+      ],
+      "selectivity_ratios": [
+        0.046296296296296294,
+        0.007168458781362007
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT diagnosis_challenges, affected_organs, preventive_measures FROM disease WHERE diagnosis_challenges != 'difficult to find early' OR treatment_challenges != 'no clear silver bullet for therapy';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "diagnosis_challenges",
+        "affected_organs",
+        "preventive_measures"
+      ],
+      "where_clause": "diagnosis_challenges != 'difficult to find early' OR treatment_challenges != 'no clear silver bullet for therapy'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "diagnosis_challenges != 'difficult to find early'",
+        "treatment_challenges != 'no clear silver bullet for therapy'"
+      ],
+      "selectivity_ratios": [
+        0.01639344262295082,
+        0.009708737864077669
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT diagnostic_methods, common_symptoms, quality_of_life_impact FROM disease WHERE quality_of_life_impact = 'mobility_impairment' OR etiology != 'pneumonia';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "diagnostic_methods",
+        "common_symptoms",
+        "quality_of_life_impact"
+      ],
+      "where_clause": "quality_of_life_impact = 'mobility_impairment' OR etiology != 'pneumonia'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "quality_of_life_impact = 'mobility_impairment'",
+        "etiology != 'pneumonia'"
+      ],
+      "selectivity_ratios": [
+        0.06451612903225806,
+        0.005376344086021506
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT quality_of_life_impact, etiology, pathogenesis FROM disease WHERE pathogenesis = 'congenital' OR sequelae != 'chronic pain';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "quality_of_life_impact",
+        "etiology",
+        "pathogenesis"
+      ],
+      "where_clause": "pathogenesis = 'congenital' OR sequelae != 'chronic pain'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "pathogenesis = 'congenital'",
+        "sequelae != 'chronic pain'"
+      ],
+      "selectivity_ratios": [
+        0.006060606060606061,
+        0.05555555555555555
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT quality_of_life_impact, risk_factors, preventive_measures FROM disease WHERE risk_factors != 'sedentary_lifestyle' AND affected_organs != 'bone' AND epidemiology != 'very common sexually transmitted infection' AND sequelae != 'blindness';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "quality_of_life_impact",
+        "risk_factors",
+        "preventive_measures"
+      ],
+      "where_clause": "risk_factors != 'sedentary_lifestyle' AND affected_organs != 'bone' AND epidemiology != 'very common sexually transmitted infection' AND sequelae != 'blindness'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "risk_factors != 'sedentary_lifestyle'",
+        "affected_organs != 'bone'",
+        "epidemiology != 'very common sexually transmitted infection'",
+        "sequelae != 'blindness'"
+      ],
+      "selectivity_ratios": [
+        0.009708737864077669,
+        0.022727272727272728,
+        0.006944444444444444,
+        0.027777777777777776
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT treatment_challenges, common_symptoms, disease_type FROM disease WHERE disease_type = 'iatrogenic' AND common_symptoms != 'tenderness' AND complications != 'chlamydial conjunctivitis' AND treatments != 'immunotherapy';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "treatment_challenges",
+        "common_symptoms",
+        "disease_type"
+      ],
+      "where_clause": "disease_type = 'iatrogenic' AND common_symptoms != 'tenderness' AND complications != 'chlamydial conjunctivitis' AND treatments != 'immunotherapy'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "disease_type = 'iatrogenic'",
+        "common_symptoms != 'tenderness'",
+        "complications != 'chlamydial conjunctivitis'",
+        "treatments != 'immunotherapy'"
+      ],
+      "selectivity_ratios": [
+        0.0446927374301676,
+        0.0038022813688212928,
+        0.005847953216374269,
+        0.004878048780487805
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT affected_organs, complications, diagnostic_methods FROM disease WHERE affected_organs = 'abdomen' AND complications != 'panic disorders' AND quality_of_life_impact != 'social_isolation' AND diagnostic_methods != 'clinical_evaluation';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "affected_organs",
+        "complications",
+        "diagnostic_methods"
+      ],
+      "where_clause": "affected_organs = 'abdomen' AND complications != 'panic disorders' AND quality_of_life_impact != 'social_isolation' AND diagnostic_methods != 'clinical_evaluation'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "affected_organs = 'abdomen'",
+        "complications != 'panic disorders'",
+        "quality_of_life_impact != 'social_isolation'",
+        "diagnostic_methods != 'clinical_evaluation'"
+      ],
+      "selectivity_ratios": [
+        0.01818181818181818,
+        0.005847953216374269,
+        0.04516129032258064,
+        0.4166666666666667
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT epidemiology, sequelae, etiology FROM disease WHERE epidemiology != '3,500 to 4,000 children worldwide; up to 80% mortality' AND disease_type != 'autoimmune' AND epidemiology = 'reported in almost every state' AND disease_name != 'Chlamydia';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "epidemiology",
+        "sequelae",
+        "etiology"
+      ],
+      "where_clause": "epidemiology != '3,500 to 4,000 children worldwide; up to 80% mortality' AND disease_type != 'autoimmune' AND epidemiology = 'reported in almost every state' AND disease_name != 'Chlamydia'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "epidemiology != '3,500 to 4,000 children worldwide; up to 80% mortality'",
+        "disease_type != 'autoimmune'",
+        "epidemiology = 'reported in almost every state'",
+        "disease_name != 'Chlamydia'"
+      ],
+      "selectivity_ratios": [
+        0.006944444444444444,
+        0.027932960893854747,
+        0.006944444444444444,
+        0.00847457627118644
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT epidemiology, affected_organs, sequelae FROM disease WHERE affected_organs != 'toes' OR etiology = 'genetic predisposition' OR treatment_challenges != 'limited options' OR pathogenesis != 'infectious_fungal';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "epidemiology",
+        "affected_organs",
+        "sequelae"
+      ],
+      "where_clause": "affected_organs != 'toes' OR etiology = 'genetic predisposition' OR treatment_challenges != 'limited options' OR pathogenesis != 'infectious_fungal'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "affected_organs != 'toes'",
+        "etiology = 'genetic predisposition'",
+        "treatment_challenges != 'limited options'",
+        "pathogenesis != 'infectious_fungal'"
+      ],
+      "selectivity_ratios": [
+        0.00909090909090909,
+        0.010752688172043012,
+        0.009708737864077669,
+        0.006060606060606061
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT treatment_challenges, disease_type, complications FROM disease WHERE complications = 'cervicitis' OR diagnostic_methods != 'laboratory_test' OR disease_name = 'Opioid Addiction' OR complications = 'heart related complications';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "treatment_challenges",
+        "disease_type",
+        "complications"
+      ],
+      "where_clause": "complications = 'cervicitis' OR diagnostic_methods != 'laboratory_test' OR disease_name = 'Opioid Addiction' OR complications = 'heart related complications'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "complications = 'cervicitis'",
+        "diagnostic_methods != 'laboratory_test'",
+        "disease_name = 'Opioid Addiction'",
+        "complications = 'heart related complications'"
+      ],
+      "selectivity_ratios": [
+        0.005847953216374269,
+        0.2222222222222222,
+        0.00847457627118644,
+        0.005847953216374269
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT disease_type, drugs, treatment_challenges FROM disease WHERE disease_type != 'allergic' OR diagnostic_methods = 'endoscopy' OR drugs != 'antidepressants' OR preventive_measures = 'vaccination';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "disease_type",
+        "drugs",
+        "treatment_challenges"
+      ],
+      "where_clause": "disease_type != 'allergic' OR diagnostic_methods = 'endoscopy' OR drugs != 'antidepressants' OR preventive_measures = 'vaccination'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "disease_type != 'allergic'",
+        "diagnostic_methods = 'endoscopy'",
+        "drugs != 'antidepressants'",
+        "preventive_measures = 'vaccination'"
+      ],
+      "selectivity_ratios": [
+        0.01675977653631285,
+        0.018518518518518517,
+        0.007168458781362007,
+        0.058823529411764705
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT diagnosis_challenges, complications, diagnostic_methods FROM disease WHERE complications != 'large_blood_vessel_damage' OR disease_name != 'Pleural Effusion' OR treatment_challenges = 'financial_burden' OR quality_of_life_impact = 'dietary_restriction';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "diagnosis_challenges",
+        "complications",
+        "diagnostic_methods"
+      ],
+      "where_clause": "complications != 'large_blood_vessel_damage' OR disease_name != 'Pleural Effusion' OR treatment_challenges = 'financial_burden' OR quality_of_life_impact = 'dietary_restriction'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "complications != 'large_blood_vessel_damage'",
+        "disease_name != 'Pleural Effusion'",
+        "treatment_challenges = 'financial_burden'",
+        "quality_of_life_impact = 'dietary_restriction'"
+      ],
+      "selectivity_ratios": [
+        0.005847953216374269,
+        0.00847457627118644,
+        0.009708737864077669,
+        0.03870967741935484
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT treatments, common_symptoms, quality_of_life_impact FROM disease WHERE (common_symptoms = 'constipation' AND prognosis = 'variable') OR (epidemiology != '741 DR-TB cases in Ethiopia in 2018' AND risk_factors != 'immunosuppression');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "treatments",
+        "common_symptoms",
+        "quality_of_life_impact"
+      ],
+      "where_clause": "(common_symptoms = 'constipation' AND prognosis = 'variable') OR (epidemiology != '741 DR-TB cases in Ethiopia in 2018' AND risk_factors != 'immunosuppression')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "common_symptoms = 'constipation'",
+        "prognosis = 'variable'",
+        "epidemiology != '741 DR-TB cases in Ethiopia in 2018'",
+        "risk_factors != 'immunosuppression'"
+      ],
+      "selectivity_ratios": [
+        0.005703422053231939,
+        0.1510791366906475,
+        0.006944444444444444,
+        0.009708737864077669
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT disease_name, preventive_measures, common_symptoms FROM disease WHERE (common_symptoms != 'decreased appetite' AND complications != 'cardiovascular_disorders') OR (disease_type = 'infectious' AND disease_type = 'genetic');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "disease_name",
+        "preventive_measures",
+        "common_symptoms"
+      ],
+      "where_clause": "(common_symptoms != 'decreased appetite' AND complications != 'cardiovascular_disorders') OR (disease_type = 'infectious' AND disease_type = 'genetic')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "common_symptoms != 'decreased appetite'",
+        "complications != 'cardiovascular_disorders'",
+        "disease_type = 'infectious'",
+        "disease_type = 'genetic'"
+      ],
+      "selectivity_ratios": [
+        0.0038022813688212928,
+        0.005847953216374269,
+        0.15083798882681565,
+        0.05027932960893855
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT affected_organs, quality_of_life_impact, sequelae FROM disease WHERE (affected_organs = 'nervous system' AND risk_factors != 'hyperlipidemia') OR (etiology = 'insulin resistance' AND diagnostic_methods != 'screening');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "affected_organs",
+        "quality_of_life_impact",
+        "sequelae"
+      ],
+      "where_clause": "(affected_organs = 'nervous system' AND risk_factors != 'hyperlipidemia') OR (etiology = 'insulin resistance' AND diagnostic_methods != 'screening')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "affected_organs = 'nervous system'",
+        "risk_factors != 'hyperlipidemia'",
+        "etiology = 'insulin resistance'",
+        "diagnostic_methods != 'screening'"
+      ],
+      "selectivity_ratios": [
+        0.031818181818181815,
+        0.009708737864077669,
+        0.010752688172043012,
+        0.046296296296296294
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT diagnostic_methods, disease_type, diagnosis_challenges FROM disease WHERE (diagnosis_challenges = 'difficult to define onset after opioid initiation' AND prognosis = 'stable') OR (risk_factors != 'genetic_predisposition' AND diagnostic_methods = 'genetic_testing');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "diagnostic_methods",
+        "disease_type",
+        "diagnosis_challenges"
+      ],
+      "where_clause": "(diagnosis_challenges = 'difficult to define onset after opioid initiation' AND prognosis = 'stable') OR (risk_factors != 'genetic_predisposition' AND diagnostic_methods = 'genetic_testing')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "diagnosis_challenges = 'difficult to define onset after opioid initiation'",
+        "prognosis = 'stable'",
+        "risk_factors != 'genetic_predisposition'",
+        "diagnostic_methods = 'genetic_testing'"
+      ],
+      "selectivity_ratios": [
+        0.01639344262295082,
+        0.014388489208633094,
+        0.038834951456310676,
+        0.009259259259259259
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "sql": "SELECT NBA_team, name, own_year FROM manager;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "NBA_team",
+        "name",
+        "own_year"
+      ],
+      "tables": [
+        "manager"
+      ]
+    }
+  }
+]

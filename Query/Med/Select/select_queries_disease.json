@@ -1,0 +1,58 @@
+[
+  {
+    "sql": "SELECT risk_factors, epidemiology FROM disease;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "risk_factors",
+        "epidemiology"
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT disease_name, treatments, etiology FROM disease;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "disease_name",
+        "treatments",
+        "etiology"
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT drugs, disease_type FROM disease;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "drugs",
+        "disease_type"
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT disease_type FROM disease;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "disease_type"
+      ],
+      "tables": [
+        "disease"
+      ]
+    }
+  }
+]

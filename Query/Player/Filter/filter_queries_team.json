@@ -1,0 +1,334 @@
+[
+  {
+    "sql": "SELECT founded_year, ownership, team_name FROM team WHERE ownership != '  ';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "founded_year",
+        "ownership",
+        "team_name"
+      ],
+      "where_clause": "ownership != '  '",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "ownership != '  '"
+      ],
+      "selectivity_ratios": [
+        0.08333333333333333
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT ownership, championships, founded_year FROM team WHERE founded_year < 1989;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "ownership",
+        "championships",
+        "founded_year"
+      ],
+      "where_clause": "founded_year < 1989",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "founded_year < 1989"
+      ],
+      "selectivity_ratios": [
+        0.1
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT founded_year, ownership, team_name FROM team WHERE ownership != 'Harris Blitzer Sports & Entertainment (HBSE)  ' AND founded_year >= 1967;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "founded_year",
+        "ownership",
+        "team_name"
+      ],
+      "where_clause": "ownership != 'Harris Blitzer Sports & Entertainment (HBSE)  ' AND founded_year >= 1967",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "ownership != 'Harris Blitzer Sports & Entertainment (HBSE)  '",
+        "founded_year >= 1967"
+      ],
+      "selectivity_ratios": [
+        0.041666666666666664,
+        0.5
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT championships, founded_year, location FROM team WHERE location = 'Brooklyn' AND location = 'Memphis';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "championships",
+        "founded_year",
+        "location"
+      ],
+      "where_clause": "location = 'Brooklyn' AND location = 'Memphis'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "location = 'Brooklyn'",
+        "location = 'Memphis'"
+      ],
+      "selectivity_ratios": [
+        0.03333333333333333,
+        0.03333333333333333
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT founded_year, team_name, location FROM team WHERE founded_year < 1949 OR location != 'Oklahoma City';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "founded_year",
+        "team_name",
+        "location"
+      ],
+      "where_clause": "founded_year < 1949 OR location != 'Oklahoma City'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "founded_year < 1949",
+        "location != 'Oklahoma City'"
+      ],
+      "selectivity_ratios": [
+        0.25,
+        0.03333333333333333
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT ownership, founded_year, championships FROM team WHERE ownership != 'Professional Basketball Club LLC, a group of Oklahoma City investors led by Clay Bennett  ' OR ownership != 'Jerry Buss (from 1979)';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "ownership",
+        "founded_year",
+        "championships"
+      ],
+      "where_clause": "ownership != 'Professional Basketball Club LLC, a group of Oklahoma City investors led by Clay Bennett  ' OR ownership != 'Jerry Buss (from 1979)'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "ownership != 'Professional Basketball Club LLC, a group of Oklahoma City investors led by Clay Bennett  '",
+        "ownership != 'Jerry Buss (from 1979)'"
+      ],
+      "selectivity_ratios": [
+        0.041666666666666664,
+        0.041666666666666664
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT championships, ownership, founded_year FROM team WHERE ownership = 'James L. Dolan' AND ownership = 'Glen Taylor' AND location = 'Houston' AND location != 'Brooklyn';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "championships",
+        "ownership",
+        "founded_year"
+      ],
+      "where_clause": "ownership = 'James L. Dolan' AND ownership = 'Glen Taylor' AND location = 'Houston' AND location != 'Brooklyn'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "ownership = 'James L. Dolan'",
+        "ownership = 'Glen Taylor'",
+        "location = 'Houston'",
+        "location != 'Brooklyn'"
+      ],
+      "selectivity_ratios": [
+        0.041666666666666664,
+        0.041666666666666664,
+        0.03333333333333333,
+        0.03333333333333333
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT team_name, championships, location FROM team WHERE team_name = 'Golden State Warriors' AND founded_year >= 1989 AND ownership != 'Joseph Tsai' AND location != 'Charlotte';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "team_name",
+        "championships",
+        "location"
+      ],
+      "where_clause": "team_name = 'Golden State Warriors' AND founded_year >= 1989 AND ownership != 'Joseph Tsai' AND location != 'Charlotte'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "team_name = 'Golden State Warriors'",
+        "founded_year >= 1989",
+        "ownership != 'Joseph Tsai'",
+        "location != 'Charlotte'"
+      ],
+      "selectivity_ratios": [
+        0.03333333333333333,
+        0.1,
+        0.041666666666666664,
+        0.03333333333333333
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT championships, founded_year, location FROM team WHERE founded_year <= 1978 OR team_name = 'Dallas Mavericks' OR location != 'Minneapolis' OR team_name != 'Miami Heat';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "championships",
+        "founded_year",
+        "location"
+      ],
+      "where_clause": "founded_year <= 1978 OR team_name = 'Dallas Mavericks' OR location != 'Minneapolis' OR team_name != 'Miami Heat'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "founded_year <= 1978",
+        "team_name = 'Dallas Mavericks'",
+        "location != 'Minneapolis'",
+        "team_name != 'Miami Heat'"
+      ],
+      "selectivity_ratios": [
+        0.25,
+        0.03333333333333333,
+        0.03333333333333333,
+        0.03333333333333333
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT team_name, founded_year, ownership FROM team WHERE founded_year > 1967 OR team_name != 'Charlotte Hornets' OR team_name = 'Detroit Pistons' OR founded_year >= 1989;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "team_name",
+        "founded_year",
+        "ownership"
+      ],
+      "where_clause": "founded_year > 1967 OR team_name != 'Charlotte Hornets' OR team_name = 'Detroit Pistons' OR founded_year >= 1989",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "founded_year > 1967",
+        "team_name != 'Charlotte Hornets'",
+        "team_name = 'Detroit Pistons'",
+        "founded_year >= 1989"
+      ],
+      "selectivity_ratios": [
+        0.5,
+        0.03333333333333333,
+        0.03333333333333333,
+        0.1
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT location, founded_year, team_name FROM team WHERE (founded_year >= 1949 AND founded_year = 1949) OR (ownership != 'Paul Allen' AND ownership != 'Glen Taylor');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "location",
+        "founded_year",
+        "team_name"
+      ],
+      "where_clause": "(founded_year >= 1949 AND founded_year = 1949) OR (ownership != 'Paul Allen' AND ownership != 'Glen Taylor')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "founded_year >= 1949",
+        "founded_year = 1949",
+        "ownership != 'Paul Allen'",
+        "ownership != 'Glen Taylor'"
+      ],
+      "selectivity_ratios": [
+        0.25,
+        0.25,
+        0.041666666666666664,
+        0.041666666666666664
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT location, founded_year, team_name FROM team WHERE (founded_year > 1989 AND ownership != 'Gabe Plotkin and Rick Schnall') OR (ownership = ' ' AND founded_year = 1967);",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "location",
+        "founded_year",
+        "team_name"
+      ],
+      "where_clause": "(founded_year > 1989 AND ownership != 'Gabe Plotkin and Rick Schnall') OR (ownership = ' ' AND founded_year = 1967)",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "founded_year > 1989",
+        "ownership != 'Gabe Plotkin and Rick Schnall'",
+        "ownership = ' '",
+        "founded_year = 1967"
+      ],
+      "selectivity_ratios": [
+        0.1,
+        0.041666666666666664,
+        0.20833333333333334,
+        0.5
+      ],
+      "tables": [
+        "team"
+      ]
+    }
+  }
+]

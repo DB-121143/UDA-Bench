@@ -1,0 +1,29 @@
+{
+    "finance": [
+        "company_name: the full legal name of the company as disclosed in the annual report.",
+        "registered_office: the registered address or main office location of the company.",
+        "exchange_code: The code of the stock exchange where the company is listed (e.g., ASX, SUN).",
+        "principal_activities: main business activities or industry classification; choose one or more from ['Mining', 'Finance', 'Healthcare', 'Manufacturing', 'Technology', 'Retail', 'Energy', 'Utilities', 'Real Estate', 'Transportation', 'Agriculture', 'Telecommunications', 'Media', 'Other'], seperated by `||` (e.g. Mining || Finance).",
+        "board_members: profiles of board members.",
+        "executive_profiles: profiles of executive management team members.",
+        "revenue: total operating revenue recognized during the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+        "net_profit_or_loss: net profit or loss amount for the reporting period (enter a negative number for loss). Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+        "total_Debt: total debt outstanding at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+        "total_assets: total assets held by the company at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+        "cash_reserves: total cash and cash equivalents held at period-end. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+        "net_assets: net asset value at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+        "earnings_per_share: earnings per share (EPS) for the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+        "dividend_per_share: dividends paid per share for the period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+        "largest_shareholder: the name of the largest shareholder.",
+        "the_highest_ownership_stake: the highest percentage of ownership held by a single shareholder. Enter a number, unit: percent (%).",
+        "major_equity_changes: whether there were major equity changes during the period; choose one from ['Yes', 'No'].",
+        "major_events: type(s) of major events; choose one or more from ['M&A', 'Litigation', 'Major Contract', 'Leadership Change', 'Restructuring', 'Delisting', 'Other'], seperated by `||` (e.g. Litigation).",
+        "bussiness_sales: total operating revenue from all major business lines or segments. If the document reports revenue for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+        "bussiness_profit: total profit contributed by all major business lines or projects. If the document reports profit for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+        "bussiness_cost: total cost associated with all main business lines or projects. If the document reports cost for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+        "business_segments_num: number of business segments reported. Enter a number.",
+        "business_risks: main types of business risks; choose one or more from ['Market Risk', 'Credit Risk', 'Operational Risk', 'Legal/Compliance Risk', 'Environmental Risk', 'Strategic Risk', 'Other'], seperated by `||` (e.g. Credit Risk || Market Risk).",
+        "remuneration_policy: executive remuneration policy type; choose only one from ['Fixed', 'Performance-based', 'Stock Option', 'Mixed', 'Not Disclosed'].",
+        "auditor: name of the external audit firm."
+    ]
+}

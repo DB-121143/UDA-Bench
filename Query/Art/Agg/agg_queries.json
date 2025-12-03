@@ -1,0 +1,262 @@
+[
+  {
+    "sql": "SELECT Style, field, death_city, MIN(teaching) AS min_teaching FROM Art GROUP BY Style;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Art"
+      ],
+      "group_by_attributes": [
+        "Style"
+      ],
+      "selected_attributes": [
+        "field",
+        "death_city"
+      ],
+      "aggregations": [
+        {
+          "function": "MIN",
+          "attribute": "teaching",
+          "alias": "min_teaching"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT zodiac, birth_date, name, COUNT(name) AS count_name FROM Art GROUP BY zodiac;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Art"
+      ],
+      "group_by_attributes": [
+        "zodiac"
+      ],
+      "selected_attributes": [
+        "birth_date",
+        "name"
+      ],
+      "aggregations": [
+        {
+          "function": "COUNT",
+          "attribute": "name",
+          "alias": "count_name"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT genre, birth_city, nationality, AVG(age) AS avg_age FROM Art GROUP BY genre;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Art"
+      ],
+      "group_by_attributes": [
+        "genre"
+      ],
+      "selected_attributes": [
+        "birth_city",
+        "nationality"
+      ],
+      "aggregations": [
+        {
+          "function": "AVG",
+          "attribute": "age",
+          "alias": "avg_age"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT nationality, Theme, art_movement, MAX(age) AS max_age FROM Art GROUP BY nationality;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Art"
+      ],
+      "group_by_attributes": [
+        "nationality"
+      ],
+      "selected_attributes": [
+        "Theme",
+        "art_movement"
+      ],
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "age",
+          "alias": "max_age"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT zodiac, birth_date, teaching, COUNT(art_institution) AS count_art_institution FROM Art GROUP BY zodiac;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Art"
+      ],
+      "group_by_attributes": [
+        "zodiac"
+      ],
+      "selected_attributes": [
+        "birth_date",
+        "teaching"
+      ],
+      "aggregations": [
+        {
+          "function": "COUNT",
+          "attribute": "art_institution",
+          "alias": "count_art_institution"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT Style, death_city, name, MIN(age) AS min_age FROM Art GROUP BY Style;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Art"
+      ],
+      "group_by_attributes": [
+        "Style"
+      ],
+      "selected_attributes": [
+        "death_city",
+        "name"
+      ],
+      "aggregations": [
+        {
+          "function": "MIN",
+          "attribute": "age",
+          "alias": "min_age"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT nationality, birth_continent, name, MAX(age) AS max_age FROM Art GROUP BY nationality;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Art"
+      ],
+      "group_by_attributes": [
+        "nationality"
+      ],
+      "selected_attributes": [
+        "birth_continent",
+        "name"
+      ],
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "age",
+          "alias": "max_age"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT birth_continent, age, nationality, SUM(age) AS sum_age FROM Art GROUP BY birth_continent;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Art"
+      ],
+      "group_by_attributes": [
+        "birth_continent"
+      ],
+      "selected_attributes": [
+        "age",
+        "nationality"
+      ],
+      "aggregations": [
+        {
+          "function": "SUM",
+          "attribute": "age",
+          "alias": "sum_age"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT nationality, awards, name, COUNT(teaching) AS count_teaching FROM Art GROUP BY nationality;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Art"
+      ],
+      "group_by_attributes": [
+        "nationality"
+      ],
+      "selected_attributes": [
+        "awards",
+        "name"
+      ],
+      "aggregations": [
+        {
+          "function": "COUNT",
+          "attribute": "teaching",
+          "alias": "count_teaching"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT nationality, name, birth_continent, COUNT(birth_city) AS count_birth_city FROM Art GROUP BY nationality;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Art"
+      ],
+      "group_by_attributes": [
+        "nationality"
+      ],
+      "selected_attributes": [
+        "name",
+        "birth_continent"
+      ],
+      "aggregations": [
+        {
+          "function": "COUNT",
+          "attribute": "birth_city",
+          "alias": "count_birth_city"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  }
+]

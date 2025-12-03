@@ -1,0 +1,168 @@
+[
+  {
+    "sql": "SELECT age, NBA_team, name FROM manager WHERE NBA_team != 'Cleveland Cavaliers';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "age",
+        "NBA_team",
+        "name"
+      ],
+      "where_clause": "NBA_team != 'Cleveland Cavaliers'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "NBA_team != 'Cleveland Cavaliers'"
+      ],
+      "selectivity_ratios": [
+        0.0625
+      ],
+      "tables": [
+        "manager"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT age, NBA_team, name FROM manager WHERE NBA_team != 'Golden State Warriors' AND age >= 66;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "age",
+        "NBA_team",
+        "name"
+      ],
+      "where_clause": "NBA_team != 'Golden State Warriors' AND age >= 66",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "NBA_team != 'Golden State Warriors'",
+        "age >= 66"
+      ],
+      "selectivity_ratios": [
+        0.0625,
+        0.5
+      ],
+      "tables": [
+        "manager"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT age, name, nationality FROM manager WHERE age < 63 OR nationality != 'Israeli-American';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "age",
+        "name",
+        "nationality"
+      ],
+      "where_clause": "age < 63 OR nationality != 'Israeli-American'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "age < 63",
+        "nationality != 'Israeli-American'"
+      ],
+      "selectivity_ratios": [
+        0.25,
+        0.0625
+      ],
+      "tables": [
+        "manager"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT own_year, NBA_team, age FROM manager WHERE NBA_team = 'Miami Heat' AND own_year != 2008 AND nationality != 'American  ' AND nationality != 'American  ';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "own_year",
+        "NBA_team",
+        "age"
+      ],
+      "where_clause": "NBA_team = 'Miami Heat' AND own_year != 2008 AND nationality != 'American  ' AND nationality != 'American  '",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "NBA_team = 'Miami Heat'",
+        "own_year != 2008",
+        "nationality != 'American  '",
+        "nationality != 'American  '"
+      ],
+      "selectivity_ratios": [
+        0.0625,
+        0.5,
+        0.0625,
+        0.0625
+      ],
+      "tables": [
+        "manager"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT own_year, age, nationality FROM manager WHERE age <= 76 OR name = 'Joseph Chung-Hsin Tsai' OR own_year != 2012 OR own_year = 2017;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "own_year",
+        "age",
+        "nationality"
+      ],
+      "where_clause": "age <= 76 OR name = 'Joseph Chung-Hsin Tsai' OR own_year != 2012 OR own_year = 2017",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "age <= 76",
+        "name = 'Joseph Chung-Hsin Tsai'",
+        "own_year != 2012",
+        "own_year = 2017"
+      ],
+      "selectivity_ratios": [
+        0.25,
+        0.0625,
+        0.25,
+        0.1
+      ],
+      "tables": [
+        "manager"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT nationality, age, name FROM manager WHERE (age >= 63 AND age = 63) OR (NBA_team != 'Indiana Pacers' AND NBA_team != 'New Orleans Pelicans');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "nationality",
+        "age",
+        "name"
+      ],
+      "where_clause": "(age >= 63 AND age = 63) OR (NBA_team != 'Indiana Pacers' AND NBA_team != 'New Orleans Pelicans')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "age >= 63",
+        "age = 63",
+        "NBA_team != 'Indiana Pacers'",
+        "NBA_team != 'New Orleans Pelicans'"
+      ],
+      "selectivity_ratios": [
+        0.25,
+        0.25,
+        0.0625,
+        0.0625
+      ],
+      "tables": [
+        "manager"
+      ]
+    }
+  }
+]

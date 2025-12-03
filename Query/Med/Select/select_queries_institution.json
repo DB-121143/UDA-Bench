@@ -1,0 +1,32 @@
+[
+  {
+    "sql": "SELECT international_collaboration, funding_sources, institution_country FROM institution;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "international_collaboration",
+        "funding_sources",
+        "institution_country"
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT key_technologies, institution_type, institution_name FROM institution;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "key_technologies",
+        "institution_type",
+        "institution_name"
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  }
+]

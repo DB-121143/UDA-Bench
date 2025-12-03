@@ -1,0 +1,262 @@
+{
+  "player": [
+    {
+      "name": "name",
+      "table": "player",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "full name of the NBA player (e.g., LeBron James)."
+    },
+    {
+      "name": "birth_date",
+      "table": "player",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "birth date of the player; use format YYYY/%-m/%-d (e.g., 1984/2/30)."
+    },
+    {
+      "name": "nationality",
+      "table": "player",
+      "value_type": "str",
+      "usage": "categorical",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "nationality of the player (e.g., USA, France)."
+    },
+    {
+      "name": "age",
+      "table": "player",
+      "value_type": "int",
+      "usage": "numerical",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "age of the player (if death_date is given, compute as death_date - birth_date; otherwise, compute as 2025/1/1 - birth_date)."
+    },
+    {
+      "name": "team",
+      "table": "player",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "the current NBA team the player belongs to, or the last NBA team the player joined if not currently active (e.g., Los Angeles Lakers)."
+    },
+    {
+      "name": "position",
+      "table": "player",
+      "value_type": "str",
+      "usage": "categorical",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "player's primary position on the team; choose one from ['Frontcourt', 'Backcourt']."
+    },
+    {
+      "name": "draft_pick",
+      "table": "player",
+      "value_type": "int",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "the pick number at which the player was selected in the NBA draft (e.g., 1)."
+    },
+    {
+      "name": "draft_year",
+      "table": "player",
+      "value_type": "int",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "the year the player was selected in the NBA draft; use format YYYY (e.g., 2003)."
+    },
+    {
+      "name": "college",
+      "table": "player",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "the college the player attended, if applicable (e.g., Duke University)."
+    },
+    {
+      "name": "nba_championships",
+      "table": "player",
+      "value_type": "int",
+      "usage": "numerical",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "number of NBA championships the player has won (e.g., 4)."
+    },
+    {
+      "name": "mvp_awards",
+      "table": "player",
+      "value_type": "int",
+      "usage": "numerical",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "number of NBA MVP awards the player has won; use 0 if none (e.g., 2)."
+    },
+    {
+      "name": "olympic_gold_medals",
+      "table": "player",
+      "value_type": "int",
+      "usage": "numerical",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "number of Olympic gold medals the player has won (e.g., 3)."
+    },
+    {
+      "name": "fiba_world_cup",
+      "table": "player",
+      "value_type": "int",
+      "usage": "numerical",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "number of FIBA World Cup titles the player has won (e.g., 1)."
+    }
+  ],
+  "manager": [
+    {
+      "name": "name",
+      "table": "manager",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "name is the full name of the team owner (e.g. Jeanie Buss)."
+    },
+    {
+      "name": "age",
+      "table": "manager",
+      "value_type": "int",
+      "usage": "numerical",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "age is the age of the team owner, a integer (e.g. 45)."
+    },
+    {
+      "name": "nationality",
+      "table": "manager",
+      "value_type": "str",
+      "usage": "categorical",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "nationality is the nationality of the team owner (e.g. American)."
+    },
+    {
+      "name": "nba_team",
+      "table": "manager",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "NBA_team is the NBA team's name the owner own, (e.g. Los Angeles Lakers)."
+    },
+    {
+      "name": "own_year",
+      "table": "manager",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "own_year is year the owner have this NBA team (e.g. 2010)."
+    }
+  ],
+  "team": [
+    {
+      "name": "team_name",
+      "table": "team",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "team_name is the full name of the team (e.g. Los Angeles Lakers)."
+    },
+    {
+      "name": "founded_year",
+      "table": "team",
+      "value_type": "int",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "founded_year is the year of this team team founded (e.g. 1947)."
+    },
+    {
+      "name": "location",
+      "table": "team",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "location is the lastest city the team team located (e.g. Los Angeles)."
+    },
+    {
+      "name": "ownership",
+      "table": "team",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "ownership is the name of the team's owner (e.g. Jeanie Buss)."
+    },
+    {
+      "name": "championships",
+      "table": "team",
+      "value_type": "int",
+      "usage": "numerical",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "championships is the number of this team getting championships (e.g. 5)."
+    }
+  ],
+  "city": [
+    {
+      "name": "city_name",
+      "table": "city",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "city_name is the name of the city (e.g. Boston)"
+    },
+    {
+      "name": "state_name",
+      "table": "city",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "state_name is the name of the state the city is located in (e.g. California)."
+    },
+    {
+      "name": "population",
+      "table": "city",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "population is the population of the city (e.g. 7000000)."
+    },
+    {
+      "name": "area",
+      "table": "city",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "area is the area of the city in square kilometers (e.g. 89.64)."
+    },
+    {
+      "name": "gdp",
+      "table": "city",
+      "value_type": "str",
+      "usage": "general",
+      "modality": "text",
+      "is_nullable": false,
+      "description": "gdp is the gross domestic product of the city in millions (e.g. 7.2)."
+    }
+  ]
+}

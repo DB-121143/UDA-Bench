@@ -1,0 +1,1662 @@
+[
+  {
+    "sql": "SELECT business_segments_num, dividend_per_share, auditor FROM Finan_finance WHERE auditor = 'PKF Littlejohn LLP';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "business_segments_num",
+        "dividend_per_share",
+        "auditor"
+      ],
+      "where_clause": "auditor = 'PKF Littlejohn LLP'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "auditor = 'PKF Littlejohn LLP'"
+      ],
+      "selectivity_ratios": [
+        0.02040816326530612
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT net_assets, board_members, net_profit_or_loss FROM Finan_finance WHERE net_profit_or_loss = '1460000000';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "net_assets",
+        "board_members",
+        "net_profit_or_loss"
+      ],
+      "where_clause": "net_profit_or_loss = '1460000000'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "net_profit_or_loss = '1460000000'"
+      ],
+      "selectivity_ratios": [
+        0.010101010101010102
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT bussiness_cost, remuneration_policy, registered_office FROM Finan_finance WHERE bussiness_cost != '2129327000';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "bussiness_cost",
+        "remuneration_policy",
+        "registered_office"
+      ],
+      "where_clause": "bussiness_cost != '2129327000'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "bussiness_cost != '2129327000'"
+      ],
+      "selectivity_ratios": [
+        0.01098901098901099
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT net_profit_or_loss, exchange_code, total_Debt FROM Finan_finance WHERE total_Debt = '21325000000';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "net_profit_or_loss",
+        "exchange_code",
+        "total_Debt"
+      ],
+      "where_clause": "total_Debt = '21325000000'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "total_Debt = '21325000000'"
+      ],
+      "selectivity_ratios": [
+        0.011363636363636364
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT principal_activities, bussiness_profit, major_events FROM Finan_finance WHERE bussiness_profit = '230400000';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "principal_activities",
+        "bussiness_profit",
+        "major_events"
+      ],
+      "where_clause": "bussiness_profit = '230400000'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "bussiness_profit = '230400000'"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, exchange_code, the_highest_ownership_stake FROM Finan_finance WHERE exchange_code = 'RFT';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "major_equity_changes",
+        "exchange_code",
+        "the_highest_ownership_stake"
+      ],
+      "where_clause": "exchange_code = 'RFT'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "exchange_code = 'RFT'"
+      ],
+      "selectivity_ratios": [
+        0.00980392156862745
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT bussiness_profit, auditor, total_assets FROM Finan_finance WHERE auditor != 'PKF Littlejohn LLP';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "bussiness_profit",
+        "auditor",
+        "total_assets"
+      ],
+      "where_clause": "auditor != 'PKF Littlejohn LLP'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "auditor != 'PKF Littlejohn LLP'"
+      ],
+      "selectivity_ratios": [
+        0.02040816326530612
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT bussiness_sales, net_profit_or_loss, net_assets FROM Finan_finance WHERE net_assets = 249398000;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "bussiness_sales",
+        "net_profit_or_loss",
+        "net_assets"
+      ],
+      "where_clause": "net_assets = 249398000",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "net_assets = 249398000"
+      ],
+      "selectivity_ratios": [
+        0.5
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT principal_activities, total_Debt, major_equity_changes FROM Finan_finance WHERE major_equity_changes != 'Yes';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "principal_activities",
+        "total_Debt",
+        "major_equity_changes"
+      ],
+      "where_clause": "major_equity_changes != 'Yes'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "major_equity_changes != 'Yes'"
+      ],
+      "selectivity_ratios": [
+        0.5858585858585859
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT largest_shareholder, company_name, executive_profiles FROM Finan_finance WHERE company_name != 'NuCana plc';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "largest_shareholder",
+        "company_name",
+        "executive_profiles"
+      ],
+      "where_clause": "company_name != 'NuCana plc'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "company_name != 'NuCana plc'"
+      ],
+      "selectivity_ratios": [
+        0.01
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT largest_shareholder, auditor, registered_office FROM Finan_finance WHERE largest_shareholder != 'Kelly Investments 1 PTY Ltd' AND business_risks = 'Environmental Risk';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "largest_shareholder",
+        "auditor",
+        "registered_office"
+      ],
+      "where_clause": "largest_shareholder != 'Kelly Investments 1 PTY Ltd' AND business_risks = 'Environmental Risk'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "largest_shareholder != 'Kelly Investments 1 PTY Ltd'",
+        "business_risks = 'Environmental Risk'"
+      ],
+      "selectivity_ratios": [
+        0.014705882352941176,
+        0.07882882882882883
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT cash_reserves, bussiness_profit, auditor FROM Finan_finance WHERE auditor = 'PKF Littlejohn LLP' AND major_equity_changes = 'Yes';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "cash_reserves",
+        "bussiness_profit",
+        "auditor"
+      ],
+      "where_clause": "auditor = 'PKF Littlejohn LLP' AND major_equity_changes = 'Yes'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "auditor = 'PKF Littlejohn LLP'",
+        "major_equity_changes = 'Yes'"
+      ],
+      "selectivity_ratios": [
+        0.02040816326530612,
+        0.5858585858585859
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT dividend_per_share, bussiness_profit, total_Debt FROM Finan_finance WHERE dividend_per_share != 0.40 AND earnings_per_share = 0.49;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "dividend_per_share",
+        "bussiness_profit",
+        "total_Debt"
+      ],
+      "where_clause": "dividend_per_share != 0.40 AND earnings_per_share = 0.49",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "dividend_per_share != 0.40",
+        "earnings_per_share = 0.49"
+      ],
+      "selectivity_ratios": [
+        0.25,
+        0.5
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT net_profit_or_loss, principal_activities, major_equity_changes FROM Finan_finance WHERE net_profit_or_loss != '2823562' AND earnings_per_share = 0.49;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "net_profit_or_loss",
+        "principal_activities",
+        "major_equity_changes"
+      ],
+      "where_clause": "net_profit_or_loss != '2823562' AND earnings_per_share = 0.49",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "net_profit_or_loss != '2823562'",
+        "earnings_per_share = 0.49"
+      ],
+      "selectivity_ratios": [
+        0.010101010101010102,
+        0.5
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT total_assets, bussiness_profit, principal_activities FROM Finan_finance WHERE principal_activities != 'Finance' AND exchange_code != 'AIM';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "total_assets",
+        "bussiness_profit",
+        "principal_activities"
+      ],
+      "where_clause": "principal_activities != 'Finance' AND exchange_code != 'AIM'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "principal_activities != 'Finance'",
+        "exchange_code != 'AIM'"
+      ],
+      "selectivity_ratios": [
+        0.15254237288135594,
+        0.0392156862745098
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT remuneration_policy, net_assets, principal_activities FROM Finan_finance WHERE remuneration_policy != 'Stock Option' AND total_assets != 136955488;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "remuneration_policy",
+        "net_assets",
+        "principal_activities"
+      ],
+      "where_clause": "remuneration_policy != 'Stock Option' AND total_assets != 136955488",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "remuneration_policy != 'Stock Option'",
+        "total_assets != 136955488"
+      ],
+      "selectivity_ratios": [
+        0.19205298013245034,
+        0.25
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT board_members, revenue, cash_reserves FROM Finan_finance WHERE board_members != 'Keith Bradley' AND business_segments_num < 1;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "board_members",
+        "revenue",
+        "cash_reserves"
+      ],
+      "where_clause": "board_members != 'Keith Bradley' AND business_segments_num < 1",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "board_members != 'Keith Bradley'",
+        "business_segments_num < 1"
+      ],
+      "selectivity_ratios": [
+        0.0014044943820224719,
+        0.25
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT earnings_per_share, the_highest_ownership_stake, net_profit_or_loss FROM Finan_finance WHERE net_profit_or_loss = '165500000' AND bussiness_cost != '993529';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "earnings_per_share",
+        "the_highest_ownership_stake",
+        "net_profit_or_loss"
+      ],
+      "where_clause": "net_profit_or_loss = '165500000' AND bussiness_cost != '993529'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "net_profit_or_loss = '165500000'",
+        "bussiness_cost != '993529'"
+      ],
+      "selectivity_ratios": [
+        0.010101010101010102,
+        0.01098901098901099
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT largest_shareholder, auditor, major_equity_changes FROM Finan_finance WHERE largest_shareholder != 'Drake Private Investments' AND business_risks != 'Credit Risk';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "largest_shareholder",
+        "auditor",
+        "major_equity_changes"
+      ],
+      "where_clause": "largest_shareholder != 'Drake Private Investments' AND business_risks != 'Credit Risk'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "largest_shareholder != 'Drake Private Investments'",
+        "business_risks != 'Credit Risk'"
+      ],
+      "selectivity_ratios": [
+        0.014705882352941176,
+        0.14414414414414414
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT earnings_per_share, cash_reserves, principal_activities FROM Finan_finance WHERE principal_activities = 'Agriculture' AND the_highest_ownership_stake != 11.63;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "earnings_per_share",
+        "cash_reserves",
+        "principal_activities"
+      ],
+      "where_clause": "principal_activities = 'Agriculture' AND the_highest_ownership_stake != 11.63",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "principal_activities = 'Agriculture'",
+        "the_highest_ownership_stake != 11.63"
+      ],
+      "selectivity_ratios": [
+        0.011299435028248588,
+        0.25
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT total_assets, board_members, bussiness_cost FROM Finan_finance WHERE bussiness_cost = '10978000000' OR total_Debt = '168459000';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "total_assets",
+        "board_members",
+        "bussiness_cost"
+      ],
+      "where_clause": "bussiness_cost = '10978000000' OR total_Debt = '168459000'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "bussiness_cost = '10978000000'",
+        "total_Debt = '168459000'"
+      ],
+      "selectivity_ratios": [
+        0.01098901098901099,
+        0.011363636363636364
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT the_highest_ownership_stake, net_profit_or_loss, largest_shareholder FROM Finan_finance WHERE the_highest_ownership_stake != 49.28 OR remuneration_policy != 'Fixed';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "the_highest_ownership_stake",
+        "net_profit_or_loss",
+        "largest_shareholder"
+      ],
+      "where_clause": "the_highest_ownership_stake != 49.28 OR remuneration_policy != 'Fixed'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "the_highest_ownership_stake != 49.28",
+        "remuneration_policy != 'Fixed'"
+      ],
+      "selectivity_ratios": [
+        0.1,
+        0.10596026490066225
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT auditor, board_members, major_events FROM Finan_finance WHERE major_events = 'Other' OR principal_activities != 'Biopharmaceuticals';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "auditor",
+        "board_members",
+        "major_events"
+      ],
+      "where_clause": "major_events = 'Other' OR principal_activities != 'Biopharmaceuticals'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "major_events = 'Other'",
+        "principal_activities != 'Biopharmaceuticals'"
+      ],
+      "selectivity_ratios": [
+        0.2046783625730994,
+        0.005649717514124294
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT exchange_code, executive_profiles, principal_activities FROM Finan_finance WHERE exchange_code = 'MTA' OR net_assets != 41673000;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "exchange_code",
+        "executive_profiles",
+        "principal_activities"
+      ],
+      "where_clause": "exchange_code = 'MTA' OR net_assets != 41673000",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "exchange_code = 'MTA'",
+        "net_assets != 41673000"
+      ],
+      "selectivity_ratios": [
+        0.00980392156862745,
+        0.25
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT major_events, dividend_per_share, earnings_per_share FROM Finan_finance WHERE dividend_per_share != 0.00 OR major_equity_changes > 'Yes';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "major_events",
+        "dividend_per_share",
+        "earnings_per_share"
+      ],
+      "where_clause": "dividend_per_share != 0.00 OR major_equity_changes > 'Yes'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "dividend_per_share != 0.00",
+        "major_equity_changes > 'Yes'"
+      ],
+      "selectivity_ratios": [
+        0.5,
+        0.5858585858585859
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT remuneration_policy, bussiness_sales, revenue FROM Finan_finance WHERE remuneration_policy != 'Fixed' OR total_Debt != '0';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "remuneration_policy",
+        "bussiness_sales",
+        "revenue"
+      ],
+      "where_clause": "remuneration_policy != 'Fixed' OR total_Debt != '0'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "remuneration_policy != 'Fixed'",
+        "total_Debt != '0'"
+      ],
+      "selectivity_ratios": [
+        0.10596026490066225,
+        0.125
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT bussiness_profit, largest_shareholder, net_profit_or_loss FROM Finan_finance WHERE bussiness_profit != '122600000' OR cash_reserves = 476657130;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "bussiness_profit",
+        "largest_shareholder",
+        "net_profit_or_loss"
+      ],
+      "where_clause": "bussiness_profit != '122600000' OR cash_reserves = 476657130",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "bussiness_profit != '122600000'",
+        "cash_reserves = 476657130"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904,
+        0.25
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT net_assets, exchange_code, remuneration_policy FROM Finan_finance WHERE exchange_code = 'ASE' OR company_name != 'Playtech plc';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "net_assets",
+        "exchange_code",
+        "remuneration_policy"
+      ],
+      "where_clause": "exchange_code = 'ASE' OR company_name != 'Playtech plc'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "exchange_code = 'ASE'",
+        "company_name != 'Playtech plc'"
+      ],
+      "selectivity_ratios": [
+        0.00980392156862745,
+        0.01
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT net_profit_or_loss, earnings_per_share, net_assets FROM Finan_finance WHERE net_profit_or_loss != '53392000' OR major_events = 'Major Contract';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "net_profit_or_loss",
+        "earnings_per_share",
+        "net_assets"
+      ],
+      "where_clause": "net_profit_or_loss != '53392000' OR major_events = 'Major Contract'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "net_profit_or_loss != '53392000'",
+        "major_events = 'Major Contract'"
+      ],
+      "selectivity_ratios": [
+        0.010101010101010102,
+        0.10526315789473684
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT net_assets, business_risks, auditor FROM Finan_finance WHERE auditor = 'KPMG' OR bussiness_cost = '31755000';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "net_assets",
+        "business_risks",
+        "auditor"
+      ],
+      "where_clause": "auditor = 'KPMG' OR bussiness_cost = '31755000'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "auditor = 'KPMG'",
+        "bussiness_cost = '31755000'"
+      ],
+      "selectivity_ratios": [
+        0.030612244897959183,
+        0.01098901098901099
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT business_risks, largest_shareholder, dividend_per_share FROM Finan_finance WHERE dividend_per_share = 0.40 AND major_equity_changes < 'No' AND earnings_per_share = 0.49 AND net_assets = 1362019954;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "business_risks",
+        "largest_shareholder",
+        "dividend_per_share"
+      ],
+      "where_clause": "dividend_per_share = 0.40 AND major_equity_changes < 'No' AND earnings_per_share = 0.49 AND net_assets = 1362019954",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "dividend_per_share = 0.40",
+        "major_equity_changes < 'No'",
+        "earnings_per_share = 0.49",
+        "net_assets = 1362019954"
+      ],
+      "selectivity_ratios": [
+        0.25,
+        0.41414141414141414,
+        0.5,
+        0.25
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT registered_office, bussiness_sales, major_equity_changes FROM Finan_finance WHERE bussiness_sales = '1793368000' AND executive_profiles != 'Michael Boggs' AND revenue != 12857200000 AND business_risks != 'Credit Risk';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "registered_office",
+        "bussiness_sales",
+        "major_equity_changes"
+      ],
+      "where_clause": "bussiness_sales = '1793368000' AND executive_profiles != 'Michael Boggs' AND revenue != 12857200000 AND business_risks != 'Credit Risk'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "bussiness_sales = '1793368000'",
+        "executive_profiles != 'Michael Boggs'",
+        "revenue != 12857200000",
+        "business_risks != 'Credit Risk'"
+      ],
+      "selectivity_ratios": [
+        0.011111111111111112,
+        0.002145922746781116,
+        0.1,
+        0.14414414414414414
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT net_profit_or_loss, business_risks, business_segments_num FROM Finan_finance WHERE business_risks = 'Strategic Risk' AND business_risks != 'Legal/Compliance Risk' AND earnings_per_share != 0.49 AND cash_reserves != 1987600000;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "net_profit_or_loss",
+        "business_risks",
+        "business_segments_num"
+      ],
+      "where_clause": "business_risks = 'Strategic Risk' AND business_risks != 'Legal/Compliance Risk' AND earnings_per_share != 0.49 AND cash_reserves != 1987600000",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "business_risks = 'Strategic Risk'",
+        "business_risks != 'Legal/Compliance Risk'",
+        "earnings_per_share != 0.49",
+        "cash_reserves != 1987600000"
+      ],
+      "selectivity_ratios": [
+        0.16441441441441443,
+        0.15315315315315314,
+        0.5,
+        0.1
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT earnings_per_share, business_risks, net_assets FROM Finan_finance WHERE business_risks = 'Operational Risk' AND business_segments_num < 2 AND bussiness_sales = '2236000000' AND total_Debt = '3254939000';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "earnings_per_share",
+        "business_risks",
+        "net_assets"
+      ],
+      "where_clause": "business_risks = 'Operational Risk' AND business_segments_num < 2 AND bussiness_sales = '2236000000' AND total_Debt = '3254939000'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "business_risks = 'Operational Risk'",
+        "business_segments_num < 2",
+        "bussiness_sales = '2236000000'",
+        "total_Debt = '3254939000'"
+      ],
+      "selectivity_ratios": [
+        0.20045045045045046,
+        0.5,
+        0.011111111111111112,
+        0.011363636363636364
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT exchange_code, principal_activities, earnings_per_share FROM Finan_finance WHERE principal_activities != 'Media' AND major_equity_changes != 'Yes' AND net_profit_or_loss = '1723000000' AND earnings_per_share = 0.49;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "exchange_code",
+        "principal_activities",
+        "earnings_per_share"
+      ],
+      "where_clause": "principal_activities != 'Media' AND major_equity_changes != 'Yes' AND net_profit_or_loss = '1723000000' AND earnings_per_share = 0.49",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "principal_activities != 'Media'",
+        "major_equity_changes != 'Yes'",
+        "net_profit_or_loss = '1723000000'",
+        "earnings_per_share = 0.49"
+      ],
+      "selectivity_ratios": [
+        0.03389830508474576,
+        0.5858585858585859,
+        0.010101010101010102,
+        0.5
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT executive_profiles, total_assets, auditor FROM Finan_finance WHERE executive_profiles != 'Nancy L. Erba' AND business_risks != 'Market Risk' AND remuneration_policy = 'Mixed' AND business_segments_num = 2;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "executive_profiles",
+        "total_assets",
+        "auditor"
+      ],
+      "where_clause": "executive_profiles != 'Nancy L. Erba' AND business_risks != 'Market Risk' AND remuneration_policy = 'Mixed' AND business_segments_num = 2",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "executive_profiles != 'Nancy L. Erba'",
+        "business_risks != 'Market Risk'",
+        "remuneration_policy = 'Mixed'",
+        "business_segments_num = 2"
+      ],
+      "selectivity_ratios": [
+        0.002145922746781116,
+        0.22522522522522523,
+        0.48344370860927155,
+        0.5
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT bussiness_sales, auditor, revenue FROM Finan_finance WHERE bussiness_sales != '-171254' AND business_risks != 'Other' AND the_highest_ownership_stake != 17.70 AND net_assets != 249398000;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "bussiness_sales",
+        "auditor",
+        "revenue"
+      ],
+      "where_clause": "bussiness_sales != '-171254' AND business_risks != 'Other' AND the_highest_ownership_stake != 17.70 AND net_assets != 249398000",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "bussiness_sales != '-171254'",
+        "business_risks != 'Other'",
+        "the_highest_ownership_stake != 17.70",
+        "net_assets != 249398000"
+      ],
+      "selectivity_ratios": [
+        0.011111111111111112,
+        0.033783783783783786,
+        0.5,
+        0.5
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT company_name, business_segments_num, exchange_code FROM Finan_finance WHERE company_name != 'Swiss Water Decaffeinated Coffee Inc.' AND executive_profiles != 'Shayne Currie' AND the_highest_ownership_stake != 49.28 AND total_Debt = '0';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "company_name",
+        "business_segments_num",
+        "exchange_code"
+      ],
+      "where_clause": "company_name != 'Swiss Water Decaffeinated Coffee Inc.' AND executive_profiles != 'Shayne Currie' AND the_highest_ownership_stake != 49.28 AND total_Debt = '0'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "company_name != 'Swiss Water Decaffeinated Coffee Inc.'",
+        "executive_profiles != 'Shayne Currie'",
+        "the_highest_ownership_stake != 49.28",
+        "total_Debt = '0'"
+      ],
+      "selectivity_ratios": [
+        0.01,
+        0.002145922746781116,
+        0.1,
+        0.125
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT total_assets, net_profit_or_loss, bussiness_profit FROM Finan_finance WHERE bussiness_profit = '470734000' AND registered_office != '225 NE Mizner Blvd, Suite 640, Boca Raton, FL 33432' AND largest_shareholder = 'The Master Trust Bank \nof Japan, Ltd. (Trust \naccount)' AND net_profit_or_loss = '27299000';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "total_assets",
+        "net_profit_or_loss",
+        "bussiness_profit"
+      ],
+      "where_clause": "bussiness_profit = '470734000' AND registered_office != '225 NE Mizner Blvd, Suite 640, Boca Raton, FL 33432' AND largest_shareholder = 'The Master Trust Bank \nof Japan, Ltd. (Trust \naccount)' AND net_profit_or_loss = '27299000'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "bussiness_profit = '470734000'",
+        "registered_office != '225 NE Mizner Blvd, Suite 640, Boca Raton, FL 33432'",
+        "largest_shareholder = 'The Master Trust Bank \nof Japan, Ltd. (Trust \naccount)'",
+        "net_profit_or_loss = '27299000'"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904,
+        0.010101010101010102,
+        0.014705882352941176,
+        0.010101010101010102
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT total_Debt, bussiness_sales, business_segments_num FROM Finan_finance WHERE total_Debt != '258804000' AND registered_office != '340 Madison Avenue, Suite 3C, New York, New York, 10173' AND major_events != 'Other' AND net_profit_or_loss = '40423000';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "total_Debt",
+        "bussiness_sales",
+        "business_segments_num"
+      ],
+      "where_clause": "total_Debt != '258804000' AND registered_office != '340 Madison Avenue, Suite 3C, New York, New York, 10173' AND major_events != 'Other' AND net_profit_or_loss = '40423000'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "total_Debt != '258804000'",
+        "registered_office != '340 Madison Avenue, Suite 3C, New York, New York, 10173'",
+        "major_events != 'Other'",
+        "net_profit_or_loss = '40423000'"
+      ],
+      "selectivity_ratios": [
+        0.011363636363636364,
+        0.010101010101010102,
+        0.2046783625730994,
+        0.010101010101010102
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT earnings_per_share, net_profit_or_loss, net_assets FROM Finan_finance WHERE net_profit_or_loss != '165500000' OR principal_activities = 'Other' OR major_equity_changes > 'Yes' OR total_Debt = '8613673';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "earnings_per_share",
+        "net_profit_or_loss",
+        "net_assets"
+      ],
+      "where_clause": "net_profit_or_loss != '165500000' OR principal_activities = 'Other' OR major_equity_changes > 'Yes' OR total_Debt = '8613673'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "net_profit_or_loss != '165500000'",
+        "principal_activities = 'Other'",
+        "major_equity_changes > 'Yes'",
+        "total_Debt = '8613673'"
+      ],
+      "selectivity_ratios": [
+        0.010101010101010102,
+        0.05649717514124294,
+        0.5858585858585859,
+        0.011363636363636364
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT auditor, revenue, remuneration_policy FROM Finan_finance WHERE revenue = 391926000 OR board_members != 'Jakob Pfaudler' OR company_name = 'Bionano Genomics, Inc.' OR auditor != 'BDO LLP';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "auditor",
+        "revenue",
+        "remuneration_policy"
+      ],
+      "where_clause": "revenue = 391926000 OR board_members != 'Jakob Pfaudler' OR company_name = 'Bionano Genomics, Inc.' OR auditor != 'BDO LLP'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "revenue = 391926000",
+        "board_members != 'Jakob Pfaudler'",
+        "company_name = 'Bionano Genomics, Inc.'",
+        "auditor != 'BDO LLP'"
+      ],
+      "selectivity_ratios": [
+        0.5,
+        0.0028089887640449437,
+        0.01,
+        0.02040816326530612
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT bussiness_sales, registered_office, remuneration_policy FROM Finan_finance WHERE bussiness_sales != '0' OR total_assets != 1358991000 OR board_members = 'Anna Massion' OR total_assets = 33746800000;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "bussiness_sales",
+        "registered_office",
+        "remuneration_policy"
+      ],
+      "where_clause": "bussiness_sales != '0' OR total_assets != 1358991000 OR board_members = 'Anna Massion' OR total_assets = 33746800000",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "bussiness_sales != '0'",
+        "total_assets != 1358991000",
+        "board_members = 'Anna Massion'",
+        "total_assets = 33746800000"
+      ],
+      "selectivity_ratios": [
+        0.044444444444444446,
+        0.5,
+        0.0028089887640449437,
+        0.1
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT the_highest_ownership_stake, revenue, board_members FROM Finan_finance WHERE revenue != 12857200000 OR total_assets = 33746800000 OR business_segments_num = 3 OR business_risks = 'Environmental Risk';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "the_highest_ownership_stake",
+        "revenue",
+        "board_members"
+      ],
+      "where_clause": "revenue != 12857200000 OR total_assets = 33746800000 OR business_segments_num = 3 OR business_risks = 'Environmental Risk'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "revenue != 12857200000",
+        "total_assets = 33746800000",
+        "business_segments_num = 3",
+        "business_risks = 'Environmental Risk'"
+      ],
+      "selectivity_ratios": [
+        0.1,
+        0.1,
+        0.25,
+        0.07882882882882883
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT remuneration_policy, net_profit_or_loss, business_risks FROM Finan_finance WHERE net_profit_or_loss = '27299000' OR the_highest_ownership_stake != 17.70 OR company_name != 'Odyssey Gold Limited' OR earnings_per_share != -0.04;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "remuneration_policy",
+        "net_profit_or_loss",
+        "business_risks"
+      ],
+      "where_clause": "net_profit_or_loss = '27299000' OR the_highest_ownership_stake != 17.70 OR company_name != 'Odyssey Gold Limited' OR earnings_per_share != -0.04",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "net_profit_or_loss = '27299000'",
+        "the_highest_ownership_stake != 17.70",
+        "company_name != 'Odyssey Gold Limited'",
+        "earnings_per_share != -0.04"
+      ],
+      "selectivity_ratios": [
+        0.010101010101010102,
+        0.5,
+        0.01,
+        0.25
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT net_assets, executive_profiles, business_risks FROM Finan_finance WHERE net_assets = 249398000 OR net_assets = 1362019954 OR cash_reserves = 87043000 OR total_Debt = '119701564920';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "net_assets",
+        "executive_profiles",
+        "business_risks"
+      ],
+      "where_clause": "net_assets = 249398000 OR net_assets = 1362019954 OR cash_reserves = 87043000 OR total_Debt = '119701564920'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "net_assets = 249398000",
+        "net_assets = 1362019954",
+        "cash_reserves = 87043000",
+        "total_Debt = '119701564920'"
+      ],
+      "selectivity_ratios": [
+        0.5,
+        0.25,
+        0.5,
+        0.011363636363636364
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT dividend_per_share, company_name, executive_profiles FROM Finan_finance WHERE dividend_per_share = 1.12 OR bussiness_cost != '682929600' OR bussiness_profit = '27299000' OR earnings_per_share = 2.18;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "dividend_per_share",
+        "company_name",
+        "executive_profiles"
+      ],
+      "where_clause": "dividend_per_share = 1.12 OR bussiness_cost != '682929600' OR bussiness_profit = '27299000' OR earnings_per_share = 2.18",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "dividend_per_share = 1.12",
+        "bussiness_cost != '682929600'",
+        "bussiness_profit = '27299000'",
+        "earnings_per_share = 2.18"
+      ],
+      "selectivity_ratios": [
+        0.1,
+        0.01098901098901099,
+        0.011904761904761904,
+        0.25
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT bussiness_profit, principal_activities, major_events FROM Finan_finance WHERE principal_activities != 'Transportation' OR registered_office != '2 Prologis Blvd., Suite 500, Mississauga, Ontario, L5W 0G8' OR dividend_per_share != 0.40 OR major_events = 'Leadership Change';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "bussiness_profit",
+        "principal_activities",
+        "major_events"
+      ],
+      "where_clause": "principal_activities != 'Transportation' OR registered_office != '2 Prologis Blvd., Suite 500, Mississauga, Ontario, L5W 0G8' OR dividend_per_share != 0.40 OR major_events = 'Leadership Change'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "principal_activities != 'Transportation'",
+        "registered_office != '2 Prologis Blvd., Suite 500, Mississauga, Ontario, L5W 0G8'",
+        "dividend_per_share != 0.40",
+        "major_events = 'Leadership Change'"
+      ],
+      "selectivity_ratios": [
+        0.03954802259887006,
+        0.010101010101010102,
+        0.25,
+        0.1695906432748538
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT net_assets, total_assets, auditor FROM Finan_finance WHERE total_assets != 136955488 OR total_assets != 33746800000 OR remuneration_policy != 'Stock Option' OR major_events != 'Major Contract';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "net_assets",
+        "total_assets",
+        "auditor"
+      ],
+      "where_clause": "total_assets != 136955488 OR total_assets != 33746800000 OR remuneration_policy != 'Stock Option' OR major_events != 'Major Contract'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "total_assets != 136955488",
+        "total_assets != 33746800000",
+        "remuneration_policy != 'Stock Option'",
+        "major_events != 'Major Contract'"
+      ],
+      "selectivity_ratios": [
+        0.25,
+        0.1,
+        0.19205298013245034,
+        0.10526315789473684
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT company_name, the_highest_ownership_stake, business_segments_num FROM Finan_finance WHERE business_segments_num = 1 OR earnings_per_share = -0.04 OR exchange_code = 'WHLR' OR dividend_per_share = 0.40;",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "company_name",
+        "the_highest_ownership_stake",
+        "business_segments_num"
+      ],
+      "where_clause": "business_segments_num = 1 OR earnings_per_share = -0.04 OR exchange_code = 'WHLR' OR dividend_per_share = 0.40",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "business_segments_num = 1",
+        "earnings_per_share = -0.04",
+        "exchange_code = 'WHLR'",
+        "dividend_per_share = 0.40"
+      ],
+      "selectivity_ratios": [
+        0.25,
+        0.25,
+        0.00980392156862745,
+        0.25
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT remuneration_policy, total_Debt, executive_profiles FROM Finan_finance WHERE (executive_profiles = 'Jakob Pfaudler' AND cash_reserves = 87043000) OR (registered_office != 'Beechfield, Hollinhurst Road, Radcliffe, Manchester, M26 1JN' AND auditor != 'BDO Audit Pty Ltd');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "remuneration_policy",
+        "total_Debt",
+        "executive_profiles"
+      ],
+      "where_clause": "(executive_profiles = 'Jakob Pfaudler' AND cash_reserves = 87043000) OR (registered_office != 'Beechfield, Hollinhurst Road, Radcliffe, Manchester, M26 1JN' AND auditor != 'BDO Audit Pty Ltd')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "executive_profiles = 'Jakob Pfaudler'",
+        "cash_reserves = 87043000",
+        "registered_office != 'Beechfield, Hollinhurst Road, Radcliffe, Manchester, M26 1JN'",
+        "auditor != 'BDO Audit Pty Ltd'"
+      ],
+      "selectivity_ratios": [
+        0.004291845493562232,
+        0.5,
+        0.010101010101010102,
+        0.030612244897959183
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT executive_profiles, business_risks, auditor FROM Finan_finance WHERE (auditor = 'PricewaterhouseCoopers LLP' AND major_equity_changes = 'No') OR (business_risks != 'Legal/Compliance Risk' AND bussiness_sales = '0');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "executive_profiles",
+        "business_risks",
+        "auditor"
+      ],
+      "where_clause": "(auditor = 'PricewaterhouseCoopers LLP' AND major_equity_changes = 'No') OR (business_risks != 'Legal/Compliance Risk' AND bussiness_sales = '0')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "auditor = 'PricewaterhouseCoopers LLP'",
+        "major_equity_changes = 'No'",
+        "business_risks != 'Legal/Compliance Risk'",
+        "bussiness_sales = '0'"
+      ],
+      "selectivity_ratios": [
+        0.11224489795918367,
+        0.41414141414141414,
+        0.15315315315315314,
+        0.044444444444444446
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT major_events, net_profit_or_loss, net_assets FROM Finan_finance WHERE (net_profit_or_loss = '44060000' AND dividend_per_share = 0.40) OR (major_events = 'Major Contract' AND bussiness_cost = '2795073000');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "major_events",
+        "net_profit_or_loss",
+        "net_assets"
+      ],
+      "where_clause": "(net_profit_or_loss = '44060000' AND dividend_per_share = 0.40) OR (major_events = 'Major Contract' AND bussiness_cost = '2795073000')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "net_profit_or_loss = '44060000'",
+        "dividend_per_share = 0.40",
+        "major_events = 'Major Contract'",
+        "bussiness_cost = '2795073000'"
+      ],
+      "selectivity_ratios": [
+        0.010101010101010102,
+        0.25,
+        0.10526315789473684,
+        0.01098901098901099
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT board_members, registered_office, the_highest_ownership_stake FROM Finan_finance WHERE (the_highest_ownership_stake = 49.28 AND executive_profiles != 'D N Fletcher') OR (registered_office = '169 Inverness Dr W, Suite 300, Englewood, Colorado 80112' AND bussiness_profit = '1925000000');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "board_members",
+        "registered_office",
+        "the_highest_ownership_stake"
+      ],
+      "where_clause": "(the_highest_ownership_stake = 49.28 AND executive_profiles != 'D N Fletcher') OR (registered_office = '169 Inverness Dr W, Suite 300, Englewood, Colorado 80112' AND bussiness_profit = '1925000000')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "the_highest_ownership_stake = 49.28",
+        "executive_profiles != 'D N Fletcher'",
+        "registered_office = '169 Inverness Dr W, Suite 300, Englewood, Colorado 80112'",
+        "bussiness_profit = '1925000000'"
+      ],
+      "selectivity_ratios": [
+        0.1,
+        0.002145922746781116,
+        0.010101010101010102,
+        0.011904761904761904
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT principal_activities, remuneration_policy, business_segments_num FROM Finan_finance WHERE (principal_activities = 'Real Estate' AND business_risks != 'Other') OR (net_profit_or_loss != '1658085550' AND major_events != 'Leadership Change');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "principal_activities",
+        "remuneration_policy",
+        "business_segments_num"
+      ],
+      "where_clause": "(principal_activities = 'Real Estate' AND business_risks != 'Other') OR (net_profit_or_loss != '1658085550' AND major_events != 'Leadership Change')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "principal_activities = 'Real Estate'",
+        "business_risks != 'Other'",
+        "net_profit_or_loss != '1658085550'",
+        "major_events != 'Leadership Change'"
+      ],
+      "selectivity_ratios": [
+        0.04519774011299435,
+        0.033783783783783786,
+        0.010101010101010102,
+        0.1695906432748538
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT executive_profiles, principal_activities, revenue FROM Finan_finance WHERE (principal_activities != 'Agriculture' AND board_members = 'Nigel Machin') OR (bussiness_sales = '176940000' AND exchange_code != 'NYSE');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "executive_profiles",
+        "principal_activities",
+        "revenue"
+      ],
+      "where_clause": "(principal_activities != 'Agriculture' AND board_members = 'Nigel Machin') OR (bussiness_sales = '176940000' AND exchange_code != 'NYSE')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "principal_activities != 'Agriculture'",
+        "board_members = 'Nigel Machin'",
+        "bussiness_sales = '176940000'",
+        "exchange_code != 'NYSE'"
+      ],
+      "selectivity_ratios": [
+        0.011299435028248588,
+        0.0014044943820224719,
+        0.011111111111111112,
+        0.1568627450980392
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT dividend_per_share, earnings_per_share, major_events FROM Finan_finance WHERE (dividend_per_share = 0.40 AND total_Debt != '119701564920') OR (company_name = 'Rectifier Technologies Ltd' AND registered_office != '5 Hanover Quay, Grand Canal Dock, Dublin, D02 VY79, Ireland');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "dividend_per_share",
+        "earnings_per_share",
+        "major_events"
+      ],
+      "where_clause": "(dividend_per_share = 0.40 AND total_Debt != '119701564920') OR (company_name = 'Rectifier Technologies Ltd' AND registered_office != '5 Hanover Quay, Grand Canal Dock, Dublin, D02 VY79, Ireland')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "dividend_per_share = 0.40",
+        "total_Debt != '119701564920'",
+        "company_name = 'Rectifier Technologies Ltd'",
+        "registered_office != '5 Hanover Quay, Grand Canal Dock, Dublin, D02 VY79, Ireland'"
+      ],
+      "selectivity_ratios": [
+        0.25,
+        0.011363636363636364,
+        0.01,
+        0.010101010101010102
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT exchange_code, bussiness_profit, business_segments_num FROM Finan_finance WHERE (exchange_code != 'MTA' AND cash_reserves != 87043000) OR (total_Debt != '0' AND bussiness_sales != '42963764');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "exchange_code",
+        "bussiness_profit",
+        "business_segments_num"
+      ],
+      "where_clause": "(exchange_code != 'MTA' AND cash_reserves != 87043000) OR (total_Debt != '0' AND bussiness_sales != '42963764')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "exchange_code != 'MTA'",
+        "cash_reserves != 87043000",
+        "total_Debt != '0'",
+        "bussiness_sales != '42963764'"
+      ],
+      "selectivity_ratios": [
+        0.00980392156862745,
+        0.5,
+        0.125,
+        0.011111111111111112
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT dividend_per_share, bussiness_profit, registered_office FROM Finan_finance WHERE (bussiness_profit = '1102000000' AND business_risks != 'Legal/Compliance Risk') OR (bussiness_sales != '42984000' AND net_profit_or_loss != '1745099230');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "dividend_per_share",
+        "bussiness_profit",
+        "registered_office"
+      ],
+      "where_clause": "(bussiness_profit = '1102000000' AND business_risks != 'Legal/Compliance Risk') OR (bussiness_sales != '42984000' AND net_profit_or_loss != '1745099230')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "bussiness_profit = '1102000000'",
+        "business_risks != 'Legal/Compliance Risk'",
+        "bussiness_sales != '42984000'",
+        "net_profit_or_loss != '1745099230'"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904,
+        0.15315315315315314,
+        0.011111111111111112,
+        0.010101010101010102
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT business_segments_num, dividend_per_share, total_assets FROM Finan_finance WHERE (dividend_per_share != 0.00 AND bussiness_sales != '5268700000') OR (auditor = 'BDO LLP' AND bussiness_sales = '10927947660');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "business_segments_num",
+        "dividend_per_share",
+        "total_assets"
+      ],
+      "where_clause": "(dividend_per_share != 0.00 AND bussiness_sales != '5268700000') OR (auditor = 'BDO LLP' AND bussiness_sales = '10927947660')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "dividend_per_share != 0.00",
+        "bussiness_sales != '5268700000'",
+        "auditor = 'BDO LLP'",
+        "bussiness_sales = '10927947660'"
+      ],
+      "selectivity_ratios": [
+        0.5,
+        0.011111111111111112,
+        0.02040816326530612,
+        0.011111111111111112
+      ],
+      "tables": [
+        "Finan_finance"
+      ]
+    }
+  }
+]

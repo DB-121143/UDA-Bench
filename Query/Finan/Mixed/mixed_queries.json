@@ -1,0 +1,278 @@
+[
+  {
+    "sql": "SELECT remuneration_policy, AVG(executive_profiles) AS avg_executive_profiles FROM Finan_finance WHERE net_assets != 8699800000 GROUP BY remuneration_policy;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter1_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 1,
+        "agg": 1
+      },
+      "tables": [
+        "Finan_finance"
+      ],
+      "filter_subcategory": 1,
+      "filter_metadata": {
+        "filter_combination": "single",
+        "num_filters": 1,
+        "predicates": [
+          "net_assets != 8699800000"
+        ],
+        "selectivity_ratios": [
+          0.1
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "AVG",
+          "attribute": "executive_profiles",
+          "alias": "avg_executive_profiles"
+        }
+      ],
+      "group_by_attributes": [
+        "remuneration_policy"
+      ],
+      "selected_attributes": [
+        "remuneration_policy"
+      ],
+      "combination_name": "filter1_agg1"
+    }
+  },
+  {
+    "sql": "SELECT remuneration_policy, AVG(the_highest_ownership_stake) AS avg_the_highest_ownership_stake FROM Finan_finance WHERE total_Debt = '104280399' AND net_profit_or_loss != '160800000' GROUP BY remuneration_policy;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter2_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 2,
+        "agg": 1
+      },
+      "tables": [
+        "Finan_finance"
+      ],
+      "filter_subcategory": 2,
+      "filter_metadata": {
+        "filter_combination": "AND",
+        "num_filters": 2,
+        "predicates": [
+          "total_Debt = '104280399'",
+          "net_profit_or_loss != '160800000'"
+        ],
+        "selectivity_ratios": [
+          0.011363636363636364,
+          0.010101010101010102
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "AVG",
+          "attribute": "the_highest_ownership_stake",
+          "alias": "avg_the_highest_ownership_stake"
+        }
+      ],
+      "group_by_attributes": [
+        "remuneration_policy"
+      ],
+      "selected_attributes": [
+        "remuneration_policy"
+      ],
+      "combination_name": "filter2_agg1"
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, MAX(executive_profiles) AS max_executive_profiles FROM Finan_finance WHERE major_equity_changes >= 'Yes' OR dividend_per_share = 1.12 GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter3_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 3,
+        "agg": 1
+      },
+      "tables": [
+        "Finan_finance"
+      ],
+      "filter_subcategory": 3,
+      "filter_metadata": {
+        "filter_combination": "OR",
+        "num_filters": 2,
+        "predicates": [
+          "major_equity_changes >= 'Yes'",
+          "dividend_per_share = 1.12"
+        ],
+        "selectivity_ratios": [
+          0.5858585858585859,
+          0.1
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "executive_profiles",
+          "alias": "max_executive_profiles"
+        }
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "selected_attributes": [
+        "major_equity_changes"
+      ],
+      "combination_name": "filter3_agg1"
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, MAX(executive_profiles) AS max_executive_profiles FROM Finan_finance WHERE bussiness_profit = '1925000000' AND executive_profiles = '4 (Ganesh Pattabiraman' AND bussiness_profit = '28900000' GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter4_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 4,
+        "agg": 1
+      },
+      "tables": [
+        "Finan_finance"
+      ],
+      "filter_subcategory": 4,
+      "filter_metadata": {
+        "filter_combination": "AND",
+        "num_filters": 3,
+        "predicates": [
+          "bussiness_profit = '1925000000'",
+          "executive_profiles = '4 (Ganesh Pattabiraman'",
+          "bussiness_profit = '28900000'"
+        ],
+        "selectivity_ratios": [
+          0.011904761904761904,
+          0.002145922746781116,
+          0.011904761904761904
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "executive_profiles",
+          "alias": "max_executive_profiles"
+        }
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "selected_attributes": [
+        "major_equity_changes"
+      ],
+      "combination_name": "filter4_agg1"
+    }
+  },
+  {
+    "sql": "SELECT remuneration_policy, AVG(executive_profiles) AS avg_executive_profiles FROM Finan_finance WHERE cash_reserves != 1987600000 OR auditor = 'PricewaterhouseCoopers LLP' OR total_assets = 136955488 GROUP BY remuneration_policy;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter5_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 5,
+        "agg": 1
+      },
+      "tables": [
+        "Finan_finance"
+      ],
+      "filter_subcategory": 5,
+      "filter_metadata": {
+        "filter_combination": "OR",
+        "num_filters": 3,
+        "predicates": [
+          "cash_reserves != 1987600000",
+          "auditor = 'PricewaterhouseCoopers LLP'",
+          "total_assets = 136955488"
+        ],
+        "selectivity_ratios": [
+          0.1,
+          0.11224489795918367,
+          0.25
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "AVG",
+          "attribute": "executive_profiles",
+          "alias": "avg_executive_profiles"
+        }
+      ],
+      "group_by_attributes": [
+        "remuneration_policy"
+      ],
+      "selected_attributes": [
+        "remuneration_policy"
+      ],
+      "combination_name": "filter5_agg1"
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, SUM(executive_profiles) AS sum_executive_profiles FROM Finan_finance WHERE (board_members = 'Yanbin Wang' AND business_segments_num >= 4) OR (revenue = 12857200000 AND executive_profiles != 'Bethany Greenwood') GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter6_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 6,
+        "agg": 1
+      },
+      "tables": [
+        "Finan_finance"
+      ],
+      "filter_subcategory": 6,
+      "filter_metadata": {
+        "filter_combination": "AND_OR_mixed",
+        "num_filters": 4,
+        "predicates": [
+          "board_members = 'Yanbin Wang'",
+          "business_segments_num >= 4",
+          "revenue = 12857200000",
+          "executive_profiles != 'Bethany Greenwood'"
+        ],
+        "selectivity_ratios": [
+          0.0014044943820224719,
+          0.1,
+          0.1,
+          0.002145922746781116
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "SUM",
+          "attribute": "executive_profiles",
+          "alias": "sum_executive_profiles"
+        }
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "selected_attributes": [
+        "major_equity_changes"
+      ],
+      "combination_name": "filter6_agg1"
+    }
+  }
+]

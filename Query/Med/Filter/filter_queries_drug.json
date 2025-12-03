@@ -1,0 +1,666 @@
+[
+  {
+    "sql": "SELECT manufacturer, activation_conditions, indication FROM drug WHERE activation_conditions = 'requires stimulation';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "manufacturer",
+        "activation_conditions",
+        "indication"
+      ],
+      "where_clause": "activation_conditions = 'requires stimulation'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "activation_conditions = 'requires stimulation'"
+      ],
+      "selectivity_ratios": [
+        0.03333333333333333
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT pharmaceutical_form, active_ingredients, administration_route FROM drug WHERE administration_route = 'injection';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "pharmaceutical_form",
+        "active_ingredients",
+        "administration_route"
+      ],
+      "where_clause": "administration_route = 'injection'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "administration_route = 'injection'"
+      ],
+      "selectivity_ratios": [
+        0.011363636363636364
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT manufacturer, brand_name, activation_conditions FROM drug WHERE brand_name != 'Actipraz 40 Mg Tablet';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "manufacturer",
+        "brand_name",
+        "activation_conditions"
+      ],
+      "where_clause": "brand_name != 'Actipraz 40 Mg Tablet'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "brand_name != 'Actipraz 40 Mg Tablet'"
+      ],
+      "selectivity_ratios": [
+        0.011627906976744186
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT indication, disease_name, recommended_usage FROM drug WHERE recommended_usage = 'take as prescribed';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "indication",
+        "disease_name",
+        "recommended_usage"
+      ],
+      "where_clause": "recommended_usage = 'take as prescribed'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "recommended_usage = 'take as prescribed'"
+      ],
+      "selectivity_ratios": [
+        0.011764705882352941
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT prescription_status, side_effects, brand_name FROM drug WHERE prescription_status < 'unclassified' AND pharmaceutical_form != 'capsule';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "prescription_status",
+        "side_effects",
+        "brand_name"
+      ],
+      "where_clause": "prescription_status < 'unclassified' AND pharmaceutical_form != 'capsule'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "prescription_status < 'unclassified'",
+        "pharmaceutical_form != 'capsule'"
+      ],
+      "selectivity_ratios": [
+        0.02127659574468085,
+        0.12389380530973451
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT recommended_usage, administration_route, dosage_frequency FROM drug WHERE dosage_frequency > 'every 4 to 6 hours as needed' AND active_ingredients != 'azithromycin';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "recommended_usage",
+        "administration_route",
+        "dosage_frequency"
+      ],
+      "where_clause": "dosage_frequency > 'every 4 to 6 hours as needed' AND active_ingredients != 'azithromycin'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "dosage_frequency > 'every 4 to 6 hours as needed'",
+        "active_ingredients != 'azithromycin'"
+      ],
+      "selectivity_ratios": [
+        0.025974025974025976,
+        0.008620689655172414
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT activation_conditions, single_dose, recommended_usage FROM drug WHERE activation_conditions != 'take with food' AND dosage_frequency <= 'every 8 hours';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "activation_conditions",
+        "single_dose",
+        "recommended_usage"
+      ],
+      "where_clause": "activation_conditions != 'take with food' AND dosage_frequency <= 'every 8 hours'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "activation_conditions != 'take with food'",
+        "dosage_frequency <= 'every 8 hours'"
+      ],
+      "selectivity_ratios": [
+        0.06666666666666667,
+        0.025974025974025976
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT administration_route, indication, recommended_usage FROM drug WHERE administration_route != 'injection' AND storage_conditions < 'protect from light';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "administration_route",
+        "indication",
+        "recommended_usage"
+      ],
+      "where_clause": "administration_route != 'injection' AND storage_conditions < 'protect from light'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "administration_route != 'injection'",
+        "storage_conditions < 'protect from light'"
+      ],
+      "selectivity_ratios": [
+        0.011363636363636364,
+        0.18
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT active_ingredients, brand_name, single_dose FROM drug WHERE active_ingredients != 'Antihistamines' OR single_dose != 'children 2-5 years 36 mcg';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "active_ingredients",
+        "brand_name",
+        "single_dose"
+      ],
+      "where_clause": "active_ingredients != 'Antihistamines' OR single_dose != 'children 2-5 years 36 mcg'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "active_ingredients != 'Antihistamines'",
+        "single_dose != 'children 2-5 years 36 mcg'"
+      ],
+      "selectivity_ratios": [
+        0.008620689655172414,
+        0.0072992700729927005
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT unsuitable_population, administration_route, storage_conditions FROM drug WHERE unsuitable_population != 'patients with cyst on the ovary' OR storage_conditions > 'avoid freezing';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "unsuitable_population",
+        "administration_route",
+        "storage_conditions"
+      ],
+      "where_clause": "unsuitable_population != 'patients with cyst on the ovary' OR storage_conditions > 'avoid freezing'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "unsuitable_population != 'patients with cyst on the ovary'",
+        "storage_conditions > 'avoid freezing'"
+      ],
+      "selectivity_ratios": [
+        0.0036496350364963502,
+        0.02
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT brand_name, pharmaceutical_form, active_ingredients FROM drug WHERE active_ingredients = 'mepolizumab' OR activation_conditions != 'before meals';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "brand_name",
+        "pharmaceutical_form",
+        "active_ingredients"
+      ],
+      "where_clause": "active_ingredients = 'mepolizumab' OR activation_conditions != 'before meals'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "active_ingredients = 'mepolizumab'",
+        "activation_conditions != 'before meals'"
+      ],
+      "selectivity_ratios": [
+        0.008620689655172414,
+        0.03333333333333333
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT indication, prescription_status, disease_name FROM drug WHERE disease_name = 'Parkinson''s disease' OR mechanism_of_action != 'improving metabolic profile';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "indication",
+        "prescription_status",
+        "disease_name"
+      ],
+      "where_clause": "disease_name = 'Parkinson''s disease' OR mechanism_of_action != 'improving metabolic profile'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "disease_name = 'Parkinson''s disease'",
+        "mechanism_of_action != 'improving metabolic profile'"
+      ],
+      "selectivity_ratios": [
+        0.006993006993006993,
+        0.009900990099009901
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT prescription_status, activation_conditions, storage_conditions FROM drug WHERE activation_conditions = 'before meals' AND storage_conditions < 'protect from moisture' AND side_effects != 'headache' AND mechanism_of_action != 'induces loss of consciousness';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "prescription_status",
+        "activation_conditions",
+        "storage_conditions"
+      ],
+      "where_clause": "activation_conditions = 'before meals' AND storage_conditions < 'protect from moisture' AND side_effects != 'headache' AND mechanism_of_action != 'induces loss of consciousness'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "activation_conditions = 'before meals'",
+        "storage_conditions < 'protect from moisture'",
+        "side_effects != 'headache'",
+        "mechanism_of_action != 'induces loss of consciousness'"
+      ],
+      "selectivity_ratios": [
+        0.03333333333333333,
+        0.02,
+        0.022151898734177215,
+        0.009900990099009901
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT disease_name, pharmaceutical_form, brand_name FROM drug WHERE brand_name = 'Omlek-D' AND pharmaceutical_form = 'gel' AND disease_name != 'Herpes simplex' AND indication != 'infections';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "disease_name",
+        "pharmaceutical_form",
+        "brand_name"
+      ],
+      "where_clause": "brand_name = 'Omlek-D' AND pharmaceutical_form = 'gel' AND disease_name != 'Herpes simplex' AND indication != 'infections'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "brand_name = 'Omlek-D'",
+        "pharmaceutical_form = 'gel'",
+        "disease_name != 'Herpes simplex'",
+        "indication != 'infections'"
+      ],
+      "selectivity_ratios": [
+        0.011627906976744186,
+        0.008849557522123894,
+        0.006993006993006993,
+        0.006557377049180328
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT mechanism_of_action, active_ingredients, administration_route FROM drug WHERE administration_route = 'injection' AND manufacturer != 'Astra Zeneca' AND mechanism_of_action != 'enhancing glucose metabolism' AND administration_route != 'oral';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "mechanism_of_action",
+        "active_ingredients",
+        "administration_route"
+      ],
+      "where_clause": "administration_route = 'injection' AND manufacturer != 'Astra Zeneca' AND mechanism_of_action != 'enhancing glucose metabolism' AND administration_route != 'oral'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "administration_route = 'injection'",
+        "manufacturer != 'Astra Zeneca'",
+        "mechanism_of_action != 'enhancing glucose metabolism'",
+        "administration_route != 'oral'"
+      ],
+      "selectivity_ratios": [
+        0.011363636363636364,
+        0.03125,
+        0.009900990099009901,
+        0.6477272727272727
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT single_dose, mechanism_of_action, side_effects FROM drug WHERE side_effects = 'fever' AND storage_conditions = 'store below 25C or 77F' AND mechanism_of_action != 'broken down into 6-thioguanine nucleotides to exert immunosuppressive effects' AND active_ingredients = 'Omeprazole';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "single_dose",
+        "mechanism_of_action",
+        "side_effects"
+      ],
+      "where_clause": "side_effects = 'fever' AND storage_conditions = 'store below 25C or 77F' AND mechanism_of_action != 'broken down into 6-thioguanine nucleotides to exert immunosuppressive effects' AND active_ingredients = 'Omeprazole'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "side_effects = 'fever'",
+        "storage_conditions = 'store below 25C or 77F'",
+        "mechanism_of_action != 'broken down into 6-thioguanine nucleotides to exert immunosuppressive effects'",
+        "active_ingredients = 'Omeprazole'"
+      ],
+      "selectivity_ratios": [
+        0.004219409282700422,
+        0.02,
+        0.009900990099009901,
+        0.008620689655172414
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT administration_route, side_effects, mechanism_of_action FROM drug WHERE administration_route != 'injection' OR indication = 'heartburn' OR storage_conditions > 'store in a tight, light-resistant container' OR recommended_usage = 'other';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "administration_route",
+        "side_effects",
+        "mechanism_of_action"
+      ],
+      "where_clause": "administration_route != 'injection' OR indication = 'heartburn' OR storage_conditions > 'store in a tight, light-resistant container' OR recommended_usage = 'other'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "administration_route != 'injection'",
+        "indication = 'heartburn'",
+        "storage_conditions > 'store in a tight, light-resistant container'",
+        "recommended_usage = 'other'"
+      ],
+      "selectivity_ratios": [
+        0.011363636363636364,
+        0.006557377049180328,
+        0.02,
+        0.2235294117647059
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT brand_name, manufacturer, disease_name FROM drug WHERE manufacturer = 'Astellas' OR active_ingredients != 'Pravastatin sodium salt' OR generic_name = 'Pramipexole dihydrochloride' OR manufacturer = 'Preferred Pharmaceuticals, Inc.';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "brand_name",
+        "manufacturer",
+        "disease_name"
+      ],
+      "where_clause": "manufacturer = 'Astellas' OR active_ingredients != 'Pravastatin sodium salt' OR generic_name = 'Pramipexole dihydrochloride' OR manufacturer = 'Preferred Pharmaceuticals, Inc.'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "manufacturer = 'Astellas'",
+        "active_ingredients != 'Pravastatin sodium salt'",
+        "generic_name = 'Pramipexole dihydrochloride'",
+        "manufacturer = 'Preferred Pharmaceuticals, Inc.'"
+      ],
+      "selectivity_ratios": [
+        0.03125,
+        0.008620689655172414,
+        0.009708737864077669,
+        0.03125
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT brand_name, single_dose, active_ingredients FROM drug WHERE brand_name != 'Duaklir Genuair' OR active_ingredients = 'Milnacipran' OR single_dose != 'adults 10-40 mg once a day' OR prescription_status = 'unclassified';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "brand_name",
+        "single_dose",
+        "active_ingredients"
+      ],
+      "where_clause": "brand_name != 'Duaklir Genuair' OR active_ingredients = 'Milnacipran' OR single_dose != 'adults 10-40 mg once a day' OR prescription_status = 'unclassified'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "brand_name != 'Duaklir Genuair'",
+        "active_ingredients = 'Milnacipran'",
+        "single_dose != 'adults 10-40 mg once a day'",
+        "prescription_status = 'unclassified'"
+      ],
+      "selectivity_ratios": [
+        0.011627906976744186,
+        0.017241379310344827,
+        0.0072992700729927005,
+        0.02127659574468085
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT administration_route, manufacturer, active_ingredients FROM drug WHERE manufacturer != 'Cipla' OR generic_name != 'Ropinirole' OR storage_conditions >= 'store at room temperature' OR brand_name = 'Omlek-D';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "administration_route",
+        "manufacturer",
+        "active_ingredients"
+      ],
+      "where_clause": "manufacturer != 'Cipla' OR generic_name != 'Ropinirole' OR storage_conditions >= 'store at room temperature' OR brand_name = 'Omlek-D'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "manufacturer != 'Cipla'",
+        "generic_name != 'Ropinirole'",
+        "storage_conditions >= 'store at room temperature'",
+        "brand_name = 'Omlek-D'"
+      ],
+      "selectivity_ratios": [
+        0.03125,
+        0.009708737864077669,
+        0.26,
+        0.011627906976744186
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT recommended_usage, pharmaceutical_form, disease_name FROM drug WHERE (pharmaceutical_form = 'spray' AND dosage_frequency = 'twice daily') OR (side_effects != 'weight loss' AND activation_conditions != 'before meals');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "recommended_usage",
+        "pharmaceutical_form",
+        "disease_name"
+      ],
+      "where_clause": "(pharmaceutical_form = 'spray' AND dosage_frequency = 'twice daily') OR (side_effects != 'weight loss' AND activation_conditions != 'before meals')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "pharmaceutical_form = 'spray'",
+        "dosage_frequency = 'twice daily'",
+        "side_effects != 'weight loss'",
+        "activation_conditions != 'before meals'"
+      ],
+      "selectivity_ratios": [
+        0.02654867256637168,
+        0.03896103896103896,
+        0.004219409282700422,
+        0.03333333333333333
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT recommended_usage, pharmaceutical_form, generic_name FROM drug WHERE (pharmaceutical_form != 'granule' AND manufacturer != 'Avanir Pharmaceuticals') OR (brand_name = 'PEG-Intron' AND brand_name = 'Nexium');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "recommended_usage",
+        "pharmaceutical_form",
+        "generic_name"
+      ],
+      "where_clause": "(pharmaceutical_form != 'granule' AND manufacturer != 'Avanir Pharmaceuticals') OR (brand_name = 'PEG-Intron' AND brand_name = 'Nexium')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "pharmaceutical_form != 'granule'",
+        "manufacturer != 'Avanir Pharmaceuticals'",
+        "brand_name = 'PEG-Intron'",
+        "brand_name = 'Nexium'"
+      ],
+      "selectivity_ratios": [
+        0.008849557522123894,
+        0.03125,
+        0.023255813953488372,
+        0.011627906976744186
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT unsuitable_population, mechanism_of_action, administration_route FROM drug WHERE (administration_route = 'nasal' AND activation_conditions != 'requires stimulation') OR (indication = 'severe asthma' AND active_ingredients != 'Psilocybin');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "unsuitable_population",
+        "mechanism_of_action",
+        "administration_route"
+      ],
+      "where_clause": "(administration_route = 'nasal' AND activation_conditions != 'requires stimulation') OR (indication = 'severe asthma' AND active_ingredients != 'Psilocybin')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "administration_route = 'nasal'",
+        "activation_conditions != 'requires stimulation'",
+        "indication = 'severe asthma'",
+        "active_ingredients != 'Psilocybin'"
+      ],
+      "selectivity_ratios": [
+        0.03409090909090909,
+        0.03333333333333333,
+        0.006557377049180328,
+        0.008620689655172414
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT disease_name, brand_name, unsuitable_population FROM drug WHERE (unsuitable_population = 'patients with stomach/intestinal problems' AND dosage_frequency = 'every 8 hours') OR (activation_conditions = 'requires stimulation' AND mechanism_of_action != 'produces relaxation to relieve pain');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "disease_name",
+        "brand_name",
+        "unsuitable_population"
+      ],
+      "where_clause": "(unsuitable_population = 'patients with stomach/intestinal problems' AND dosage_frequency = 'every 8 hours') OR (activation_conditions = 'requires stimulation' AND mechanism_of_action != 'produces relaxation to relieve pain')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "unsuitable_population = 'patients with stomach/intestinal problems'",
+        "dosage_frequency = 'every 8 hours'",
+        "activation_conditions = 'requires stimulation'",
+        "mechanism_of_action != 'produces relaxation to relieve pain'"
+      ],
+      "selectivity_ratios": [
+        0.0072992700729927005,
+        0.025974025974025976,
+        0.03333333333333333,
+        0.009900990099009901
+      ],
+      "tables": [
+        "drug"
+      ]
+    }
+  }
+]

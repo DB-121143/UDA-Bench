@@ -1,0 +1,334 @@
+[
+  {
+    "sql": "SELECT key_technologies, institution_country, international_collaboration FROM institution WHERE technology_application != 'FDA drug approval';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "key_technologies",
+        "institution_country",
+        "international_collaboration"
+      ],
+      "where_clause": "technology_application != 'FDA drug approval'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "technology_application != 'FDA drug approval'"
+      ],
+      "selectivity_ratios": [
+        0.0125
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT leadership, parent_organization, establishment_year FROM institution WHERE leadership = 'Tanja Gruber';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "leadership",
+        "parent_organization",
+        "establishment_year"
+      ],
+      "where_clause": "leadership = 'Tanja Gruber'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "leadership = 'Tanja Gruber'"
+      ],
+      "selectivity_ratios": [
+        0.008695652173913044
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT institution_city, international_collaboration, institution_name FROM institution WHERE research_fields != 'molecular_biology' AND funding_sources = 'university grant';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "institution_city",
+        "international_collaboration",
+        "institution_name"
+      ],
+      "where_clause": "research_fields != 'molecular_biology' AND funding_sources = 'university grant'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "research_fields != 'molecular_biology'",
+        "funding_sources = 'university grant'"
+      ],
+      "selectivity_ratios": [
+        0.005050505050505051,
+        0.02564102564102564
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT leadership, research_fields, international_collaboration FROM institution WHERE technology_application = 'early diagnosis of cardiac TTR amyloidosis using DPD scintigraphy' AND key_technologies = 'navigation for insertion of screws';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "leadership",
+        "research_fields",
+        "international_collaboration"
+      ],
+      "where_clause": "technology_application = 'early diagnosis of cardiac TTR amyloidosis using DPD scintigraphy' AND key_technologies = 'navigation for insertion of screws'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "technology_application = 'early diagnosis of cardiac TTR amyloidosis using DPD scintigraphy'",
+        "key_technologies = 'navigation for insertion of screws'"
+      ],
+      "selectivity_ratios": [
+        0.0125,
+        0.006060606060606061
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT number_of_staff, parent_organization, key_technologies FROM institution WHERE international_collaboration = 'NCI cancer centers in the United States' OR institution_country != 'China';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "number_of_staff",
+        "parent_organization",
+        "key_technologies"
+      ],
+      "where_clause": "international_collaboration = 'NCI cancer centers in the United States' OR institution_country != 'China'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "international_collaboration = 'NCI cancer centers in the United States'",
+        "institution_country != 'China'"
+      ],
+      "selectivity_ratios": [
+        0.016129032258064516,
+        0.03260869565217391
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT institution_city, establishment_year, technology_application FROM institution WHERE research_fields != 'molecular_biology' OR international_collaboration != 'collaboration with research centres throughout Europe and the UK';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "institution_city",
+        "establishment_year",
+        "technology_application"
+      ],
+      "where_clause": "research_fields != 'molecular_biology' OR international_collaboration != 'collaboration with research centres throughout Europe and the UK'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "research_fields != 'molecular_biology'",
+        "international_collaboration != 'collaboration with research centres throughout Europe and the UK'"
+      ],
+      "selectivity_ratios": [
+        0.005050505050505051,
+        0.016129032258064516
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT technology_application, institution_country, institution_city FROM institution WHERE research_diseases = 'portal hypertensive gastropathy' AND key_technologies != 'bacteriological culture' AND research_diseases != 'chronic pain' AND institution_city != 'Ferndale';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "technology_application",
+        "institution_country",
+        "institution_city"
+      ],
+      "where_clause": "research_diseases = 'portal hypertensive gastropathy' AND key_technologies != 'bacteriological culture' AND research_diseases != 'chronic pain' AND institution_city != 'Ferndale'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "research_diseases = 'portal hypertensive gastropathy'",
+        "key_technologies != 'bacteriological culture'",
+        "research_diseases != 'chronic pain'",
+        "institution_city != 'Ferndale'"
+      ],
+      "selectivity_ratios": [
+        0.005050505050505051,
+        0.006060606060606061,
+        0.010101010101010102,
+        0.01098901098901099
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT institution_name, research_fields, research_diseases FROM institution WHERE key_achievements = 'post-graduate education in gastroenterology' AND parent_organization != 'University of Texas' AND leadership != 'K Persson Waller' AND institution_country > 'Vietnam';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "institution_name",
+        "research_fields",
+        "research_diseases"
+      ],
+      "where_clause": "key_achievements = 'post-graduate education in gastroenterology' AND parent_organization != 'University of Texas' AND leadership != 'K Persson Waller' AND institution_country > 'Vietnam'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "key_achievements = 'post-graduate education in gastroenterology'",
+        "parent_organization != 'University of Texas'",
+        "leadership != 'K Persson Waller'",
+        "institution_country > 'Vietnam'"
+      ],
+      "selectivity_ratios": [
+        0.014705882352941176,
+        0.01818181818181818,
+        0.008695652173913044,
+        0.010869565217391304
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT establishment_year, international_collaboration, leadership FROM institution WHERE leadership != 'John Niederhuber' OR research_fields != 'surgery' OR institution_name != 'Emory University' OR key_technologies = 'antibacterial photodynamic treatment (aPDT)';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "establishment_year",
+        "international_collaboration",
+        "leadership"
+      ],
+      "where_clause": "leadership != 'John Niederhuber' OR research_fields != 'surgery' OR institution_name != 'Emory University' OR key_technologies = 'antibacterial photodynamic treatment (aPDT)'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "leadership != 'John Niederhuber'",
+        "research_fields != 'surgery'",
+        "institution_name != 'Emory University'",
+        "key_technologies = 'antibacterial photodynamic treatment (aPDT)'"
+      ],
+      "selectivity_ratios": [
+        0.008695652173913044,
+        0.005050505050505051,
+        0.011235955056179775,
+        0.006060606060606061
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT international_collaboration, establishment_year, key_achievements FROM institution WHERE leadership = 'K Persson Waller' OR parent_organization != 'UNSW Sydney' OR institution_name = 'Flushing Hospital Medical Center' OR technology_application != 'individual counseling';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "international_collaboration",
+        "establishment_year",
+        "key_achievements"
+      ],
+      "where_clause": "leadership = 'K Persson Waller' OR parent_organization != 'UNSW Sydney' OR institution_name = 'Flushing Hospital Medical Center' OR technology_application != 'individual counseling'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "leadership = 'K Persson Waller'",
+        "parent_organization != 'UNSW Sydney'",
+        "institution_name = 'Flushing Hospital Medical Center'",
+        "technology_application != 'individual counseling'"
+      ],
+      "selectivity_ratios": [
+        0.008695652173913044,
+        0.03636363636363636,
+        0.0056179775280898875,
+        0.0125
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT number_of_staff, parent_organization, technology_application FROM institution WHERE (parent_organization = 'Shanghai Jiao Tong University School of Medicine' AND institution_city = 'London') OR (research_diseases != 'lower limb complications of diabetes' AND technology_application != 'intensive case management');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "number_of_staff",
+        "parent_organization",
+        "technology_application"
+      ],
+      "where_clause": "(parent_organization = 'Shanghai Jiao Tong University School of Medicine' AND institution_city = 'London') OR (research_diseases != 'lower limb complications of diabetes' AND technology_application != 'intensive case management')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "parent_organization = 'Shanghai Jiao Tong University School of Medicine'",
+        "institution_city = 'London'",
+        "research_diseases != 'lower limb complications of diabetes'",
+        "technology_application != 'intensive case management'"
+      ],
+      "selectivity_ratios": [
+        0.01818181818181818,
+        0.03296703296703297,
+        0.005050505050505051,
+        0.0125
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT parent_organization, key_achievements, international_collaboration FROM institution WHERE (technology_application = 'inpatient psychiatric treatment' AND key_technologies = 'blood sample collection') OR (funding_sources != 'industry grant' AND key_achievements = 'Largest neuroscience study of mindfulness for addiction');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "parent_organization",
+        "key_achievements",
+        "international_collaboration"
+      ],
+      "where_clause": "(technology_application = 'inpatient psychiatric treatment' AND key_technologies = 'blood sample collection') OR (funding_sources != 'industry grant' AND key_achievements = 'Largest neuroscience study of mindfulness for addiction')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "technology_application = 'inpatient psychiatric treatment'",
+        "key_technologies = 'blood sample collection'",
+        "funding_sources != 'industry grant'",
+        "key_achievements = 'Largest neuroscience study of mindfulness for addiction'"
+      ],
+      "selectivity_ratios": [
+        0.0125,
+        0.006060606060606061,
+        0.1282051282051282,
+        0.014705882352941176
+      ],
+      "tables": [
+        "institution"
+      ]
+    }
+  }
+]

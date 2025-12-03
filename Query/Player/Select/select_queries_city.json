@@ -1,0 +1,17 @@
+[
+  {
+    "sql": "SELECT area, city_name, gdp FROM city;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "area",
+        "city_name",
+        "gdp"
+      ],
+      "tables": [
+        "city"
+      ]
+    }
+  }
+]

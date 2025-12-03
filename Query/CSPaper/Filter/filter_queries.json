@@ -1,0 +1,1662 @@
+[
+  {
+    "sql": "SELECT agent_framework, application_domain, performance_on_hotpotqa FROM CSPaper_paper WHERE performance_on_hotpotqa != 'KILT-EM: 27.3 (T5-Base)';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "agent_framework",
+        "application_domain",
+        "performance_on_hotpotqa"
+      ],
+      "where_clause": "performance_on_hotpotqa != 'KILT-EM: 27.3 (T5-Base)'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "performance_on_hotpotqa != 'KILT-EM: 27.3 (T5-Base)'"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT generator_model, reasoning_depth, data_modality FROM CSPaper_paper WHERE data_modality = 'proprietary enterprise dataset';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "generator_model",
+        "reasoning_depth",
+        "data_modality"
+      ],
+      "where_clause": "data_modality = 'proprietary enterprise dataset'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "data_modality = 'proprietary enterprise dataset'"
+      ],
+      "selectivity_ratios": [
+        0.003952569169960474
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT uses_knowledge_graph, uses_reranker, use_agent FROM CSPaper_paper WHERE uses_knowledge_graph <= 'Yes';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "uses_knowledge_graph",
+        "uses_reranker",
+        "use_agent"
+      ],
+      "where_clause": "uses_knowledge_graph <= 'Yes'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "uses_knowledge_graph <= 'Yes'"
+      ],
+      "selectivity_ratios": [
+        0.16080402010050251
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT baseline, uses_knowledge_graph, evaluation_dataset FROM CSPaper_paper WHERE evaluation_dataset = 'QAMPARI';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "baseline",
+        "uses_knowledge_graph",
+        "evaluation_dataset"
+      ],
+      "where_clause": "evaluation_dataset = 'QAMPARI'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "evaluation_dataset = 'QAMPARI'"
+      ],
+      "selectivity_ratios": [
+        0.0038240917782026767
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT evaluation_dataset, baseline, use_agent FROM CSPaper_paper WHERE baseline = 'FLARE';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "evaluation_dataset",
+        "baseline",
+        "use_agent"
+      ],
+      "where_clause": "baseline = 'FLARE'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "baseline = 'FLARE'"
+      ],
+      "selectivity_ratios": [
+        0.004920049200492005
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT evaluation_dataset, reasoning_depth, data_modality FROM CSPaper_paper WHERE reasoning_depth = 'single-hop';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "evaluation_dataset",
+        "reasoning_depth",
+        "data_modality"
+      ],
+      "where_clause": "reasoning_depth = 'single-hop'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "reasoning_depth = 'single-hop'"
+      ],
+      "selectivity_ratios": [
+        0.4472361809045226
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT data_modality, multi_turn_retrieval, evaluation_metric FROM CSPaper_paper WHERE evaluation_metric = 'F1-score';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "data_modality",
+        "multi_turn_retrieval",
+        "evaluation_metric"
+      ],
+      "where_clause": "evaluation_metric = 'F1-score'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "evaluation_metric = 'F1-score'"
+      ],
+      "selectivity_ratios": [
+        0.012465373961218837
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT evaluation_metric, baseline, use_agent FROM CSPaper_paper WHERE use_agent = 'No';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "evaluation_metric",
+        "baseline",
+        "use_agent"
+      ],
+      "where_clause": "use_agent = 'No'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "use_agent = 'No'"
+      ],
+      "selectivity_ratios": [
+        0.765
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT retrieval_method, agent_framework, baseline FROM CSPaper_paper WHERE baseline = 'Single-step Approach';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "retrieval_method",
+        "agent_framework",
+        "baseline"
+      ],
+      "where_clause": "baseline = 'Single-step Approach'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "baseline = 'Single-step Approach'"
+      ],
+      "selectivity_ratios": [
+        0.0036900369003690036
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT topic, reasoning_depth, performance_on_hotpotqa FROM CSPaper_paper WHERE topic != 'LLM';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 1,
+      "selected_attributes": [
+        "topic",
+        "reasoning_depth",
+        "performance_on_hotpotqa"
+      ],
+      "where_clause": "topic != 'LLM'",
+      "filter_combination": "single",
+      "num_filters": 1,
+      "predicates": [
+        "topic != 'LLM'"
+      ],
+      "selectivity_ratios": [
+        0.004975124378109453
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT performance_on_NQ, agent_framework, topic FROM CSPaper_paper WHERE performance_on_NQ != 'MH_test: 50.0' AND generator_model != 'GPT-4o-mini';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "performance_on_NQ",
+        "agent_framework",
+        "topic"
+      ],
+      "where_clause": "performance_on_NQ != 'MH_test: 50.0' AND generator_model != 'GPT-4o-mini'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "performance_on_NQ != 'MH_test: 50.0'",
+        "generator_model != 'GPT-4o-mini'"
+      ],
+      "selectivity_ratios": [
+        0.006535947712418301,
+        0.018957345971563982
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT evaluation_metric, performance_on_hotpotqa, application_domain FROM CSPaper_paper WHERE application_domain = 'Academic' AND evaluation_metric = 'recall';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "evaluation_metric",
+        "performance_on_hotpotqa",
+        "application_domain"
+      ],
+      "where_clause": "application_domain = 'Academic' AND evaluation_metric = 'recall'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "application_domain = 'Academic'",
+        "evaluation_metric = 'recall'"
+      ],
+      "selectivity_ratios": [
+        0.08888888888888889,
+        0.002770083102493075
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT performance_on_hotpotqa, evaluation_metric, retrieval_method FROM CSPaper_paper WHERE performance_on_hotpotqa != 'BERT F1 Score: 0.7320' AND application_domain != 'Medical';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "performance_on_hotpotqa",
+        "evaluation_metric",
+        "retrieval_method"
+      ],
+      "where_clause": "performance_on_hotpotqa != 'BERT F1 Score: 0.7320' AND application_domain != 'Medical'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "performance_on_hotpotqa != 'BERT F1 Score: 0.7320'",
+        "application_domain != 'Medical'"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904,
+        0.11481481481481481
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT data_modality, uses_knowledge_graph, evaluation_dataset FROM CSPaper_paper WHERE data_modality != 'proprietary enterprise dataset' AND baseline = 'MLP';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "data_modality",
+        "uses_knowledge_graph",
+        "evaluation_dataset"
+      ],
+      "where_clause": "data_modality != 'proprietary enterprise dataset' AND baseline = 'MLP'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "data_modality != 'proprietary enterprise dataset'",
+        "baseline = 'MLP'"
+      ],
+      "selectivity_ratios": [
+        0.003952569169960474,
+        0.0024600246002460025
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT performance_on_hotpotqa, evaluation_metric, baseline FROM CSPaper_paper WHERE baseline != 'BM25' AND reasoning_depth != 'single-hop';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "performance_on_hotpotqa",
+        "evaluation_metric",
+        "baseline"
+      ],
+      "where_clause": "baseline != 'BM25' AND reasoning_depth != 'single-hop'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "baseline != 'BM25'",
+        "reasoning_depth != 'single-hop'"
+      ],
+      "selectivity_ratios": [
+        0.01107011070110701,
+        0.4472361809045226
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT baseline, uses_reranker, generator_model FROM CSPaper_paper WHERE baseline != 'GPT-3' AND use_agent != 'Yes';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "baseline",
+        "uses_reranker",
+        "generator_model"
+      ],
+      "where_clause": "baseline != 'GPT-3' AND use_agent != 'Yes'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "baseline != 'GPT-3'",
+        "use_agent != 'Yes'"
+      ],
+      "selectivity_ratios": [
+        0.0024600246002460025,
+        0.235
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT retrieval_method, baseline, generator_model FROM CSPaper_paper WHERE retrieval_method != 'Other' AND evaluation_metric = 'RMSE';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "retrieval_method",
+        "baseline",
+        "generator_model"
+      ],
+      "where_clause": "retrieval_method != 'Other' AND evaluation_metric = 'RMSE'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "retrieval_method != 'Other'",
+        "evaluation_metric = 'RMSE'"
+      ],
+      "selectivity_ratios": [
+        0.061224489795918366,
+        0.002770083102493075
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT multi_turn_retrieval, data_modality, performance_on_NQ FROM CSPaper_paper WHERE data_modality = 'Image' AND evaluation_metric != 'BERTScore';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "multi_turn_retrieval",
+        "data_modality",
+        "performance_on_NQ"
+      ],
+      "where_clause": "data_modality = 'Image' AND evaluation_metric != 'BERTScore'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "data_modality = 'Image'",
+        "evaluation_metric != 'BERTScore'"
+      ],
+      "selectivity_ratios": [
+        0.11067193675889328,
+        0.009695290858725761
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT performance_on_NQ, data_modality, evaluation_dataset FROM CSPaper_paper WHERE performance_on_NQ != 'Qwen-2.5-7B (Light-BEE): EM 38.71, F1 50.11' AND use_agent = 'Yes';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "performance_on_NQ",
+        "data_modality",
+        "evaluation_dataset"
+      ],
+      "where_clause": "performance_on_NQ != 'Qwen-2.5-7B (Light-BEE): EM 38.71, F1 50.11' AND use_agent = 'Yes'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "performance_on_NQ != 'Qwen-2.5-7B (Light-BEE): EM 38.71, F1 50.11'",
+        "use_agent = 'Yes'"
+      ],
+      "selectivity_ratios": [
+        0.006535947712418301,
+        0.235
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT generator_model, baseline, performance_on_NQ FROM CSPaper_paper WHERE baseline = 'GPT-3' AND multi_turn_retrieval > 'No';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 2,
+      "selected_attributes": [
+        "generator_model",
+        "baseline",
+        "performance_on_NQ"
+      ],
+      "where_clause": "baseline = 'GPT-3' AND multi_turn_retrieval > 'No'",
+      "filter_combination": "AND",
+      "num_filters": 2,
+      "predicates": [
+        "baseline = 'GPT-3'",
+        "multi_turn_retrieval > 'No'"
+      ],
+      "selectivity_ratios": [
+        0.0024600246002460025,
+        0.7085427135678392
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT retrieval_method, uses_knowledge_graph, multi_turn_retrieval FROM CSPaper_paper WHERE retrieval_method != 'Dense Retrieval' OR evaluation_metric != 'AUC';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "retrieval_method",
+        "uses_knowledge_graph",
+        "multi_turn_retrieval"
+      ],
+      "where_clause": "retrieval_method != 'Dense Retrieval' OR evaluation_metric != 'AUC'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "retrieval_method != 'Dense Retrieval'",
+        "evaluation_metric != 'AUC'"
+      ],
+      "selectivity_ratios": [
+        0.5428571428571428,
+        0.002770083102493075
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT multi_turn_retrieval, baseline, data_modality FROM CSPaper_paper WHERE multi_turn_retrieval >= 'Yes' OR use_agent >= 'Yes';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "multi_turn_retrieval",
+        "baseline",
+        "data_modality"
+      ],
+      "where_clause": "multi_turn_retrieval >= 'Yes' OR use_agent >= 'Yes'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "multi_turn_retrieval >= 'Yes'",
+        "use_agent >= 'Yes'"
+      ],
+      "selectivity_ratios": [
+        0.2914572864321608,
+        0.235
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT uses_knowledge_graph, reasoning_depth, retrieval_method FROM CSPaper_paper WHERE retrieval_method = 'Dense Retrieval' OR performance_on_hotpotqa != 'EM (x4 compression): 0.430';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "uses_knowledge_graph",
+        "reasoning_depth",
+        "retrieval_method"
+      ],
+      "where_clause": "retrieval_method = 'Dense Retrieval' OR performance_on_hotpotqa != 'EM (x4 compression): 0.430'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "retrieval_method = 'Dense Retrieval'",
+        "performance_on_hotpotqa != 'EM (x4 compression): 0.430'"
+      ],
+      "selectivity_ratios": [
+        0.5428571428571428,
+        0.011904761904761904
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT performance_on_NQ, uses_knowledge_graph, reasoning_depth FROM CSPaper_paper WHERE reasoning_depth = 'single-hop' OR use_agent >= 'No';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "performance_on_NQ",
+        "uses_knowledge_graph",
+        "reasoning_depth"
+      ],
+      "where_clause": "reasoning_depth = 'single-hop' OR use_agent >= 'No'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "reasoning_depth = 'single-hop'",
+        "use_agent >= 'No'"
+      ],
+      "selectivity_ratios": [
+        0.4472361809045226,
+        0.765
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT evaluation_dataset, performance_on_hotpotqa, agent_framework FROM CSPaper_paper WHERE performance_on_hotpotqa = 'F1: 62.87' OR use_agent <= 'No';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "evaluation_dataset",
+        "performance_on_hotpotqa",
+        "agent_framework"
+      ],
+      "where_clause": "performance_on_hotpotqa = 'F1: 62.87' OR use_agent <= 'No'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "performance_on_hotpotqa = 'F1: 62.87'",
+        "use_agent <= 'No'"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904,
+        0.765
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT generator_model, uses_reranker, evaluation_metric FROM CSPaper_paper WHERE uses_reranker < 'Yes' OR topic != 'LLM';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "generator_model",
+        "uses_reranker",
+        "evaluation_metric"
+      ],
+      "where_clause": "uses_reranker < 'Yes' OR topic != 'LLM'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "uses_reranker < 'Yes'",
+        "topic != 'LLM'"
+      ],
+      "selectivity_ratios": [
+        0.31794871794871793,
+        0.004975124378109453
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT data_modality, multi_turn_retrieval, agent_framework FROM CSPaper_paper WHERE data_modality != 'Image' OR agent_framework = 'ToT';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "data_modality",
+        "multi_turn_retrieval",
+        "agent_framework"
+      ],
+      "where_clause": "data_modality != 'Image' OR agent_framework = 'ToT'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "data_modality != 'Image'",
+        "agent_framework = 'ToT'"
+      ],
+      "selectivity_ratios": [
+        0.11067193675889328,
+        0.04081632653061224
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT performance_on_NQ, reasoning_depth, generator_model FROM CSPaper_paper WHERE reasoning_depth = 'single-hop' OR data_modality != 'proprietary enterprise dataset';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "performance_on_NQ",
+        "reasoning_depth",
+        "generator_model"
+      ],
+      "where_clause": "reasoning_depth = 'single-hop' OR data_modality != 'proprietary enterprise dataset'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "reasoning_depth = 'single-hop'",
+        "data_modality != 'proprietary enterprise dataset'"
+      ],
+      "selectivity_ratios": [
+        0.4472361809045226,
+        0.003952569169960474
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT data_modality, uses_reranker, generator_model FROM CSPaper_paper WHERE data_modality != 'Table' OR evaluation_metric = 'LLM-as-a-judge';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "data_modality",
+        "uses_reranker",
+        "generator_model"
+      ],
+      "where_clause": "data_modality != 'Table' OR evaluation_metric = 'LLM-as-a-judge'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "data_modality != 'Table'",
+        "evaluation_metric = 'LLM-as-a-judge'"
+      ],
+      "selectivity_ratios": [
+        0.06324110671936758,
+        0.002770083102493075
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT application_domain, use_agent, reasoning_depth FROM CSPaper_paper WHERE use_agent > 'Yes' OR reasoning_depth = 'single-hop';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 3,
+      "selected_attributes": [
+        "application_domain",
+        "use_agent",
+        "reasoning_depth"
+      ],
+      "where_clause": "use_agent > 'Yes' OR reasoning_depth = 'single-hop'",
+      "filter_combination": "OR",
+      "num_filters": 2,
+      "predicates": [
+        "use_agent > 'Yes'",
+        "reasoning_depth = 'single-hop'"
+      ],
+      "selectivity_ratios": [
+        0.235,
+        0.4472361809045226
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT uses_reranker, performance_on_hotpotqa, data_modality FROM CSPaper_paper WHERE performance_on_hotpotqa = 'Comparison F1: 75.30)' AND performance_on_NQ = 'fact_single Recall@5: 0.705' AND use_agent = 'Yes' AND application_domain != 'Sports';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "uses_reranker",
+        "performance_on_hotpotqa",
+        "data_modality"
+      ],
+      "where_clause": "performance_on_hotpotqa = 'Comparison F1: 75.30)' AND performance_on_NQ = 'fact_single Recall@5: 0.705' AND use_agent = 'Yes' AND application_domain != 'Sports'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "performance_on_hotpotqa = 'Comparison F1: 75.30)'",
+        "performance_on_NQ = 'fact_single Recall@5: 0.705'",
+        "use_agent = 'Yes'",
+        "application_domain != 'Sports'"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904,
+        0.006535947712418301,
+        0.235,
+        0.007407407407407408
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT evaluation_dataset, uses_knowledge_graph, use_agent FROM CSPaper_paper WHERE uses_knowledge_graph > 'single-hop' AND generator_model != 'GPT-3' AND uses_reranker >= 'Text' AND evaluation_dataset != 'Musique';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "evaluation_dataset",
+        "uses_knowledge_graph",
+        "use_agent"
+      ],
+      "where_clause": "uses_knowledge_graph > 'single-hop' AND generator_model != 'GPT-3' AND uses_reranker >= 'Text' AND evaluation_dataset != 'Musique'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "uses_knowledge_graph > 'single-hop'",
+        "generator_model != 'GPT-3'",
+        "uses_reranker >= 'Text'",
+        "evaluation_dataset != 'Musique'"
+      ],
+      "selectivity_ratios": [
+        0.005025125628140704,
+        0.004739336492890996,
+        0.005128205128205128,
+        0.0057361376673040155
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT performance_on_NQ, data_modality, application_domain FROM CSPaper_paper WHERE data_modality = 'Audio' AND uses_reranker <= 'Yes' AND use_agent < 'No' AND data_modality = 'proprietary enterprise dataset';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "performance_on_NQ",
+        "data_modality",
+        "application_domain"
+      ],
+      "where_clause": "data_modality = 'Audio' AND uses_reranker <= 'Yes' AND use_agent < 'No' AND data_modality = 'proprietary enterprise dataset'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "data_modality = 'Audio'",
+        "uses_reranker <= 'Yes'",
+        "use_agent < 'No'",
+        "data_modality = 'proprietary enterprise dataset'"
+      ],
+      "selectivity_ratios": [
+        0.03557312252964427,
+        0.31794871794871793,
+        0.765,
+        0.003952569169960474
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT evaluation_metric, generator_model, agent_framework FROM CSPaper_paper WHERE agent_framework >= 'Other' AND use_agent < 'No' AND baseline = 'GPT-3' AND topic != 'Information Retrieval';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "evaluation_metric",
+        "generator_model",
+        "agent_framework"
+      ],
+      "where_clause": "agent_framework >= 'Other' AND use_agent < 'No' AND baseline = 'GPT-3' AND topic != 'Information Retrieval'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "agent_framework >= 'Other'",
+        "use_agent < 'No'",
+        "baseline = 'GPT-3'",
+        "topic != 'Information Retrieval'"
+      ],
+      "selectivity_ratios": [
+        0.5510204081632653,
+        0.765,
+        0.0024600246002460025,
+        0.009950248756218905
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT uses_knowledge_graph, baseline, uses_reranker FROM CSPaper_paper WHERE baseline != 'RAPTOR' AND data_modality = 'Audio' AND generator_model = 'Llama3-8b' AND uses_reranker <= 'Text';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "uses_knowledge_graph",
+        "baseline",
+        "uses_reranker"
+      ],
+      "where_clause": "baseline != 'RAPTOR' AND data_modality = 'Audio' AND generator_model = 'Llama3-8b' AND uses_reranker <= 'Text'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "baseline != 'RAPTOR'",
+        "data_modality = 'Audio'",
+        "generator_model = 'Llama3-8b'",
+        "uses_reranker <= 'Text'"
+      ],
+      "selectivity_ratios": [
+        0.004920049200492005,
+        0.03557312252964427,
+        0.004739336492890996,
+        0.005128205128205128
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT generator_model, retrieval_method, agent_framework FROM CSPaper_paper WHERE generator_model != 'GPT-Neo-1.3B' AND agent_framework >= 'ToT' AND multi_turn_retrieval != 'No' AND topic != 'Retrieval-Augmented Generation';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "generator_model",
+        "retrieval_method",
+        "agent_framework"
+      ],
+      "where_clause": "generator_model != 'GPT-Neo-1.3B' AND agent_framework >= 'ToT' AND multi_turn_retrieval != 'No' AND topic != 'Retrieval-Augmented Generation'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "generator_model != 'GPT-Neo-1.3B'",
+        "agent_framework >= 'ToT'",
+        "multi_turn_retrieval != 'No'",
+        "topic != 'Retrieval-Augmented Generation'"
+      ],
+      "selectivity_ratios": [
+        0.004739336492890996,
+        0.04081632653061224,
+        0.7085427135678392,
+        0.9601990049751243
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT uses_reranker, application_domain, evaluation_metric FROM CSPaper_paper WHERE uses_reranker > 'Text' AND performance_on_hotpotqa != 'F1: 0.3066' AND evaluation_dataset != 'WebQSP' AND uses_reranker > 'No';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "uses_reranker",
+        "application_domain",
+        "evaluation_metric"
+      ],
+      "where_clause": "uses_reranker > 'Text' AND performance_on_hotpotqa != 'F1: 0.3066' AND evaluation_dataset != 'WebQSP' AND uses_reranker > 'No'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "uses_reranker > 'Text'",
+        "performance_on_hotpotqa != 'F1: 0.3066'",
+        "evaluation_dataset != 'WebQSP'",
+        "uses_reranker > 'No'"
+      ],
+      "selectivity_ratios": [
+        0.005128205128205128,
+        0.011904761904761904,
+        0.0038240917782026767,
+        0.676923076923077
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT topic, application_domain, uses_knowledge_graph FROM CSPaper_paper WHERE topic != 'LLM' AND generator_model != 'Llama3.1-8B-Instruct' AND multi_turn_retrieval < 'Yes' AND topic != 'SFT';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "topic",
+        "application_domain",
+        "uses_knowledge_graph"
+      ],
+      "where_clause": "topic != 'LLM' AND generator_model != 'Llama3.1-8B-Instruct' AND multi_turn_retrieval < 'Yes' AND topic != 'SFT'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "topic != 'LLM'",
+        "generator_model != 'Llama3.1-8B-Instruct'",
+        "multi_turn_retrieval < 'Yes'",
+        "topic != 'SFT'"
+      ],
+      "selectivity_ratios": [
+        0.004975124378109453,
+        0.004739336492890996,
+        0.2914572864321608,
+        0.004975124378109453
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT performance_on_NQ, baseline, evaluation_metric FROM CSPaper_paper WHERE evaluation_metric = 'Contextual Recall' AND agent_framework <= 'ToT' AND evaluation_dataset = 'T-REx' AND evaluation_metric != 'Contextual Recall';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "performance_on_NQ",
+        "baseline",
+        "evaluation_metric"
+      ],
+      "where_clause": "evaluation_metric = 'Contextual Recall' AND agent_framework <= 'ToT' AND evaluation_dataset = 'T-REx' AND evaluation_metric != 'Contextual Recall'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "evaluation_metric = 'Contextual Recall'",
+        "agent_framework <= 'ToT'",
+        "evaluation_dataset = 'T-REx'",
+        "evaluation_metric != 'Contextual Recall'"
+      ],
+      "selectivity_ratios": [
+        0.002770083102493075,
+        0.04081632653061224,
+        0.0076481835564053535,
+        0.002770083102493075
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT evaluation_dataset, evaluation_metric, application_domain FROM CSPaper_paper WHERE evaluation_dataset != 'NaturalQuestions' AND uses_knowledge_graph <= 'single-hop' AND multi_turn_retrieval <= 'Yes' AND multi_turn_retrieval = 'No';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 4,
+      "selected_attributes": [
+        "evaluation_dataset",
+        "evaluation_metric",
+        "application_domain"
+      ],
+      "where_clause": "evaluation_dataset != 'NaturalQuestions' AND uses_knowledge_graph <= 'single-hop' AND multi_turn_retrieval <= 'Yes' AND multi_turn_retrieval = 'No'",
+      "filter_combination": "AND",
+      "num_filters": 4,
+      "predicates": [
+        "evaluation_dataset != 'NaturalQuestions'",
+        "uses_knowledge_graph <= 'single-hop'",
+        "multi_turn_retrieval <= 'Yes'",
+        "multi_turn_retrieval = 'No'"
+      ],
+      "selectivity_ratios": [
+        0.011472275334608031,
+        0.005025125628140704,
+        0.2914572864321608,
+        0.7085427135678392
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT data_modality, agent_framework, generator_model FROM CSPaper_paper WHERE data_modality != 'Image' OR baseline = 'GraphRAG' OR application_domain != 'Sports' OR reasoning_depth != 'multi-hop';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "data_modality",
+        "agent_framework",
+        "generator_model"
+      ],
+      "where_clause": "data_modality != 'Image' OR baseline = 'GraphRAG' OR application_domain != 'Sports' OR reasoning_depth != 'multi-hop'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "data_modality != 'Image'",
+        "baseline = 'GraphRAG'",
+        "application_domain != 'Sports'",
+        "reasoning_depth != 'multi-hop'"
+      ],
+      "selectivity_ratios": [
+        0.11067193675889328,
+        0.006150061500615006,
+        0.007407407407407408,
+        0.5527638190954773
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT agent_framework, uses_reranker, use_agent FROM CSPaper_paper WHERE uses_reranker = 'Text' OR retrieval_method != 'Dense Retrieval' OR topic = 'No' OR uses_reranker != 'Text';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "agent_framework",
+        "uses_reranker",
+        "use_agent"
+      ],
+      "where_clause": "uses_reranker = 'Text' OR retrieval_method != 'Dense Retrieval' OR topic = 'No' OR uses_reranker != 'Text'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "uses_reranker = 'Text'",
+        "retrieval_method != 'Dense Retrieval'",
+        "topic = 'No'",
+        "uses_reranker != 'Text'"
+      ],
+      "selectivity_ratios": [
+        0.005128205128205128,
+        0.5428571428571428,
+        0.004975124378109453,
+        0.005128205128205128
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT uses_knowledge_graph, retrieval_method, performance_on_NQ FROM CSPaper_paper WHERE uses_knowledge_graph >= 'Yes' OR multi_turn_retrieval = 'No' OR uses_knowledge_graph = 'No' OR evaluation_dataset != 'QuALITY';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "uses_knowledge_graph",
+        "retrieval_method",
+        "performance_on_NQ"
+      ],
+      "where_clause": "uses_knowledge_graph >= 'Yes' OR multi_turn_retrieval = 'No' OR uses_knowledge_graph = 'No' OR evaluation_dataset != 'QuALITY'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "uses_knowledge_graph >= 'Yes'",
+        "multi_turn_retrieval = 'No'",
+        "uses_knowledge_graph = 'No'",
+        "evaluation_dataset != 'QuALITY'"
+      ],
+      "selectivity_ratios": [
+        0.16080402010050251,
+        0.7085427135678392,
+        0.8341708542713567,
+        0.0038240917782026767
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT data_modality, uses_reranker, reasoning_depth FROM CSPaper_paper WHERE uses_reranker < 'Text' OR topic != 'Data Selection' OR performance_on_hotpotqa = 'KILT-EM: 27.3 (T5-Base)' OR uses_reranker >= 'Text';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "data_modality",
+        "uses_reranker",
+        "reasoning_depth"
+      ],
+      "where_clause": "uses_reranker < 'Text' OR topic != 'Data Selection' OR performance_on_hotpotqa = 'KILT-EM: 27.3 (T5-Base)' OR uses_reranker >= 'Text'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "uses_reranker < 'Text'",
+        "topic != 'Data Selection'",
+        "performance_on_hotpotqa = 'KILT-EM: 27.3 (T5-Base)'",
+        "uses_reranker >= 'Text'"
+      ],
+      "selectivity_ratios": [
+        0.005128205128205128,
+        0.014925373134328358,
+        0.011904761904761904,
+        0.005128205128205128
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT performance_on_NQ, data_modality, use_agent FROM CSPaper_paper WHERE data_modality != 'proprietary enterprise dataset' OR data_modality != 'Code' OR topic != 'SFT' OR agent_framework < 'ToT';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "performance_on_NQ",
+        "data_modality",
+        "use_agent"
+      ],
+      "where_clause": "data_modality != 'proprietary enterprise dataset' OR data_modality != 'Code' OR topic != 'SFT' OR agent_framework < 'ToT'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "data_modality != 'proprietary enterprise dataset'",
+        "data_modality != 'Code'",
+        "topic != 'SFT'",
+        "agent_framework < 'ToT'"
+      ],
+      "selectivity_ratios": [
+        0.003952569169960474,
+        0.043478260869565216,
+        0.004975124378109453,
+        0.04081632653061224
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT use_agent, reasoning_depth, multi_turn_retrieval FROM CSPaper_paper WHERE use_agent < 'No' OR performance_on_hotpotqa != 'EM (x16 compression): 0.426' OR uses_knowledge_graph >= 'single-hop' OR topic = 'LLM';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "use_agent",
+        "reasoning_depth",
+        "multi_turn_retrieval"
+      ],
+      "where_clause": "use_agent < 'No' OR performance_on_hotpotqa != 'EM (x16 compression): 0.426' OR uses_knowledge_graph >= 'single-hop' OR topic = 'LLM'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "use_agent < 'No'",
+        "performance_on_hotpotqa != 'EM (x16 compression): 0.426'",
+        "uses_knowledge_graph >= 'single-hop'",
+        "topic = 'LLM'"
+      ],
+      "selectivity_ratios": [
+        0.765,
+        0.011904761904761904,
+        0.005025125628140704,
+        0.004975124378109453
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT topic, performance_on_NQ, performance_on_hotpotqa FROM CSPaper_paper WHERE performance_on_hotpotqa != 'EM: 48.58' OR evaluation_metric = 'Accuracy' OR uses_knowledge_graph < 'Yes' OR data_modality != 'Image';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "topic",
+        "performance_on_NQ",
+        "performance_on_hotpotqa"
+      ],
+      "where_clause": "performance_on_hotpotqa != 'EM: 48.58' OR evaluation_metric = 'Accuracy' OR uses_knowledge_graph < 'Yes' OR data_modality != 'Image'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "performance_on_hotpotqa != 'EM: 48.58'",
+        "evaluation_metric = 'Accuracy'",
+        "uses_knowledge_graph < 'Yes'",
+        "data_modality != 'Image'"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904,
+        0.0886426592797784,
+        0.16080402010050251,
+        0.11067193675889328
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT evaluation_metric, baseline, evaluation_dataset FROM CSPaper_paper WHERE baseline != 'FLARE' OR uses_knowledge_graph <= 'single-hop' OR performance_on_hotpotqa != 'Acc: 58.4' OR evaluation_metric = 'AUC';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "evaluation_metric",
+        "baseline",
+        "evaluation_dataset"
+      ],
+      "where_clause": "baseline != 'FLARE' OR uses_knowledge_graph <= 'single-hop' OR performance_on_hotpotqa != 'Acc: 58.4' OR evaluation_metric = 'AUC'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "baseline != 'FLARE'",
+        "uses_knowledge_graph <= 'single-hop'",
+        "performance_on_hotpotqa != 'Acc: 58.4'",
+        "evaluation_metric = 'AUC'"
+      ],
+      "selectivity_ratios": [
+        0.004920049200492005,
+        0.005025125628140704,
+        0.011904761904761904,
+        0.002770083102493075
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT generator_model, evaluation_metric, agent_framework FROM CSPaper_paper WHERE evaluation_metric = 'F1 score' OR multi_turn_retrieval >= 'No' OR use_agent < 'No' OR topic = 'SFT';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "generator_model",
+        "evaluation_metric",
+        "agent_framework"
+      ],
+      "where_clause": "evaluation_metric = 'F1 score' OR multi_turn_retrieval >= 'No' OR use_agent < 'No' OR topic = 'SFT'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "evaluation_metric = 'F1 score'",
+        "multi_turn_retrieval >= 'No'",
+        "use_agent < 'No'",
+        "topic = 'SFT'"
+      ],
+      "selectivity_ratios": [
+        0.004155124653739612,
+        0.7085427135678392,
+        0.765,
+        0.004975124378109453
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT performance_on_hotpotqa, topic, multi_turn_retrieval FROM CSPaper_paper WHERE multi_turn_retrieval <= 'No' OR performance_on_hotpotqa = 'F1: 62.6' OR reasoning_depth = 'multi-hop' OR performance_on_hotpotqa != 'F1: 62.2';",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 5,
+      "selected_attributes": [
+        "performance_on_hotpotqa",
+        "topic",
+        "multi_turn_retrieval"
+      ],
+      "where_clause": "multi_turn_retrieval <= 'No' OR performance_on_hotpotqa = 'F1: 62.6' OR reasoning_depth = 'multi-hop' OR performance_on_hotpotqa != 'F1: 62.2'",
+      "filter_combination": "OR",
+      "num_filters": 4,
+      "predicates": [
+        "multi_turn_retrieval <= 'No'",
+        "performance_on_hotpotqa = 'F1: 62.6'",
+        "reasoning_depth = 'multi-hop'",
+        "performance_on_hotpotqa != 'F1: 62.2'"
+      ],
+      "selectivity_ratios": [
+        0.7085427135678392,
+        0.011904761904761904,
+        0.5527638190954773,
+        0.011904761904761904
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT retrieval_method, generator_model, reasoning_depth FROM CSPaper_paper WHERE (generator_model = 'Mistral-7B-Instruct-v0.3' AND application_domain = 'Other') OR (agent_framework >= 'CoT' AND performance_on_hotpotqa != 'F1: 59.57');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "retrieval_method",
+        "generator_model",
+        "reasoning_depth"
+      ],
+      "where_clause": "(generator_model = 'Mistral-7B-Instruct-v0.3' AND application_domain = 'Other') OR (agent_framework >= 'CoT' AND performance_on_hotpotqa != 'F1: 59.57')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "generator_model = 'Mistral-7B-Instruct-v0.3'",
+        "application_domain = 'Other'",
+        "agent_framework >= 'CoT'",
+        "performance_on_hotpotqa != 'F1: 59.57'"
+      ],
+      "selectivity_ratios": [
+        0.0071090047393364926,
+        0.1111111111111111,
+        0.16326530612244897,
+        0.011904761904761904
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT evaluation_dataset, generator_model, topic FROM CSPaper_paper WHERE (generator_model != 'LLaMA-2-7B' AND uses_reranker <= 'Text') OR (uses_knowledge_graph >= 'single-hop' AND baseline != 'Vanilla');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "evaluation_dataset",
+        "generator_model",
+        "topic"
+      ],
+      "where_clause": "(generator_model != 'LLaMA-2-7B' AND uses_reranker <= 'Text') OR (uses_knowledge_graph >= 'single-hop' AND baseline != 'Vanilla')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "generator_model != 'LLaMA-2-7B'",
+        "uses_reranker <= 'Text'",
+        "uses_knowledge_graph >= 'single-hop'",
+        "baseline != 'Vanilla'"
+      ],
+      "selectivity_ratios": [
+        0.004739336492890996,
+        0.005128205128205128,
+        0.005025125628140704,
+        0.0024600246002460025
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT evaluation_dataset, data_modality, agent_framework FROM CSPaper_paper WHERE (data_modality = 'Table' AND performance_on_hotpotqa = 'EM: 42.2') OR (evaluation_dataset != 'MS-MARCO' AND agent_framework >= 'ToT');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "evaluation_dataset",
+        "data_modality",
+        "agent_framework"
+      ],
+      "where_clause": "(data_modality = 'Table' AND performance_on_hotpotqa = 'EM: 42.2') OR (evaluation_dataset != 'MS-MARCO' AND agent_framework >= 'ToT')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "data_modality = 'Table'",
+        "performance_on_hotpotqa = 'EM: 42.2'",
+        "evaluation_dataset != 'MS-MARCO'",
+        "agent_framework >= 'ToT'"
+      ],
+      "selectivity_ratios": [
+        0.06324110671936758,
+        0.011904761904761904,
+        0.0038240917782026767,
+        0.04081632653061224
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT reasoning_depth, topic, multi_turn_retrieval FROM CSPaper_paper WHERE (multi_turn_retrieval != 'No' AND application_domain = 'Education') OR (performance_on_hotpotqa != 'EM: 0.303' AND retrieval_method != 'Sparse Retrieval');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "reasoning_depth",
+        "topic",
+        "multi_turn_retrieval"
+      ],
+      "where_clause": "(multi_turn_retrieval != 'No' AND application_domain = 'Education') OR (performance_on_hotpotqa != 'EM: 0.303' AND retrieval_method != 'Sparse Retrieval')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "multi_turn_retrieval != 'No'",
+        "application_domain = 'Education'",
+        "performance_on_hotpotqa != 'EM: 0.303'",
+        "retrieval_method != 'Sparse Retrieval'"
+      ],
+      "selectivity_ratios": [
+        0.7085427135678392,
+        0.06666666666666667,
+        0.011904761904761904,
+        0.10204081632653061
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT baseline, use_agent, application_domain FROM CSPaper_paper WHERE (baseline = 'Vanilla RAG' AND performance_on_NQ != 'ROUGE-L: 0.0322') OR (performance_on_NQ = 'Llama-3.1: 67%' AND evaluation_metric = 'F1 score');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "baseline",
+        "use_agent",
+        "application_domain"
+      ],
+      "where_clause": "(baseline = 'Vanilla RAG' AND performance_on_NQ != 'ROUGE-L: 0.0322') OR (performance_on_NQ = 'Llama-3.1: 67%' AND evaluation_metric = 'F1 score')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "baseline = 'Vanilla RAG'",
+        "performance_on_NQ != 'ROUGE-L: 0.0322'",
+        "performance_on_NQ = 'Llama-3.1: 67%'",
+        "evaluation_metric = 'F1 score'"
+      ],
+      "selectivity_ratios": [
+        0.006150061500615006,
+        0.006535947712418301,
+        0.013071895424836602,
+        0.004155124653739612
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT reasoning_depth, baseline, multi_turn_retrieval FROM CSPaper_paper WHERE (baseline != 'FL-RAG' AND retrieval_method = 'Other') OR (baseline = 'PoisonedRAG' AND baseline != 'PoisonedRAG');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "reasoning_depth",
+        "baseline",
+        "multi_turn_retrieval"
+      ],
+      "where_clause": "(baseline != 'FL-RAG' AND retrieval_method = 'Other') OR (baseline = 'PoisonedRAG' AND baseline != 'PoisonedRAG')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "baseline != 'FL-RAG'",
+        "retrieval_method = 'Other'",
+        "baseline = 'PoisonedRAG'",
+        "baseline != 'PoisonedRAG'"
+      ],
+      "selectivity_ratios": [
+        0.0024600246002460025,
+        0.061224489795918366,
+        0.0036900369003690036,
+        0.0036900369003690036
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT performance_on_hotpotqa, uses_reranker, evaluation_dataset FROM CSPaper_paper WHERE (performance_on_hotpotqa != 'Compression of top 5 documents: EM: 33.67, F1: 45.06' AND uses_reranker < 'No') OR (application_domain = 'Sports' AND uses_knowledge_graph < 'single-hop');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "performance_on_hotpotqa",
+        "uses_reranker",
+        "evaluation_dataset"
+      ],
+      "where_clause": "(performance_on_hotpotqa != 'Compression of top 5 documents: EM: 33.67, F1: 45.06' AND uses_reranker < 'No') OR (application_domain = 'Sports' AND uses_knowledge_graph < 'single-hop')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "performance_on_hotpotqa != 'Compression of top 5 documents: EM: 33.67, F1: 45.06'",
+        "uses_reranker < 'No'",
+        "application_domain = 'Sports'",
+        "uses_knowledge_graph < 'single-hop'"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904,
+        0.676923076923077,
+        0.007407407407407408,
+        0.005025125628140704
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT reasoning_depth, evaluation_metric, application_domain FROM CSPaper_paper WHERE (reasoning_depth != 'single-hop' AND multi_turn_retrieval != 'Yes') OR (performance_on_NQ = 'Mistral-I7B (Keyword): acc: 61.0, cacc: 45.0' AND performance_on_NQ = 'LLaMA-3-8B (Light-BEE): EM 38.42, F1 49.23');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "reasoning_depth",
+        "evaluation_metric",
+        "application_domain"
+      ],
+      "where_clause": "(reasoning_depth != 'single-hop' AND multi_turn_retrieval != 'Yes') OR (performance_on_NQ = 'Mistral-I7B (Keyword): acc: 61.0, cacc: 45.0' AND performance_on_NQ = 'LLaMA-3-8B (Light-BEE): EM 38.42, F1 49.23')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "reasoning_depth != 'single-hop'",
+        "multi_turn_retrieval != 'Yes'",
+        "performance_on_NQ = 'Mistral-I7B (Keyword): acc: 61.0, cacc: 45.0'",
+        "performance_on_NQ = 'LLaMA-3-8B (Light-BEE): EM 38.42, F1 49.23'"
+      ],
+      "selectivity_ratios": [
+        0.4472361809045226,
+        0.2914572864321608,
+        0.006535947712418301,
+        0.006535947712418301
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT application_domain, topic, performance_on_hotpotqa FROM CSPaper_paper WHERE (performance_on_hotpotqa != 'Acc: 55.68' AND evaluation_metric = 'Recall') OR (multi_turn_retrieval > 'Yes' AND uses_knowledge_graph <= 'single-hop');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "application_domain",
+        "topic",
+        "performance_on_hotpotqa"
+      ],
+      "where_clause": "(performance_on_hotpotqa != 'Acc: 55.68' AND evaluation_metric = 'Recall') OR (multi_turn_retrieval > 'Yes' AND uses_knowledge_graph <= 'single-hop')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "performance_on_hotpotqa != 'Acc: 55.68'",
+        "evaluation_metric = 'Recall'",
+        "multi_turn_retrieval > 'Yes'",
+        "uses_knowledge_graph <= 'single-hop'"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904,
+        0.03462603878116344,
+        0.2914572864321608,
+        0.005025125628140704
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT application_domain, performance_on_hotpotqa, retrieval_method FROM CSPaper_paper WHERE (performance_on_hotpotqa = 'F1: 0.3066' AND uses_knowledge_graph >= 'single-hop') OR (agent_framework > 'ToT' AND baseline != 'GPT-4');",
+    "metadata": {
+      "category": "Filter",
+      "subcategory": 6,
+      "selected_attributes": [
+        "application_domain",
+        "performance_on_hotpotqa",
+        "retrieval_method"
+      ],
+      "where_clause": "(performance_on_hotpotqa = 'F1: 0.3066' AND uses_knowledge_graph >= 'single-hop') OR (agent_framework > 'ToT' AND baseline != 'GPT-4')",
+      "filter_combination": "AND_OR_mixed",
+      "num_filters": 4,
+      "predicates": [
+        "performance_on_hotpotqa = 'F1: 0.3066'",
+        "uses_knowledge_graph >= 'single-hop'",
+        "agent_framework > 'ToT'",
+        "baseline != 'GPT-4'"
+      ],
+      "selectivity_ratios": [
+        0.011904761904761904,
+        0.005025125628140704,
+        0.04081632653061224,
+        0.007380073800738007
+      ],
+      "tables": [
+        "CSPaper_paper"
+      ]
+    }
+  }
+]

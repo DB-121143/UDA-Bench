@@ -1,0 +1,89 @@
+[
+  {
+    "sql": "SELECT draft_pick FROM player;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "draft_pick"
+      ],
+      "tables": [
+        "player"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT team, name, mvp_awards, birth_date FROM player;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "team",
+        "name",
+        "mvp_awards",
+        "birth_date"
+      ],
+      "tables": [
+        "player"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT olympic_gold_medals FROM player;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "olympic_gold_medals"
+      ],
+      "tables": [
+        "player"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT nba_championships, name, fiba_world_cup FROM player;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "nba_championships",
+        "name",
+        "fiba_world_cup"
+      ],
+      "tables": [
+        "player"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT olympic_gold_medals, birth_date FROM player;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "olympic_gold_medals",
+        "birth_date"
+      ],
+      "tables": [
+        "player"
+      ]
+    }
+  },
+  {
+    "sql": "SELECT fiba_world_cup, draft_pick, mvp_awards, name FROM player;",
+    "metadata": {
+      "category": "Select",
+      "subcategory": "select",
+      "selected_attributes": [
+        "fiba_world_cup",
+        "draft_pick",
+        "mvp_awards",
+        "name"
+      ],
+      "tables": [
+        "player"
+      ]
+    }
+  }
+]

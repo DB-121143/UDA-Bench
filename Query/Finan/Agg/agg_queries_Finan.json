@@ -1,0 +1,222 @@
+[
+  {
+    "sql": "SELECT remuneration_policy, MIN(the_highest_ownership_stake) AS min_the_highest_ownership_stake FROM Finan_finance GROUP BY remuneration_policy;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan_finance"
+      ],
+      "group_by_attributes": [
+        "remuneration_policy"
+      ],
+      "aggregations": [
+        {
+          "function": "MIN",
+          "attribute": "the_highest_ownership_stake",
+          "alias": "min_the_highest_ownership_stake"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, COUNT(company_name) AS count_company_name FROM Finan_finance GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan_finance"
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "aggregations": [
+        {
+          "function": "COUNT",
+          "attribute": "company_name",
+          "alias": "count_company_name"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT remuneration_policy, AVG(executive_profiles) AS avg_executive_profiles FROM Finan_finance GROUP BY remuneration_policy;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan_finance"
+      ],
+      "group_by_attributes": [
+        "remuneration_policy"
+      ],
+      "aggregations": [
+        {
+          "function": "AVG",
+          "attribute": "executive_profiles",
+          "alias": "avg_executive_profiles"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, MAX(executive_profiles) AS max_executive_profiles FROM Finan_finance GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan_finance"
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "executive_profiles",
+          "alias": "max_executive_profiles"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, COUNT(major_equity_changes) AS count_major_equity_changes FROM Finan_finance GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan_finance"
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "aggregations": [
+        {
+          "function": "COUNT",
+          "attribute": "major_equity_changes",
+          "alias": "count_major_equity_changes"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT remuneration_policy, MIN(executive_profiles) AS min_executive_profiles FROM Finan_finance GROUP BY remuneration_policy;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan_finance"
+      ],
+      "group_by_attributes": [
+        "remuneration_policy"
+      ],
+      "aggregations": [
+        {
+          "function": "MIN",
+          "attribute": "executive_profiles",
+          "alias": "min_executive_profiles"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, MAX(executive_profiles) AS max_executive_profiles FROM Finan_finance GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan_finance"
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "executive_profiles",
+          "alias": "max_executive_profiles"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, SUM(executive_profiles) AS sum_executive_profiles FROM Finan_finance GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan_finance"
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "aggregations": [
+        {
+          "function": "SUM",
+          "attribute": "executive_profiles",
+          "alias": "sum_executive_profiles"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, COUNT(auditor) AS count_auditor FROM Finan_finance GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan_finance"
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "aggregations": [
+        {
+          "function": "COUNT",
+          "attribute": "auditor",
+          "alias": "count_auditor"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, COUNT(total_assets) AS count_total_assets FROM Finan_finance GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan_finance"
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "aggregations": [
+        {
+          "function": "COUNT",
+          "attribute": "total_assets",
+          "alias": "count_total_assets"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  }
+]

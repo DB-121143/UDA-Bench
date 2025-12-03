@@ -1,0 +1,68 @@
+[
+  {
+    "sql": "SELECT nationality, MIN(age) AS min_age FROM manager GROUP BY nationality;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "manager"
+      ],
+      "group_by_attributes": [
+        "nationality"
+      ],
+      "aggregations": [
+        {
+          "function": "MIN",
+          "attribute": "age",
+          "alias": "min_age"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT nationality, COUNT(name) AS count_name FROM manager GROUP BY nationality;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "manager"
+      ],
+      "group_by_attributes": [
+        "nationality"
+      ],
+      "aggregations": [
+        {
+          "function": "COUNT",
+          "attribute": "name",
+          "alias": "count_name"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT nationality, AVG(age) AS avg_age FROM manager GROUP BY nationality;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "manager"
+      ],
+      "group_by_attributes": [
+        "nationality"
+      ],
+      "aggregations": [
+        {
+          "function": "AVG",
+          "attribute": "age",
+          "alias": "avg_age"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  }
+]

@@ -1,0 +1,30 @@
+city_name,state_name,population,area,gdp,ID
+Denver,Colorado,715522,400.739,,1
+Boston,Massachusetts,675647,125.0,,2
+Indianapolis,Indiana,887642,953.0,,3
+Dallas,Texas,1304379,999.3,,4
+San Antonio,Texas,1434625,1205.4,,5
+Los Angeles,California,"3,820,914",1210.0,,6
+Minneapolis,Minnesota,429954,152.8,,7
+Miami,Florida,442241,,344.9,8
+Inglewood,California,"107,762",24.0, ,9
+Portland,Oregon,"652,503",375.78,,10
+San Francisco,California,808988,121.0,252200,11
+Philadelphia,Pennsylvania,1603797,,518.5,12
+New Orleans,Louisiana,"383,997",,,13
+Chicago,Illinois,2746388,,689000,14
+Orlando,Florida,307573,,,15
+Salt Lake City,Utah,200133,286.0,,16
+Toronto,Ontario,2794356,630.2,,17
+Phoenix,Arizona,1662607,1341.0,362000,18
+"Washington, D.C.",,"689,545",177.0,,19
+Cleveland,Ohio,"372,624",213.6,,20
+Houston,Texas,2314157,1651.0,,21
+Sacramento,California,524943,259.0,,22
+Detroit,Michigan,"639,111",370.03,,23
+Memphis,Tennessee,633104,,,24
+Charlotte,North Carolina,874579,808.1,,25
+New York City,New York,8258035,778.2,,26
+Oklahoma City,Oklahoma,681054,1606.7,,27
+Milwaukee,Wisconsin,"577,222",250.71,"102,000,000,000",28
+Atlanta,Georgia,"510,823",347.1,"473,000",29

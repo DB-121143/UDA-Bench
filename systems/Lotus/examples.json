@@ -1,0 +1,1088 @@
+{
+    "Wiki_Text":[
+        {
+            "context": [
+                "Nicolas Carone (June 4, 1917 – July 15, 2010) belonged to the early generation of New York School Abstract Expressionist artists.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["Nicolas Carone","Agustín Cárdenas Alfonso"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["American","Cuban"]
+        },
+        {
+            "context": [
+                "Nicolas Carone (June 4, 1917 – July 15, 2010) belonged to the early generation of New York School Abstract Expressionist artists.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris. He settled in Paris in 1955 and in 1957 joined the Surrealist movement there."
+            ],
+            "Answer": ["Abstract Expressionism","Surrealism"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["1917/6/4","1927/4/10"]
+        },
+        {
+            "context": [
+                "He died July 15, 2010 at the age of 93.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["2010/7/15","2001/2/9"]
+        },
+        {
+            "context": [
+                "He died July 15, 2010 at the age of 93.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["93","73"]
+        },
+        {
+            "context": [
+                "Nicolas Carone (June 4, 1917 – July 15, 2010) belonged to the early generation of New York School Abstract Expressionist artists.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["20th–21st","20th"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["Gemini","Aries"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["United States","Cuba"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["New York City","Matanzas"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["North America","North America"]
+        },
+        {
+            "context": [
+                "Twins Seven Seven died aged 67 in Ibadan on 16 June 2011 following complications from a stroke.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["Nigeria","Cuba"]
+        },
+        {
+            "context": [
+                "Twins Seven Seven died aged 67 in Ibadan on 16 June 2011 following complications from a stroke.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["Ibadan","Havana"]
+        },
+        {
+            "context": [
+                "Nicolas Carone (June 4, 1917 – July 15, 2010) belonged to the early generation of New York School Abstract Expressionist artists.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["Painting||Drawing","Sculpture"]
+        },
+        {
+            "context": [
+                "Carone was a part of the Abstract Expressionist movement, which relied heavily on Surrealism , poetry, and interpretations of Jungian psychology.",
+                "He settled in Paris in 1955 and in 1957 joined the Surrealist movement there."
+            ],
+            "Answer": ["Abstract","Surrealist"]
+        },
+        {
+            "context": [
+                "He met his second wife Chan May-Kan… Under the influence of Zao, she became a successful sculptor. In 1972, she committed suicide at age 41 due to mental illness.",
+                "In 1941 Gerzso and his wife moved permanently to Mexico City"
+            ],
+            "Answer": ["Remarried", "Married"]
+        },
+        {
+            "context": [
+                "He was a founding faculty member of the New York Studio School of Drawing, Painting and Sculpture, where he taught for 25 years. In 1988 he founded the International School of Art, located first in Todi, Italy and then in Nearby Montecastello.",
+                "In Cuba, Cárdenas studied under Juan José Sicre, and from 1943 to 1949 at Escuela Nacional de Bellas Artes “San Alejandro” in Havana. He was member of Asociación de Grabadores de Cuba (AGC) from 1951 to 1955, and of the creative group Los Once from 1953 to 1955."
+            ],
+            "Answer": ["New York Studio School of Drawing, Painting and Sculpture||International School of Art","Escuela Nacional de Bellas Artes “San Alejandro”||Asociación de Grabadores de Cuba (AGC)||Los Once"]
+        },
+        {
+            "context": [
+                "Carone taught at universities including Yale University, Columbia University, Brandeis University, Cornell University, Cooper Union, School of Visual Arts, and Skowhegan School. He was a founding faculty member of the New York Studio School of Drawing, Painting and Sculpture, where he taught for 25 years.",
+                "In 1972 Twins Seven Seven taught in the US at Merced College in California and at the Haystack Mountain Crafts School, Deer Isle."
+            ],
+            "Answer": ["1","1"]
+        },
+        {
+            "context": [
+                "In 1941 he won the Rome Prize and in 1949 a Fulbright Fellowship.",
+                "Cárdenas has been awarded with several distinctions during his life, including Segundo Premio VI Salón Nacional de Pintura y Escultura, Salones del Capitolio Nacional, Havana, by the Cuban government (1953) and the Silver Medal XXXVII, Salón de Bellas Artes, Círculo de Bellas Artes, Havana (1955). In 1976, he was awarded with the Ordre des Arts et des Lettres in France and the Fujisankey Biennal Prize at the Hakone Open-Air Museum, Fujisankey, Japan. Also in 1995 he received Premio Nacional de Artes Plásticas by the Cuban Ministry of Culture."
+            ],
+            "Answer": ["2","5"]
+        }
+    ],
+    "legal_case":[
+        {
+            "context": [
+                "I certify that the preceding twenty-five (25) numbered paragraphs are a true copy of the Reasons for Judgment herein of the Honourable Justice Goldberg.",
+                "EDMONDS J: INTRODUCTION"
+            ],
+            "Answer": ["Goldberg", "Edmonds"]
+        },
+        {
+            "context": [
+                "The applicants and their predecessors in business have used the Clark Rubber colour scheme...\nThe applicants seek an interlocutory injunction…",
+                "The applicants in the proceedings, Elsinora, Tioga, Perlette, Mr Armstrong, Mr Berger and ECMI, challenge the validity of..."
+            ],
+            "Answer": ["Clark Rubber", "Elsinora||Tioga||Perlette||Mr Armstrong||Mr Berger||ECMI"]
+        },
+        {
+            "context": [
+                "The second respondent is a director of the first respondent which was incorporated on 10 October 2005. The first respondent has leased premises at Shop 4, 481-485 Cheltenham Road, Keysborough...",
+                "the Deputy Commissioner as to whether ECMI is liable to pay Australian income tax..."
+            ],
+            "Answer": ["Oasis Foam & Rubber", "Deputy Commissioner of Taxation"]
+        },
+        {
+            "context": [
+                "Date of Hearing: 23 January 2006",
+                "Case timeline involves actions between 2004-2005; open court events in 2005."
+            ],
+            "Answer": ["2006", "2005"]
+        },
+        {
+            "context": [
+                "Dated: 24 January 2006",
+                "By agreement among the parties, the date of 1 December 2005 was, subsequent to the hearing, extended until the date of judgment."
+            ],
+            "Answer": ["2006", "2005"]
+        },
+        {
+            "context": [
+                "The applicants rely on causes of action based on contravention of ss 52(1) and 53 (c) of the Trade Practices Act 1974 (Cth) and ss 9 and 12 (e) of the Fair Trading Act 1999 (Vic) and on the tort of passing off.",
+                "This case concerns the construction of s 255 of the Income Tax Assessment Act 1936 (Cth) ('the ITAA 1936') and s 260 -5 of Schedule 1 to the Taxation Administration Act 1953 (Cth) ('the Administration Act') and the application of those provisions to various parties by service of notices by the Deputy Commissioner in reliance on them."
+            ],
+            "Answer": ["Contravention of ss 52(1) and 53(c) Trade Practices Act 1974; ss 9 and 12(e) Fair Trading Act 1999; passing off", "Validity of tax notices under ITAA 1936 s 255 and Administration Act s 260-5"]
+        },
+        {
+            "context": [
+                "Content involves civil dispute (injunction, passing off, misleading conduct claims)",
+                "Administrative/tax dispute."
+            ],
+            "Answer": ["Civil Case", "Administrative Case"]
+        },
+        {
+            "context": [
+                "I am disposed to grant an interlocutory injunction...",
+                "The notices are said to be invalid and of no effect..."
+            ],
+            "Answer": ["Approved", "Others"]
+        },
+        {
+            "context": [
+                "The applicants rely on causes of action based on contravention of ss 52(1) and 53 (c) of the Trade Practices Act 1974 (Cth) and ss 9 and 12 (e) of the Fair Trading Act 1999 (Vic) and on the tort of passing off.",
+                "Case legal basis includes ITAA 1936, Administration Act 1953"
+            ],
+            "Answer": ["2", "2"]
+        },
+        {
+            "context": [
+                "",
+                "Federal Court of Australia proceeding No. NSD 96 of 2005"
+            ],
+            "Answer": ["", "1"]
+        },
+        {
+            "context": [
+                "Counsel for the Applicants: Mr G S Clarke S.C. and Ms C Harris",
+                ""
+            ],
+            "Answer": ["Mr G S Clarke S.C.||Ms C Harris", ""]
+        },
+        {
+            "context": [
+                "Counsel for the Respondents: Mr C A Connor",
+                ""
+            ],
+            "Answer": ["Mr C A Connor", ""]
+        },
+        {
+            "context": [
+                "There is evidence that the applicants...have developed a recognisable store branding in the Australian retail market",
+                "ECMI (E.C. Medical Investments NV) is registered in Belgium."
+            ],
+            "Answer": ["Australia", "Belgium"]
+        },
+        {
+            "context": [
+                "The ACCC and the AKA jointly submit that the imposition upon the AKA of a single total penalty of $10,000, in respect of all contraventions, is appropriate having regard to the totality principle as outlined above.",
+                "Accordingly, a fine of $5,600 will be imposed on Narnia and fine of $1,400 will be imposed on Mr Clarke."
+            ],
+            "Answer": ["10000", "7000"]
+        },
+        {
+            "context": [
+                "The amount of $1,500 remains held by the Court to the credit of the appeal proceedings and is held in the Court's Litigant Fund account.",
+                "The appellant is to pay the respondent's costs fixed in the sum of $2000."
+            ],
+            "Answer": ["1500", "2000"]
+        },
+        {
+            "context": [
+                "The applicants...operated by franchisees of Clark Rubber throughout Australia.",
+                "Plaintiffs include companies and individuals."
+            ],
+            "Answer": ["company", "company"]
+        },
+        {
+            "context": [
+                "The first respondent proposes to carry on a retail business at those premises of selling foam and rubber products...",
+                "Defendant is a government agency."
+            ],
+            "Answer": ["company", "government"]
+        },
+        {
+            "context": [
+                "there is evidence that the applicants and their predecessors in business have developed a recognisable store branding in the Australian retail market by reference to the Clark Rubber colour scheme and the Clark Rubber mark.",
+                "Multiple tax documents, notices, and related evidence cited."
+            ],
+            "Answer": ["1", "1"]
+        },
+        {
+            "context": [
+                "I certify that the preceding twenty-five (25) numbered paragraphs are a true copy of the Reasons for Judgment...",
+                "EDMONDS J: INTRODUCTION"
+            ],
+            "Answer": ["1", "1"]
+        }
+    ],
+    "player":[
+        {
+            "context": [
+                "Antonius Cleveland (born February 2, 1994) is an American professional basketball player for Lokomotiv Kuban of the VTB United League.",
+                "Jay Fletcher Vincent (born June 10, 1959) is an American former professional basketball player."
+            ],
+            "Answer": ["Antonius Cleveland", "Jay Fletcher Vincent"]
+        },
+        {
+            "context": [
+                "Antonius Cleveland (born February 2, 1994) is an American professional basketball player...",
+                "Jay Fletcher Vincent (born June 10, 1959) is an American former professional basketball player."
+            ],
+            "Answer": ["1994/2/2", "1959/6/10"]
+        },
+        {
+            "context": [
+                "Antonius Cleveland (born February 2, 1994) is an American professional basketball player...",
+                "Jay Fletcher Vincent (born June 10, 1959) is an American former professional basketball player."
+            ],
+            "Answer": ["USA", "USA"]
+        },
+        {
+            "context": [
+                "Antonius Cleveland (born February 2, 1994)...",
+                "Jay Fletcher Vincent (born June 10, 1959)..."
+            ],
+            "Answer": ["30", "65"]
+        },
+        {
+            "context": [
+                "He played in the NBA for the Dallas Mavericks and Atlanta Hawks.",
+                "He played for several NBA teams, including the Dallas Mavericks, Washington Bullets, Denver Nuggets, San Antonio Spurs, Philadelphia 76ers, and Los Angeles Lakers."
+            ],
+            "Answer": [
+                "Dallas Mavericks||Atlanta Hawks",
+                "Dallas Mavericks||Washington Bullets||Denver Nuggets||San Antonio Spurs||Philadelphia 76ers||Los Angeles Lakers"
+            ]
+        },
+        {
+            "context": [
+                "He played in the NBA for the Dallas Mavericks and Atlanta Hawks.",
+                "A 6'7\" forward, Vincent played at Michigan State University..."
+            ],
+            "Answer": ["", "Frontcourt"]
+        },
+        {
+            "context": [
+                "After going undrafted in the 2017 NBA draft...",
+                "Vincent was selected 24th overall by the Dallas Mavericks in the 1981 NBA draft."
+            ],
+            "Answer": ["", "24"]
+        },
+        {
+            "context": [
+                "After going undrafted in the 2017 NBA draft...",
+                "Vincent was selected 24th overall by the Dallas Mavericks in the 1981 NBA draft."
+            ],
+            "Answer": ["", "1981"]
+        },
+        {
+            "context": [
+                "Cleveland played for Southeast Missouri State University for four seasons...",
+                "Vincent played at Michigan State University under coach, Jud Heathcote..."
+            ],
+            "Answer": [
+                "Southeast Missouri State University",
+                "Michigan State University"
+            ]
+        },
+        {
+            "context": [
+            "In his first season with the Lakers, he won the 2020 NBA Finals.",
+            "Durant has won two NBA championships..."
+            ],
+            "Answer": ["1", "2"]
+        },
+        {
+            "context": [
+            "He is a five-time NBA champion, a two-time NBA MVP, a three-time NBA Finals MVP, a 15-time NBA All-Star, and the only player to be selected to both the All-NBA and All-Defensive Teams for 13 consecutive seasons.",
+            "Durant has won two NBA championships, an NBA Most Valuable Player Award, two Finals MVP Awards, two NBA All-Star Game Most Valuable Player Awards, four NBA scoring titles..."
+            ],
+            "Answer": ["2", "1"]
+        },
+        {
+            "context": [
+            "He has won gold medals with the United States national team on their 2012 Olympic team, 2014 World Cup team and 2024 Olympic team, making him the first player in basketball history to win an NCAA title, NBA title, Olympic gold medal and FIBA World Cup.",
+            "Durant has won four gold medals in the Olympics (2012, 2016, 2020 and 2024)."
+            ],
+            "Answer": ["2", "4"]
+        },
+        {
+            "context": [
+            "He has won gold medals with the United States national team on their 2012 Olympic team, 2014 World Cup team and 2024 Olympic team, making him the first player in basketball history to win an NCAA title, NBA title, Olympic gold medal and FIBA World Cup.",
+            "He also won gold at the 2010 FIBA World Championship."
+            ],
+            "Answer": ["1", "1"]
+        }
+    ],
+    "disease":[
+        {
+            "context": [
+                "It is a symptom of the absence seizures.",
+                "Acne (Acne Vulgaris)"
+            ],
+            "Answer": ["Absence Seizures", "Acne Vulgaris"]
+        },
+        {
+            "context": [
+                "She has fought the missing time for a long time. It is a symptom of the absence seizures.",
+                "Acne, also known as pimples, zits, or blemishes, is thought to be caused by many factors."
+            ],
+            "Answer": ["idiopathic", "inflammatory"]
+        },
+        {
+            "context": [
+                "She says for the first time EVER her days are not really short and she doesn't have the feeling that she is 'missing time'. She has fought the missing time for a long time. It is a symptom of the absence seizures.",
+                "Rising levels of hormones cause overproduction of a normal oil on the skin, called sebum. This, coupled with insufficient shedding of exfoliated dead skin cells, plugs hair follicles. The plugged follicle can become inflamed and have increased growth of normal skin bacteria, Propionibacterium acnes."
+            ],
+            "Answer": ["other", "inflammatory"]
+        },
+        {
+            "context": [
+                "She has fought the missing time for a long time. It is a symptom of the absence seizures.",
+                "Rising levels of hormones cause overproduction of a normal oil on the skin, called sebum...Medications such as lithium, cortisone, hormones, iodides, some seizure medications, or isoniazid can also cause acne lesions."
+            ],
+            "Answer": ["Missing time||loss of awareness", "hormonal imbalance||medication side effects"]
+        },
+        {
+            "context": [
+                "He has used her EEG for teaching purposes because he said it was unique and interesting.",
+                "Take a picture of your skin condition with Aysa. Symptom checkers like Aysa can help narrow down possible skin conditions by analyzing a skin photo."
+            ],
+            "Answer": ["EEG", "clinical_evaluation"]
+        },
+        {
+            "context": [
+                "She has fought the missing time for a long time. It is a symptom of the absence seizures.",
+                "This patient has numerous whiteheads (closed comedones) as well as red, inflammatory acne bumps on the forehead."
+            ],
+            "Answer": [
+                "missing time||loss of awareness||brief lapses in consciousness||falling",
+                "whiteheads||blackheads||papules||pustules||nodules||cysts"
+            ]
+        },
+        {
+            "context": [
+                "If she is walking when a seizure hits she falls. Period. So most of the time at least one knee or ankle is sore and tender.",
+                "Acne can result in hyperpigmentation, which is dark red or brown flat marks where the acne lesions were, and permanent scars, which can appear to be depressions in the skin."
+            ],
+            "Answer": [
+                "injuries from falling||sore knees or ankles",
+                "hyperpigmentation||permanent scars"
+            ]
+        },
+        {
+            "context": [
+                "He has used her EEG for teaching purposes because he said it was unique and interesting.",
+                "Acne most commonly occurs on the face, neck, chest, and back, where the most sebaceous glands are located."
+            ],
+            "Answer": ["brain", "skin"]
+        },
+        {
+            "context": [
+                "Probably the one good thing we have gotten from the current (2nd) neuro is lamictal. I asked Jess if she thought it was helping...I had not realized how much the keppra wasn't working.",
+                "Traditional treatments can help prevent acne. Cleanse the acne-prone areas with gentle soaps or cleansers...over-the-counter medications...benzoyl peroxide...peeling agents (exfoliants)...Antibacterial agents and antibiotics such as benzoyl peroxide, clindamycin, erythromycin, sulfur, sodium sulfacetamide, and azelaic acid. Retinoids – vitamin A-based products such as tretinoin, tazarotene, and adapalene. Oral (internal) treatments may include antibiotics."
+            ],
+            "Answer": [
+                "oral_medication",
+                "oral_medication||topical_medication"
+            ]
+        },
+        {
+            "context": [
+                "Probably the one good thing we have gotten from the current (2nd) neuro is lamictal...I had not realized how much the keppra wasn't working...She cannot tolerate the topomax.",
+                "Antibacterial agents and antibiotics such as benzoyl peroxide, clindamycin, erythromycin, sulfur, sodium sulfacetamide, and azelaic acid. Retinoids – vitamin A-based products such as tretinoin, tazarotene, and adapalene. Oral (internal) treatments may include antibiotics."
+            ],
+            "Answer": [
+                "lamictal||keppra||topomax",
+                "benzoyl peroxide||clindamycin||erythromycin||sulfur||sodium sulfacetamide||azelaic acid||tretinoin||tazarotene||adapalene"
+            ]
+        },
+        {
+            "context": [
+                "We estimate now that she has gained about 2 hours of awareness per day. I think she will get even more when we get the dose adjusted again.",
+                "There is no cure for acne, but certain steps can help prevent more breakouts. Acne can result in scarring, so minimizing breakouts is important."
+            ],
+            "Answer": [
+                "variable",
+                "chronic_condition"
+            ]
+        },
+        {
+            "context": [
+                "If she is walking when a seizure hits she falls. Period. So most of the time at least one knee or ankle is sore and tender.",
+                "Acne can result in hyperpigmentation, which is dark red or brown flat marks where the acne lesions were, and permanent scars, which can appear to be depressions in the skin."
+            ],
+            "Answer": [
+                "injuries||possible chronic pain in joints",
+                "hyperpigmentation||scarring"
+            ]
+        },
+        {
+            "context": [
+                "Currently, the negative appendectomy is less than 10% in men, but can be up to 20% in women; accurate imaging studies could reduce the number of unnecessary surgeries performed on patients.",
+                "Acne affects 85–100% of people at some point in their lives. While it usually begins at puberty, it can start even younger."
+            ],
+            "Answer": [
+                "negative appendectomy rate less than 10% in men, up to 20% in women",
+                "affects 85–100% of people"
+            ]
+        },
+        {
+            "context": [
+                "Years ago antibiotics were used to treat acne because it was thought that the condition was an infectious disease. The use of certain medications is also associated with the development of acne. Acne occurs more frequently in teenagers and young adults, but can affect people of all ages.",
+                "It is uncommon in children less than 8 years of age but can occur because of a hormonal imbalance and certain medications. People of all ethnic backgrounds get acne."
+            ],
+            "Answer": [
+                "infection||medication use||age",
+                "hormonal imbalance||medication use"
+            ]
+        },
+        {
+            "context": [
+                "Accurate imaging studies could reduce the number of unnecessary surgeries performed on patients.",
+                "Traditional treatments can help prevent acne. Cleanse the acne-prone areas with gentle soaps or cleansers. Avoid irritants, such as rubbing and other alcohols, and abrasive scrubs and greasy products on the skin and the scalp. Products labeled 'water-based' or 'noncomedogenic' will help reduce clogged pores."
+            ],
+            "Answer": [
+                "accurate imaging studies",
+                "gentle cleansing||avoid irritants||use noncomedogenic products"
+            ]
+        },
+        {
+            "context": [
+                "She has fought the missing time for a long time. It is a symptom of the absence seizures...I had not realized how much the keppra wasn't working.",
+                "In this disease, blood glucose level is increased, and it damage to eyes, kidneys, nerves, brain and heart in these patients, the risk of their serious, complex, fatal disease increases."
+            ],
+            "Answer": [
+                "symptom misattribution||medication resistance",
+                "asymptomatic in early stages"
+            ]
+        },
+        {
+            "context": [
+                "And the treatment of this disease can be very difficult, but it can be some easy treatment available.",
+                "Children have sensitive skin and may experience very drying side effects from these medications. Use a weaker concentration of benzoyl peroxide (most effective); for oily skin, consider higher strengths."
+            ],
+            "Answer": [
+                "treatment complexity",
+                "side effects (dryness, irritation)||adjusting medications for sensitive skin"
+            ]
+        },
+        {
+            "context": [
+                "If she is walking when a seizure hits she falls. Period. So most of the time at least one knee or ankle is sore and tender.",
+                "In this disease, blood glucose level is increased, and it damage to eyes, kidneys, nerves, brain and heart in these patients, the risk of their serious, complex, fatal disease increases. More than 570 million people in India have diabetes and more than 30 million will be in the next few years, every 2 minutes a man dies due to diabetes. Diabetes is a dangerous disease."
+            ],
+            "Answer": [
+                "injury risk||impact on mobility||emotional distress",
+                "organ damage||risk of fatal complications"
+            ]
+        }
+    ],
+    "institutes":[
+        {
+            "context": [
+            "The Institute of Cancer Research, London, United Kingdom.",
+            "Moss Side, the precursor to today's Ashworth Hospital"
+            ],
+            "Answer": [
+            "The Institute of Cancer Research",
+            "Moss Side Hospital"
+            ]
+        },
+        {
+            "context": [
+            "The Institute of Cancer Research, London, United Kingdom",
+            "transferred Moss Side to the Ministry of Pensions"
+            ],
+            "Answer": [
+            "university-affiliated",
+            "public"
+            ]
+        },
+        {
+            "context": [
+            "The Breast Cancer Now Toby Robins Research Centre, The Institute of Cancer Research",
+            "transferred Moss Side to the Ministry of Pensions."
+            ],
+            "Answer": [
+            "The Institute of Cancer Research",
+            "Ministry of Pensions"
+            ]
+        },
+        {
+            "context": [
+            "Corresponding Author: Clare M. Isacke",
+            "Dr. James F. Battey Jr. was the director of the NIDCD until 2018."
+            ],
+            "Answer": [
+            "Clare M. Isacke",
+            "Dr. James F. Battey Jr."
+            ]
+        },
+        {
+            "context": [
+            "London, United Kingdom",
+            "Antwerp, Belgium"
+            ],
+            "Answer": [
+            "United Kingdom",
+            "Belgium"
+            ]
+        },
+        {
+            "context": [
+            "London, United Kingdom",
+            "Antwerp, Belgium"
+            ],
+            "Answer": [
+            "London",
+            "Antwerp"
+            ]
+        },
+        {
+            "context": [
+            "Assessing CSF ctDNA to Improve Diagnostic Accuracy and Therapeutic Monitoring in Breast Cancer Leptomeningeal Metastasis",
+            "used during World War One to treat victims of shell shock ... became a treatment centre for ex-servicemen with epilepsy"
+            ],
+            "Answer": [
+            "breast cancer leptomeningeal metastasis",
+            "shell shock (PTSD)||epilepsy||mental health issues"
+            ]
+        },
+        {
+            "context": [
+            "Precision Medicine and Imaging| March 14 2022",
+            "centre for what was then referred to as 'abnormal psychology'"
+            ],
+            "Answer": [
+            "oncology||clinical_research||precision_medicine||imaging",
+            "psychiatry||psychology||neurology"
+            ]
+        },
+        {
+            "context": [
+                "...studies on the causes and treatments...",
+                "...diagnostic testing and data collection for COVID-19..."
+            ],
+            "Answer": ["immunoassays||biomarker detection","PCR testing||antigen tests||epidemiological modeling"]
+        },
+        {
+            "context": [
+            "This study highlights the potential of ulpWGS-assessed CSF ctDNA fraction to improve BCLM care through timely diagnosis and adaptation of therapy",
+            "became a centre of excellence for treatment and staff training"
+            ],
+            "Answer": ["development of ctDNA monitoring for breast cancer leptomeningeal metastasis","centre of excellence for treatment and staff training in shell shock; pioneering work in abnormal psychology"]
+        },
+        {
+            "context": [
+                "...NIH collaborates with international partners...",
+                "...WHO coordinates with governments and scientists worldwide..."
+            ],
+            "Answer": ["international research partnerships","coordination with governments and scientists worldwide"]
+        },
+        {
+            "context": [
+            "...National Institutes of Health (NIH) has funded numerous studies...",
+            "...WHO receives funding from United Nations member states..."
+            ],
+            "Answer": ["government grant","international grant"]
+        },
+        {
+            "context": [
+            "therapy response monitoring, with the ultimate aim to improve management of this poor-prognosis patient group",
+            "treat victims of shell shock ... treatment centre for ex-servicemen with epilepsy"
+            ],
+            "Answer": ["diagnosis and therapeutic monitoring of leptomeningeal metastasis in breast cancer patients","treatment and rehabilitation for mental health and neurological conditions in war veterans"]
+        }
+        ],
+    "drug":[
+        {
+            "context": [
+            "Ampicillin is listed as an essential medicine by the World Health Organization.",
+            "REQUIP XL (ropinirole extended-release tablets) is indicated for the treatment of the signs and symptoms of idiopathic Parkinson's disease."
+            ],
+            "Answer": ["Ampicillin", "ropinirole"]
+        },
+        {
+            "context": [
+            "Toptada CT Soft is the most basic form of Tadalafil.",
+            "REQUIP 2mg/tablet 84tablets/box (Minimum order: 5)"
+            ],
+            "Answer": ["Toptada CT Soft", "REQUIP XL"]
+        },
+        {
+            "context": [
+            "Toptada CT Soft is used for treating erectile dysfunction and benign prostatic hyperplasia.",
+            "REQUIP XL (ropinirole extended-release tablets) is indicated for the treatment of the signs and symptoms of idiopathic Parkinson's disease."
+            ],
+            "Answer": ["erectile dysfunction||benign prostatic hyperplasia", "Parkinson's disease"]
+        },
+        {
+            "context": [
+            "The medicine is mainly used for erectile dysfunction and BPH.",
+            "REQUIP XL (ropinirole extended-release tablets) is indicated for the treatment of the signs and symptoms of idiopathic Parkinson's disease."
+            ],
+            "Answer": ["erectile dysfunction||BPH", "idiopathic Parkinson's disease"]
+        },
+        {
+            "context": [
+            "Ampicillin is a type of penicillin antibiotic.",
+            "Each biconvex, capsule-shaped tablet contains 2.28 mg, 4.56 mg, 6.84 mg, 9.12 mg, or 13.68 mg ropinirole hydrochloride equivalent to ropinirole 2 mg, 4 mg, 6 mg, 8 mg, or 12 mg, respectively."
+            ],
+            "Answer": ["Ampicillin", "ropinirole hydrochloride"]
+        },
+        {
+            "context": [
+            "Physical form: tablet.",
+            "Each biconvex, capsule-shaped tablet contains 2.28 mg, 4.56 mg, 6.84 mg, 9.12 mg, or 13.68 mg ropinirole hydrochloride equivalent to ropinirole 2 mg, 4 mg, 6 mg, 8 mg, or 12 mg, respectively."
+            ],
+            "Answer": ["tablet", "tablet"]
+        },
+        {
+            "context": [
+            "Novartis, the maker of Zelnorm, recently notified the United States Food and Drug Administration that they will no longer sell Zelnorm to treat irritable bowel syndrome and chronic constipation in female patients below the age of 55.",
+            "GlaxoSmithKline (GSK) announced that ropinirole extended-release tablets (REQUIP XL)."
+            ],
+            "Answer": ["Novartis", "GlaxoSmithKline (GSK)"]
+        },
+        {
+            "context": [
+            "Ampicillin is a penicillin antibiotic that is usually taken orally but may also be administered intravenously or intramuscularly in hospitals.",
+            "REQUIP (ropinirole) is an orally administered non-ergoline dopamine agonist."
+            ],
+            "Answer": ["oral||intravenous||intramuscular", "oral"]
+        },
+        {
+            "context": [
+            "Ampicillin should be taken on an empty stomach, either 1 hour before or 2 hours after meals.",
+            "REQUIP XL Extended-Release Tablets are taken once daily, with or without food."
+            ],
+            "Answer": ["take on an empty stomach", "take once daily||with or without food"]
+        },
+        {
+            "context": [
+            "Take at least an hour before sexual activity; effects last up to 36 hours.",
+            "In clinical trials, dosage was initiated at 2 mg/day and gradually titrated based on individual therapeutic response and tolerability."
+            ],
+            "Answer": ["one hour before sexual activity||effects last up to 36 hours", "2 mg/day initial, gradually titrated"]
+        },
+        {
+            "context": [
+            "The usual adult dose of ampicillin ranges from 250 mg to 500 mg every 6 hours.",
+            "REQUIP XL Extended-Release Tablets are taken once daily, with or without food."
+            ],
+            "Answer": ["250mg-500mg every 6 hours", "once daily"]
+        },
+        {
+            "context": [
+            "Ampicillin works by stopping the growth of bacteria.",
+            "REQUIP (ropinirole) is an orally administered non-ergoline dopamine agonist."
+            ],
+            "Answer": ["inhibits bacterial growth", "non-ergoline dopamine agonist"]
+        },
+        {
+            "context": [
+            "Common side effects include nausea, vomiting, diarrhea, and rash.",
+            "Side effects may include nausea, dizziness, drowsiness or sleepiness, headache, and sudden uncontrolled movements (dyskinesia). Increase or decrease in blood pressure and heart rate may occur. Hallucinations may occur at any time during treatment."
+            ],
+            "Answer": ["nausea||vomiting||diarrhea||rash", "nausea||dizziness||drowsiness||sleepiness||headache||dyskinesia||blood pressure change||heart rate change||hallucinations"]
+        },
+        {
+            "context": [
+            "Ampicillin should be taken on an empty stomach, either 1 hour before or 2 hours after meals.",
+            "Taking REQUIP XL with food may reduce the occurrence of nausea; this has not been established in controlled clinical trials."
+            ],
+            "Answer": ["requires fasting", "requires gradual titration||no special condition"]
+        },
+        {
+            "context": [
+            "Prescription required.",
+            "Prescription REQUIP XL is not for everyone."
+            ],
+            "Answer": ["prescription_only", "prescription_only"]
+        },
+        {
+            "context": [
+            "Ampicillin should not be used by people allergic to penicillin antibiotics.",
+            "Prescription REQUIP XL is not for everyone. REQUIP XL may cause you to fall asleep or feel very sleepy during normal activities..."
+            ],
+            "Answer": ["penicillin allergy", "not for everyone (e.g., people who experience excessive sleepiness or impulse control disorders)"]
+        },
+        {
+            "context": [
+            "Store ampicillin at room temperature, away from moisture and heat.",
+            "Store in a cool, dry place. Protect from light."
+            ],
+            "Answer": ["store at room temperature||keep dry||avoid heat", "store in a cool place||keep in a dry place||protect from light"]
+        }
+    ],
+    "finance":[
+        {
+            "context": [
+            "Rectifier Technologies Ltd Corporate directory 30 June 2022",
+            "Beazley plc Annual Report 2022"
+            ],
+            "Answer": ["Rectifier Technologies Ltd", "Beazley plc"]
+        },
+        {
+            "context": [
+            "Registered office … 97 Highbury Road BURWOOD, VIC 3125",
+            "London Stock Exchange listed; headquartered in London, UK."
+            ],
+            "Answer": ["97 Highbury Road, BURWOOD, VIC 3125", "London, UK"]
+        },
+        {
+            "context": [
+            "Rectifier Technologies Ltd shares are listed on the Australian Securities Exchange (ASX code: RFT)",
+            "Beazley is a constituent of the FTSE 100 Index and is listed on the London Stock Exchange.LSE: BEZ"
+            ],
+            "Answer": ["ASX", "LSE"]
+        },
+        {
+            "context": [
+            "The principal activities of the consolidated entity during the financial year were designing and manufacturing high-efficiency power rectifiers and producing electronic and specialised magnetic components.",
+            "Beazley provides specialist insurance products and risk management services. Core activities include underwriting cyber risk, digital, property risks, and MAP risks."
+            ],
+            "Answer": ["Manufacturing||Technology","Insurance||Finance||Specialty Insurance"]
+        },
+        {
+            "context": [
+            "Board of directors: Christine LaSala (Interim Chair), Clive Bannister (Chair from April 2023), Catherine Woods (Non-Executive Director), Fiona Muldoon (Non-Executive Director), Cecilia Reyes Leuzinger (Non-Executive Director)",
+            "Additional: Robert Stuchbery (Senior Independent Director), Nicola Hodson (Chair of Remuneration Committee), Paul Bantick (Head of Cyber Risks), Bethany Greenwood (Head of Specialty Risks)"
+            ],
+            "Answer": [
+            "Christine LaSala||Clive Bannister||Catherine Woods||Fiona Muldoon||Cecilia Reyes Leuzinger",
+            "Robert Stuchbery||Nicola Hodson||Paul Bantick||Bethany Greenwood"
+            ]
+        },
+        {
+            "context": [
+            "Adrian Cox (Chief Executive Officer), Sally Lake (Chief Financial Officer), Bob Quane (Chief Underwriting Officer)",
+            "Ian Fantozzi (Head of Digital), Richard Montminy (Head of Property Risks), Tim Turner (Head of MAP Risks)"
+            ],
+            "Answer": ["Adrian Cox||Sally Lake||Bob Quane","Ian Fantozzi||Richard Montminy||Tim Turner"]
+        },
+        {
+            "context": [
+            "Revenue from continuing operations (refer to note 5&6) | 16,303 | 13,266 |",
+            "Gross premiums written for 2022: $5,268,700,000."
+            ],
+            "Answer": ["16303000", "5268700000"]
+        },
+        {
+            "context": [
+            "Profit after income tax expense for the year attributable to the owners of  Rectifier Technologies Ltd | 491,955",
+            "Profit before tax for 2022: $191,000,000."
+            ],
+            "Answer": ["491955", "191000000"]
+        },
+        {
+            "context": [
+            "Borrowings | 16 | 1,122,142 | 154,710 |",
+            "Borrowings | 16 | 4,151,846 | 2,439,390 |"
+            ],
+            "Answer": ["1122142", "4151846"]
+        },
+        {
+            "context": [
+            "Total assets | 22,929,553 | ",
+            "Total assets | 16,837,579 |"
+            ],
+            "Answer": ["22929553", "16837579"]
+        },
+        {
+            "context": [
+            "Cash and cash equivalents at the end of the financial year 5,340,726",
+            "Cash and cash equivalents at the end of the financial year 3,257,328 |"
+            ],
+            "Answer": ["5340726", "3257328"]
+        },
+        {
+            "context": [
+            "Net assets 15,441,301 ",
+            "Net assets 11,803,368 |"
+            ],
+            "Answer": ["15441301", "11803368"]
+        },
+        {
+            "context": [
+            "Basic earnings per share (cents per share) | 0.07",
+            "Basic earnings per share (cents per share) | 0.08 |"
+            ],
+            "Answer": ["0.07", "0.08"]
+        },
+        {
+            "context": [
+            "Dividends per share for the period 0.05",
+            "Dividends per share for the period 0.09"
+            ],
+            "Answer": ["0.05", "0.09"]
+        },
+        {
+            "context": [
+            "Substantial shareholders | Mr. Ying Ming Wang (direct and indirect) 37.61%",
+            "Substantial shareholders | Mr. Yanbin Wang (direct and indirect) 15.67%"
+            ],
+            "Answer": ["Mr. Ying Ming Wang", "Mr. Yanbin Wang"]
+        },
+        {
+            "context": [
+            "Substantial shareholders | Mr. Ying Ming Wang (direct and indirect) 37.61%",
+            "Substantial shareholders | Mr. Yanbin Wang (direct and indirect) 15.67%"
+            ],
+            "Answer": ["37.61", "15.67"]
+        },
+        {
+            "context": [
+            "There were no major equity changes during the period.",
+            "There were no major equity changes during the period."
+            ],
+            "Answer": ["No", "No"]
+        },
+        {
+            "context": [
+            "Significant events after the reporting period — Nil.",
+            "The Group is exposed to foreign currency risk, interest rate risk and credit risk arising from financial instruments."
+            ],
+            "Answer": ["Other", "Other"]
+        },
+        {
+            "context": [
+            "Revenue from continuing operations (refer to note 5&6) | 16,303 |",
+            "Revenue from continuing operations (refer to note 5&6)| 13,266 |"
+            ],
+            "Answer": ["16303000", "13266"]
+        },
+        {
+            "context": [
+            "Profit after income tax expense for the year attributable to the owners of  Rectifier Technologies Ltd | 491,955",
+            "Profit after tax for 2022: $191,000,000."
+            ],
+            "Answer": ["491955", "191000000"]
+        },
+        {
+            "context": [
+            "Total expenses | 14,766,342 |",
+            "Total expenses | 11,852,067 |"
+            ],
+            "Answer": ["14766342", "11852067"]
+        },
+        {
+            "context": [
+            "The consolidated entity operates in two segments: (a) the design and manufacture of power conversion products, and (b) the development of advanced power conversion technologies.",
+            "The Group operates in Australia and Malaysia."
+            ],
+            "Answer": ["2", "2"]
+        },
+        {
+            "context": [
+            "The Group is exposed to foreign currency risk, interest rate risk and credit risk arising from financial instruments.",
+            "The Group is exposed to credit risk, market risk and liquidity risk."
+            ],
+            "Answer": ["Market Risk||Credit Risk", "Credit Risk||Market Risk||Liquidity Risk"]
+        },
+        {
+            "context": [
+            "Remuneration for executive directors is fixed and reviewed annually by the Remuneration Committee.",
+            "Remuneration of senior executives is performance-based, consisting of both fixed and variable components."
+            ],
+            "Answer": ["Fixed", "Performance-based"]
+        },
+        {
+            "context": [
+            "Auditor | PKF",
+            "Auditor | PKF Melbourne Audit & Assurance"
+            ],
+            "Answer": ["PKF", "PKF Melbourne Audit & Assurance"]
+        }
+    ],
+    "Wiki_Image":[
+        {
+            "context": [
+                "Nicolas Carone (June 4, 1917 – July 15, 2010) belonged to the early generation of New York School Abstract Expressionist artists.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["Nicolas Carone","Agustín Cárdenas Alfonso"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["American","Cuban"]
+        },
+        {
+            "context": [
+                "Nicolas Carone (June 4, 1917 – July 15, 2010) belonged to the early generation of New York School Abstract Expressionist artists.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris. He settled in Paris in 1955 and in 1957 joined the Surrealist movement there."
+            ],
+            "Answer": ["Abstract Expressionism","Surrealism"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["1917/6/4","1927/4/10"]
+        },
+        {
+            "context": [
+                "He died July 15, 2010 at the age of 93.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["2010/7/15","2001/2/9"]
+        },
+        {
+            "context": [
+                "He died July 15, 2010 at the age of 93.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["93","73"]
+        },
+        {
+            "context": [
+                "Nicolas Carone (June 4, 1917 – July 15, 2010) belonged to the early generation of New York School Abstract Expressionist artists.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["20th–21st","20th"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["Gemini","Aries"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["United States","Cuba"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["New York City","Matanzas"]
+        },
+        {
+            "context": [
+                "Carone was born June 4, 1917 into an Italian-American family in New York City.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["North America","North America"]
+        },
+        {
+            "context": [
+                "Twins Seven Seven died aged 67 in Ibadan on 16 June 2011 following complications from a stroke.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["Nigeria","Cuba"]
+        },
+        {
+            "context": [
+                "Twins Seven Seven died aged 67 in Ibadan on 16 June 2011 following complications from a stroke.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["Ibadan","Havana"]
+        },
+        {
+            "context": [
+                "Nicolas Carone (June 4, 1917 – July 15, 2010) belonged to the early generation of New York School Abstract Expressionist artists.",
+                "Agustín Cárdenas Alfonso (April 10, 1927, Matanzas, Cuba – February 9, 2001, Havana, Cuba) was a Cuban sculptor who was active in the Surrealist movement in Paris."
+            ],
+            "Answer": ["Painting||Drawing","Sculpture"]
+        },
+        {
+            "context": [
+                "Carone was a part of the Abstract Expressionist movement, which relied heavily on Surrealism , poetry, and interpretations of Jungian psychology.",
+                "He settled in Paris in 1955 and in 1957 joined the Surrealist movement there."
+            ],
+            "Answer": ["Abstract","Surrealist"]
+        },
+        {
+            "context": [
+                "He met his second wife Chan May-Kan… Under the influence of Zao, she became a successful sculptor. In 1972, she committed suicide at age 41 due to mental illness.",
+                "In 1941 Gerzso and his wife moved permanently to Mexico City"
+            ],
+            "Answer": ["Remarried", "Married"]
+        },
+        {
+            "context": [
+                "He was a founding faculty member of the New York Studio School of Drawing, Painting and Sculpture, where he taught for 25 years. In 1988 he founded the International School of Art, located first in Todi, Italy and then in Nearby Montecastello.",
+                "In Cuba, Cárdenas studied under Juan José Sicre, and from 1943 to 1949 at Escuela Nacional de Bellas Artes “San Alejandro” in Havana. He was member of Asociación de Grabadores de Cuba (AGC) from 1951 to 1955, and of the creative group Los Once from 1953 to 1955."
+            ],
+            "Answer": ["New York Studio School of Drawing, Painting and Sculpture||International School of Art","Escuela Nacional de Bellas Artes “San Alejandro”||Asociación de Grabadores de Cuba (AGC)||Los Once"]
+        },
+        {
+            "context": [
+                "Carone taught at universities including Yale University, Columbia University, Brandeis University, Cornell University, Cooper Union, School of Visual Arts, and Skowhegan School. He was a founding faculty member of the New York Studio School of Drawing, Painting and Sculpture, where he taught for 25 years.",
+                "In 1972 Twins Seven Seven taught in the US at Merced College in California and at the Haystack Mountain Crafts School, Deer Isle."
+            ],
+            "Answer": ["1","1"]
+        },
+        {
+            "context": [
+                "In 1941 he won the Rome Prize and in 1949 a Fulbright Fellowship.",
+                "Cárdenas has been awarded with several distinctions during his life, including Segundo Premio VI Salón Nacional de Pintura y Escultura, Salones del Capitolio Nacional, Havana, by the Cuban government (1953) and the Silver Medal XXXVII, Salón de Bellas Artes, Círculo de Bellas Artes, Havana (1955). In 1976, he was awarded with the Ordre des Arts et des Lettres in France and the Fujisankey Biennal Prize at the Hakone Open-Air Museum, Fujisankey, Japan. Also in 1995 he received Premio Nacional de Artes Plásticas by the Cuban Ministry of Culture."
+            ],
+            "Answer": ["2","5"]
+        }
+    ]    
+}

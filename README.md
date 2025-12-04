@@ -1,4 +1,4 @@
-# 📊 Unstructured Data Analysis Benchmark
+# <img src="/data2/jproject/OpenQuestProject/UDA-Bench/img/UDA.png" alt="UDA" width="80" height="80" style="vertical-align: middle; margin-right: 8px;" /> Unstructured Data Analysis Benchmark
 
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -7,17 +7,15 @@
 [![Systems](https://img.shields.io/badge/Systems-7-purple.svg)](https://github.com/example/systems)
 
 <div align="center">
-  <img src="img/UDA.png" alt="Benchmark Construction Process" width="600" height="800" style="max-width: 60%; height: auto;">
+  <img src="img/UDA-big.png" alt="Benchmark Construction Process" width="600" height="800" style="max-width: 60%; height: auto;">
   <br>
 </div>
 
 ## 🎯 Project Overview
 
-Nowadays, the explosion of unstructured data presents immense analytical value. Leveraging the remarkable capability of large language models (LLMs) in extracting attributes of structured tables from unstructured data, researchers are developing LLM-powered data systems for users to analyze unstructured documents as working with a database. These unstructured data analysis (UDA) systems differ significantly in all aspects, including query interfaces, query optimization strategies, and operator implementations, making it unclear which performs best in which scenario. Unfortunately, there does not exist a comprehensive benchmark that offers high-quality, large-volume, and diverse datasets as well as rich query workload to thoroughly evaluate such systems.
+The explosion of unstructured data has immense analytical value. By leveraging large language models (LLMs) to extract table-like attributes from unstructured data, researchers are building LLM-powered systems that analyze documents as if querying a database. These unstructured data analysis (UDA) systems differ widely in query interfaces, optimization, and operators, making it unclear which works best in which scenario. However, no benchmark currently offers high-quality, large-scale, diverse datasets and rich query workloads to rigorously evaluate them. We present UDA-Bench, a comprehensive UDA benchmark that addresses this need. We curate 6 datasets from different domains and manually construct a relational database view for each using 30 graduate students. These relational databases serve as ground truth to evaluate any UDA system, regardless of its interface. We further design diverse queries over the database schema that evaluate various analytical operators with different selectivities and complexities. Using this benchmark, we conduct an in-depth analysis of key UDA components—query interface, optimization, operator design, and data processing—and run exhaustive experiments to evaluate systems and techniques along these dimensions. Our main contributions are: (1) a comprehensive benchmark for rigorous UDA evaluation, and (2) a deeper understanding of the strengths and limitations of current systems, paving the way for future work in UDA.
 
-To fill this gap, we present **Unstructured Data Analysis Benchmark**, the first benchmark for unstructured data analysis that meets all the above requirements. Specifically, we organize a team with 30 graduate students that spends over in total 10,000 hours on curating 5 datasets from various domains and constructing a *relational database view* from these datasets by manual annotation. These relational databases can be used as ground truth to evaluate any of these UDA systems despite their differences in programming interfaces. Moreover, we design diverse queries to analyze the attributes defined in the database schema, covering different types of analytical operators with varying selectivities and complexities. We conduct in-depth analysis of the key building blocks of existing UDA systems: query interface, query optimization, operator design, and data processing. We run exhaustive experiments over the benchmark to fully evaluate these systems and different techniques w.r.t. the above building blocks. The major outcomes of this project, including (1) a comprehensive benchmark that allows a rigorous evaluation of UDA systems and (2) a deep understanding of the strengths and limitations of existing systems, pave the way for future research of unstructured data analysis.
-
-This is a comprehensive benchmark system for unstructured document analysis, designed to evaluate the performance of various document understanding and information extraction systems. The benchmark includes 5 datasets from different domains, covering various document types from simple structured to complex multimodal content.
+To help users quickly grasp each dataset’s schema, attributes, data distribution, and query workload, we provide an interactive visualization interface. It allows users to browse relational schemas, inspect attribute metadata, view example documents, and explore the query taxonomy, providing a single, easy-to-use interface for exploring and working with UDA-Bench. [Please Click Here!](https://db-121143.github.io/uda-bench-page/)
 
 <div align="center">
   <img src="img/framework_00.png" alt="Benchmark Construction Process" width="600" height="800" style="max-width: 60%; height: auto;">
@@ -29,17 +27,18 @@ This is a comprehensive benchmark system for unstructured document analysis, des
 
 | Dataset | # Attributes | # Files | Tokens (Max/Min/Avg) | Multi-modal |
 |---------|--------------|---------|----------------------|-------------|
-| WikiArt | 19 | 1,000 | 1,665 / 619 / 789 | ✓ |
-| NBA | 28 | 225 | 51,378 / 73 / 8,047 | ✗ |
-| LCR | 19 | 566 | 45,437 / 340 / 5,609 | ✗ |
-| Finance | 30 | 100 | 838,418 / 7,162 / 130,633 | ✓ |
+| Art | 19 | 1,000 | 1,665 / 619 / 789 | ✓ |
+| CSPaper | 20 | 200 | 107,710 / 5,325 / 29,951 | ✓ |
+| Player | 28 | 225 | 51,378 / 73 / 8,047 | ✗ |
+| Legal | 19 | 566 | 45,437 / 340 / 5,609 | ✗ |
+| Finance | 30 | 100 | 838,418 / 7,162 / 130,633 | ✗ |
 | Healthcare | 51 | 100,000 | 63,234 / 2,759 / 10,649 | ✗ |
 
 
 ## 💾 Data Access
 
 [![Download](https://img.shields.io/badge/Download-Datasets-brightgreen.svg)](https://github.com/example/datasets)
-[![Size](https://img.shields.io/badge/total_size-1GB-red.svg)](https://github.com/example/datasets)
+<!-- [![Size](https://img.shields.io/badge/total_size-1GB-red.svg)](https://github.com/example/datasets) -->
 
 Due to the large size of our datasets, we provide access through download links rather than storing them directly in the repository.
 
@@ -47,26 +46,38 @@ Due to the large size of our datasets, we provide access through download links 
 
 | Dataset | Size | Download Link | Ground Truth |
 |---------|------|---------------|--------------|
-| NBA | ~2.43MB | [Download NBA Dataset](https://drive.google.com/drive/folders/1SJlRi0xyDxghbIf87Us7G2Q8C1Baoc34?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
-| WikiArt | ~379MB | [Download WikiArt Dataset](https://drive.google.com/drive/folders/1BlymFgt_ft0qKaylae5v2HvoXZ8iM5lY?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
-| LCR | ~304MB | [Download LCR Dataset](https://drive.google.com/drive/folders/1blpgfHjoXlz_Jl6EboqN-657IpxBL81c?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
+| Art | ~379MB | [Download WikiArt Dataset](https://drive.google.com/drive/folders/1BlymFgt_ft0qKaylae5v2HvoXZ8iM5lY?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
+| CSPaper | ~678.3MB | [Download NBA Dataset](https://drive.google.com/drive/folders/1SJlRi0xyDxghbIf87Us7G2Q8C1Baoc34?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
+| Player | ~2.43MB | [Download NBA Dataset](https://drive.google.com/drive/folders/1SJlRi0xyDxghbIf87Us7G2Q8C1Baoc34?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
+| Legal | ~304MB | [Download LCR Dataset](https://drive.google.com/drive/folders/1blpgfHjoXlz_Jl6EboqN-657IpxBL81c?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
 | Finance | ~413.6MB | [Download Finance Dataset](https://drive.google.com/drive/folders/1cW1iIBqTsUm_r5NexLJ4FCIeuGGJ8D6S?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
 | Healthcare | ~5.16MB | [Download Healthcare Dataset](https://drive.google.com/drive/folders/1jv29X8I9VZAbrsTfWa13rqC2QvSY3C0V?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
 
 
 ## 📚 Dataset Details
 
-### 🏀 NBA Dataset
+### 🎨 Art Dataset
+- **Source**: WikiArt.org
+- **Content**: Artists and their artworks spanning from the 19th to 21st centuries
+- **Characteristics**: Multimodal dataset containing biographical information, artistic movements, representative works lists, and images of representative works
+
+### 🧾 CSPaper Dataset
+- **Source**: Computer science publications (curated collection of CS papers)
+- **Content**: Paper extracted attributes such as title, authors, baselines, and performance.
+- **Characteristics**: Dataset is crawled from Arxiv containing 200 research papers annotated with key attributes, including authors, baselines and their performance, the modalities of experimental datasets etc. In particular, some papers describe the performance of all baselines in the main text, while other papers only describe the best-performing baselines and leave other results in tables or figures, resulting in an analysis scenario with mixed-modal.
+
+### 🎨 Art Dataset
+- **Source**: WikiArt.org
+- **Content**: Artists and their artworks spanning from the 19th to 21st centuries
+- **Characteristics**: Multimodal dataset containing biographical information, artistic movements, representative works lists, and images of representative works
+
+
+### 🏀 Player Dataset
 - **Source**: Wikipedia
 - **Content**: NBA players, teams, team owners, and other information from the 20th century to present, covering basic information and statistics such as player personal honors, team founding year, owner nationality, etc.
 - **Characteristics**: Relatively simple structure, containing player personal honors, team founding year, owner nationality, and other information
 
-### 🎨 WikiArt Dataset
-- **Source**: WikiArt.org
-- **Content**: Artists and their artworks spanning from the 19th to 21st centuries
-- **Characteristics**: Multimodal dataset containing biographical information, artistic movements, representative works lists, and high-resolution images
-
-### ⚖️ LCR (Legal Cases) Dataset
+### ⚖️ Legal Dataset
 - **Source**: AustLII
 - **Content**: 570 professional legal cases from Australia between 2006-2009
 - **Characteristics**: Domain-specific dataset containing different types such as criminal and administrative cases, requiring semantic reasoning to extract attributes
@@ -81,13 +92,29 @@ Due to the large size of our datasets, we provide access through download links 
 - **Content**: Large number of healthcare documents since 2020
 - **Characteristics**: Largest scale dataset containing drugs, diseases, medical institutions, news, interviews, and other various healthcare information
 
-## 🔧 Benchmark Construction Process
+## 📁 File Structure
 
-<div align="center">
-  <img src="img/Benchmark%20Construction.png" alt="Unstructured Data Analysis Framework" width="600" height="800" style="max-width: 80%; height: auto;">
-  <br>
-  <em>Figure 2: Overview of the benchmark construction process, showing the four main stages: data collection, attribute definition, ground truth labeling, and query construction.</em>
-</div>
+```
+unstractured_analysis_benchmark/
+├── README.md          # Project documentation
+├── img/              # Project-related images
+├── Queries/          # Benchmark queries
+├── systems/          # Evaluation systems
+│   ├── evaporate/    # Evaporate system adaptation
+│   ├── palimpzest/   # Palimpzest system adaptation
+│   ├── lotus/        # LOTUS system wrapper
+│   ├── docetl/       # DocETL system usage examples
+│   ├── quest/        # QUEST system extension
+│   ├── zendb/        # ZenDB system implementation
+│   └── uqe/          # UQE system implementation
+└── evaluation/       # Evaluation scripts
+    ├── evaluate.py
+    ├── evaluate_healthcare.py
+    ├── evaluate_agg.py
+    └── attr_types.json
+```
+
+## 🔧 Benchmark Construction Process
 
 ### 1. 📥 Data Collection and Preprocessing
 - Collect data from original sources
@@ -104,6 +131,12 @@ Due to the large size of our datasets, we provide access through download links 
 - Total of 30 graduate students participated in labeling, consuming approximately 10,000 human hours
 - Use multiple LLMs (Deepseek-V3, GPT-4.1, Claude-sonnet-4) for cross-validation
 - Adopt semi-automated iterative labeling strategy for large-scale datasets
+
+<div align="center">
+  <img src="/data2/jproject/OpenQuestProject/UDA-Bench/img/Query_category.png" alt="Unstructured Data Analysis Framework" width="600" height="800" style="max-width: 80%; height: auto;">
+  <br>
+  <em>Figure 2: Category of Query</em>
+</div>
 
 ### 4. 🔍 Query Construction
 - Experts design query templates based on real-world scenarios
@@ -171,13 +204,13 @@ For a comprehensive evaluation, we adapted and modified these systems to support
 
 | System                | Query Interface | Chunking | Embedding | Multi-modal | Extract | Filter | Join | Aggregate | Logical Opt. | Physical Opt. |
 |------------------------|-----------------|----------|-----------|-------------|---------|--------|------|-----------|--------------|---------------|
-| 📋 **Evaporate**       | ❌              | ❌        | ❌         | ❌          | ✅       | ❌      | ❌    | ❌         | ❌            | ❌             |
-| 🐍 **Palimpzest (PZ)** | Code            | ❌        | ❌         | ✅          | ✅       | ✅      | ❌    | ❌         | ✅            | ✅             |
-| 🌸 **LOTUS**           | Code            | ❌        | ✅         | ✅          | ✅       | ✅      | ✅    | ✅         | ❌            | ✅             |
-| 🤖 **DocETL**          | Code            | ✅        | ✅         | ❌          | ✅       | ✅      | ✅    | ✅         | ✅            | ✅             |
-| 🎯 **ZenDB**           | SQL-like        | ✅        | ✅         | ❌          | ✅       | ✅      | ✅    | ❌         | ✅            | ❌             |
-| ❓ **QUEST**           | SQL-like        | ✅        | ✅         | ❌          | ✅       | ✅      | ✅    | ❌         | ✅            | ❌             |
-| 🔍 **UQE**             | SQL-like        | ❌        | ✅         | ❌          | ✅       | ✅      | ❌    | ✅         | ✅            | ❌             |
+| **Evaporate**       | ❌              | ❌        | ❌         | ❌          | ✅       | ❌      | ❌    | ❌         | ❌            | ❌             |
+| **Palimpzest** | Code            | ❌        | ❌         | ✅          | ✅       | ✅      | ✅    | ✅         | ✅            | ✅             |
+| **LOTUS**           | Code            | ❌        | ✅         | ✅          | ✅       | ✅      | ✅    | ✅         | ❌            | ✅             |
+| **DocETL**          | Code            | ✅        | ✅         | ❌          | ✅       | ✅      | ✅    | ✅         | ✅            | ✅             |
+| **ZenDB**           | SQL-like        | ✅        | ✅         | ❌          | ✅       | ✅      | ✅    | ❌         | ✅            | ❌             |
+| **QUEST**           | SQL-like        | ✅        | ✅         | ❌          | ✅       | ✅      | ✅    | ❌         | ✅            | ❌             |
+| **UQE**             | SQL-like        | ❌        | ✅         | ❌          | ✅       | ✅      | ❌    | ✅         | ✅            | ❌             |
 
 *Table 1: Overview of existing unstructured data analysis systems and their capabilities.*
 
@@ -210,34 +243,6 @@ For a comprehensive evaluation, we adapted and modified these systems to support
 
 
 
-
-## 📁 File Structure
-
-```
-unstractured_analysis_benchmark/
-├── README.md          # Project documentation
-├── img/              # Project-related images
-├── queries/          # Benchmark queries (to be added)
-│   ├── nba_queries.sql
-│   ├── wikiart_queries.sql
-│   ├── lcr_queries.sql
-│   ├── finance_queries.sql
-│   └── healthcare_queries.sql
-├── systems/          # Evaluation systems (to be added)
-│   ├── evaporate/    # Evaporate system adaptation
-│   ├── palimpzest/   # Palimpzest system adaptation
-│   ├── lotus/        # LOTUS system wrapper
-│   ├── docetl/       # DocETL system usage examples
-│   ├── quest/        # QUEST system extension
-│   ├── zendb/        # ZenDB system implementation
-│   └── uqe/          # UQE system implementation
-└── evaluation/       # Evaluation scripts (to be added)
-    ├── evaluate.py
-    ├── evaluate_healthcare.py
-    ├── evaluate_agg.py
-    └── attr_types.json
-```
-
 ## 🤝 Contributing
 
 We welcome issue reports, feature requests, or code contributions. Please ensure to follow the project's coding standards and testing requirements.
@@ -262,4 +267,4 @@ For questions or suggestions, please contact us through:
 
 ---
 
-*Last updated: 2024*
+*Last updated: 2025*

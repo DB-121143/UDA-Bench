@@ -116,11 +116,17 @@ unstractured_analysis_benchmark/
 
 ## 🔧 Benchmark Construction Process
 
+<div align="center">
+  <img src="./img/benchmark_build.png" alt="Unstructured Data Analysis Framework" width="600" height="800" style="max-width: 80%; height: auto;">
+  <br>
+  <em>Figure 2: Benchmark Construction Process</em>
+</div>
+
 ### 1. 📥 Data Collection and Preprocessing
 - Collect data from original sources
 - Use MinerU toolkit to parse complex formats (such as PDF)
 - Organize datasets into JSON format, where each object corresponds to an unstructured document
-- For Healthcare and NBA datasets, divide documents into multiple related categories
+- For Healthcare and Player datasets, divide documents into multiple related categories
 
 ### 2. 🏷️ Attribute Identification
 - Hire 6 Ph.D. students from different majors to carefully read documents
@@ -135,7 +141,7 @@ unstractured_analysis_benchmark/
 <div align="center">
   <img src="/data2/jproject/OpenQuestProject/UDA-Bench/img/Query_category.png" alt="Unstructured Data Analysis Framework" width="600" height="800" style="max-width: 80%; height: auto;">
   <br>
-  <em>Figure 2: Category of Query</em>
+  <em>Figure 3: Category of Query</em>
 </div>
 
 ### 4. 🔍 Query Construction

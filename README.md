@@ -117,7 +117,7 @@ unstractured_analysis_benchmark/
 ## 🔧 Benchmark Construction Process
 
 <div align="center">
-  <img src="./img/benchmark_build.png" alt="Unstructured Data Analysis Framework" width="600" height="800" style="max-width: 80%; height: auto;">
+  <img src="img/benchmark_build.png" alt="Unstructured Data Analysis Framework" width="600" height="800" style="max-width: 80%; height: auto;">
   <br>
   <em>Figure 2: Benchmark Construction Process</em>
 </div>
@@ -139,7 +139,7 @@ unstractured_analysis_benchmark/
 - Adopt semi-automated iterative labeling strategy for large-scale datasets
 
 <div align="center">
-  <img src="/data2/jproject/OpenQuestProject/UDA-Bench/img/Query_category.png" alt="Unstructured Data Analysis Framework" width="600" height="800" style="max-width: 80%; height: auto;">
+  <img src="img/Query_category.png" alt="Unstructured Data Analysis Framework" width="600" height="800" style="max-width: 80%; height: auto;">
   <br>
   <em>Figure 3: Category of Query</em>
 </div>

@@ -2,7 +2,7 @@
 SELECT nationality, COUNT(birth_continent) AS count_birth_continent FROM Art WHERE nationality = 'Spanish' GROUP BY nationality;
 
 -- Query 2: filter2_agg1 (Art)
-SELECT field, MAX(birth_country) AS max_birth_country FROM Art WHERE awards = 1 AND death_country = 'Georgia' GROUP BY field;
+SELECT field, MAX(birth_country) AS max_birth_country FROM Art WHERE awards = 1 OR death_country = 'Georgia' GROUP BY field;
 
 -- Query 3: filter3_agg1 (Art)
 SELECT field, SUM(teaching) AS sum_teaching FROM Art WHERE century = '20th-21st' OR teaching != 1 GROUP BY field;

@@ -1,11 +1,11 @@
 -- Query 1: filter1_agg1_join1 (player, team)
-SELECT player.position, MIN(player.olympic_gold_medals) AS min_player_olympic_gold_medals FROM player JOIN team ON player.team = team.team_name WHERE player.fiba_world_cup < 0 GROUP BY player.position;
+SELECT player.nationality, MIN(player.olympic_gold_medals) AS min_player_olympic_gold_medals FROM player JOIN team ON player.team = team.team_name WHERE player.fiba_world_cup > 0 GROUP BY player.nationality;
 
 -- Query 2: filter2_agg1_join2 (player, team, city, manager)
-SELECT manager.nationality, MAX(player.mvp_awards) AS max_player_mvp_awards FROM player JOIN team ON player.team = team.team_name JOIN manager ON team.ownership = manager.name JOIN city ON team.location = city.city_name WHERE city.population = '1603797' AND team.location != 'Minneapolis' GROUP BY manager.nationality;
+SELECT manager.nationality, MAX(player.mvp_awards) AS max_player_mvp_awards FROM player JOIN team ON player.team = team.team_name JOIN manager ON team.ownership = manager.name JOIN city ON team.location = city.city_name WHERE city.population < '1603797' OR team.location != 'Minneapolis' GROUP BY manager.nationality;
 
 -- Query 3: filter3_agg1_join1 (player, team)
-SELECT player.position, AVG(player.mvp_awards) AS avg_player_mvp_awards FROM player JOIN team ON player.team = team.team_name WHERE player.college = 'University of Kentucky' OR player.age <= 66 GROUP BY player.position;
+SELECT player.nationality, AVG(player.mvp_awards) AS avg_player_mvp_awards FROM player JOIN team ON player.team = team.team_name WHERE player.age <= 66 GROUP BY player.nationality;
 
 -- Query 4: filter4_agg1_join2 (player, team, city, manager)
 SELECT manager.nationality, MAX(player.nba_championships) AS max_player_nba_championships FROM player JOIN team ON player.team = team.team_name JOIN manager ON team.ownership = manager.name JOIN city ON team.location = city.city_name WHERE city.population = '1603797' AND city.gdp != '518.5' AND player.birth_date = '1990/8/17' GROUP BY manager.nationality;

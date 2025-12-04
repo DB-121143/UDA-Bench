@@ -1,11 +1,11 @@
 -- Query 1: filter1_join1 (player, team)
-SELECT player.draft_pick, team.team_name, player.fiba_world_cup, team.location FROM player JOIN team ON player.team = team.team_name WHERE player.fiba_world_cup < 0;
+SELECT player.draft_pick, team.team_name, player.fiba_world_cup, team.location FROM player JOIN team ON player.team = team.team_name WHERE player.fiba_world_cup > 0;
 
 -- Query 2: filter2_join2 (player, team, city, manager)
-SELECT manager.age, team.founded_year, player.name, city.city_name FROM player JOIN team ON player.team = team.team_name JOIN manager ON team.ownership = manager.name JOIN city ON team.location = city.city_name WHERE player.birth_date = '1994/2/2' AND city.population != '715522';
+SELECT manager.age, team.founded_year, player.name, city.city_name FROM player JOIN team ON player.team = team.team_name JOIN manager ON team.ownership = manager.name JOIN city ON team.location = city.city_name WHERE player.birth_date > '1994/2/2' AND city.population > '715522';
 
 -- Query 3: filter3_join1 (player, team)
-SELECT player.team, team.location, player.college, team.team_name FROM player JOIN team ON player.team = team.team_name WHERE player.nba_championships < 0 OR player.nationality != 'American-Venezuelan  ';
+SELECT player.team, team.location, player.college, team.team_name FROM player JOIN team ON player.team = team.team_name WHERE player.nba_championships > 0 OR player.nationality != 'American-Venezuelan';
 
 -- Query 4: filter4_join2 (player, team, city, manager)
 SELECT manager.age, city.area, team.location, player.team FROM player JOIN team ON player.team = team.team_name JOIN manager ON team.ownership = manager.name JOIN city ON team.location = city.city_name WHERE player.college = 'University of Kentucky' AND city.population != '383,997' AND team.founded_year >= 1949;

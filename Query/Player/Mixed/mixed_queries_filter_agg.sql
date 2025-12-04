@@ -8,10 +8,10 @@ SELECT nationality, SUM(age) AS sum_age FROM manager WHERE age != 76 AND nba_tea
 SELECT nationality, COUNT(age) AS count_age FROM player WHERE name = 'Antonius Cleveland' OR nba_championships >= 0 GROUP BY nationality;
 
 -- Query 4: filter4_agg1 (player)
-SELECT position, MAX(mvp_awards) AS max_mvp_awards FROM player WHERE nba_championships = 0 AND draft_year > 2012 AND nba_championships != 2 GROUP BY position;
+SELECT nationality, MAX(mvp_awards) AS max_mvp_awards FROM data WHERE draft_year > 2012 OR nba_championships > 0 GROUP BY nationality;
 
 -- Query 5: filter5_agg1 (player)
-SELECT position, AVG(fiba_world_cup) AS avg_fiba_world_cup FROM player WHERE team = 'New York Knicks  ' OR nba_championships <= 0 OR fiba_world_cup < 0 GROUP BY position;
+SELECT nationality, AVG(fiba_world_cup) AS avg_fiba_world_cup FROM player WHERE team = 'New York Knicks  ' OR nba_championships <= 0 OR fiba_world_cup < 0 GROUP BY nationality;
 
 -- Query 6: filter6_agg1 (player)
 SELECT position, MIN(fiba_world_cup) AS min_fiba_world_cup FROM player WHERE (fiba_world_cup < 0 AND mvp_awards <= 0) OR (age < 91 AND fiba_world_cup >= 0) GROUP BY position;

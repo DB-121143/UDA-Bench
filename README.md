@@ -66,11 +66,6 @@ Due to the large size of our datasets, we provide access through download links 
 - **Content**: Paper extracted attributes such as title, authors, baselines, and performance.
 - **Characteristics**: Dataset is crawled from Arxiv containing 200 research papers annotated with key attributes, including authors, baselines and their performance, the modalities of experimental datasets etc. In particular, some papers describe the performance of all baselines in the main text, while other papers only describe the best-performing baselines and leave other results in tables or figures, resulting in an analysis scenario with mixed-modal.
 
-### 🎨 Art Dataset
-- **Source**: WikiArt.org
-- **Content**: Artists and their artworks spanning from the 19th to 21st centuries
-- **Characteristics**: Multimodal dataset containing biographical information, artistic movements, representative works lists, and images of representative works
-
 
 ### 🏀 Player Dataset
 - **Source**: Wikipedia
@@ -126,7 +121,7 @@ unstractured_analysis_benchmark/
 - Collect data from original sources
 - Use MinerU toolkit to parse complex formats (such as PDF)
 - Organize datasets into JSON format, where each object corresponds to an unstructured document
-- For Healthcare and Player datasets, divide documents into multiple related categories
+- For Healthcare and Player datasets, divide documents into multiple related domains
 
 ### 2. 🏷️ Attribute Identification
 - Hire 6 Ph.D. students from different majors to carefully read documents
@@ -134,7 +129,7 @@ unstractured_analysis_benchmark/
 - Examples: Judge names in legal datasets are easy to identify, while case numbers require full-text search and reasoning
 
 ### 3. ✅ Ground Truth Labeling
-- Total of 30 graduate students participated in labeling, consuming approximately 10,000 human hours
+- Total of 30 graduate students participated in labeling, consuming approximately 4k human hours
 - Use multiple LLMs (Deepseek-V3, GPT-4.1, Claude-sonnet-4) for cross-validation
 - Adopt semi-automated iterative labeling strategy for large-scale datasets
 
@@ -147,16 +142,16 @@ unstractured_analysis_benchmark/
 ### 4. 🔍 Query Construction
 - Experts design query templates based on real-world scenarios
 - Support both SQL-like queries and Python code interfaces
-- Total of 240 queries created, including 220 single-table queries and 20 multi-table queries
+- Total of 608 queries created, which can be divided into 5 major categories and 42 sub-categories.
 
-## 🔍 Query Types
+<!-- ## 🔍 Query Types
 
 The benchmark supports the following query types:
 - **📤 Extract**: Simple information extraction
 - **🔍 Extract + Filter**: Information extraction with filtering conditions
 - **📊 Extract + Aggregate**: Information extraction with aggregation operations
 - **🔗 Extract + Join**: Multi-table join queries
-- **🔄 Mixture**: Mixed operation queries
+- **🔄 Mixture**: Mixed operation queries -->
 
 ## 🚀 Usage Instructions
 
@@ -188,21 +183,21 @@ Our benchmark evaluates 7 existing unstructured data analysis systems:
 
 ### System Descriptions:
 
-**📋 Evaporate**: A table extraction system that extracts structured tables from documents, and subsequently executes SQL queries on the resulting tables.
+**Evaporate**: A table extraction system that extracts structured tables from documents, and subsequently executes SQL queries on the resulting tables.
 
-**🐍 Palimpzest (PZ)**: Provides Python API-based operators for unstructured data processing. We convert each SQL query into the corresponding PZ code, execute it and obtain the results.
+**Palimpzest (PZ)**: Provides Python API-based operators for unstructured data processing. We convert each SQL query into the corresponding PZ code, execute it and obtain the results.
 
-**🌸 LOTUS**: Provides an open-source Python library for AI-based data processing with indexing, extraction, filtering, and joining capabilities. We use its interface to execute queries.
+**LOTUS**: Provides an open-source Python library for AI-based data processing with indexing, extraction, filtering, and joining capabilities. We use its interface to execute queries.
 
-**🤖 DocETL**: An agentic query rewriting and evaluation system for complex document processing. We directly use the DocETL library to execute queries without any modifications.
+**DocETL**: An agentic query rewriting and evaluation system for complex document processing. We directly use the DocETL library to execute queries without any modifications.
 
-**❓ QUEST**: A query engine for unstructured databases that accepts a subset of standard SQL syntax. We directly use their code to execute queries.
+**QUEST**: A query engine for unstructured databases that accepts a subset of standard SQL syntax. We directly use their code to execute queries.
 
-**🎯 ZenDB**: A system that constructs semantic hierarchical trees to identify relevant document sections. We implement their SHT chunking and filter reordering strategies.
+**ZenDB**: A system that constructs semantic hierarchical trees to identify relevant document sections. We implement their SHT chunking and filter reordering strategies.
 
-**🔍 UQE**: A query engine for unstructured databases that supports SQL-like query syntax with sampling-based aggregation capabilities. We implement its filter and aggregate operators, as well as logical optimizations.
+**UQE**: A query engine for unstructured databases that supports SQL-like query syntax with sampling-based aggregation capabilities. We implement its filter and aggregate operators, as well as logical optimizations.
 
-For a comprehensive evaluation, we adapted and modified these systems to support our evaluation requirements. Detailed adaptation strategies are provided in the appendix.
+<!-- For a comprehensive evaluation, we adapted and modified these systems to support our evaluation requirements. Detailed adaptation strategies are provided in the appendix. -->
 
 ### System Capabilities Comparison
 

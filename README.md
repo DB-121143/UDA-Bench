@@ -46,10 +46,10 @@ Due to the large size of our datasets, we provide access through download links 
 
 | Dataset | Size | Download Link | Ground Truth |
 |---------|------|---------------|--------------|
-| Art | ~379MB | [Download WikiArt Dataset](https://drive.google.com/drive/folders/1BlymFgt_ft0qKaylae5v2HvoXZ8iM5lY?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
-| CSPaper | ~678.3MB | [Download NBA Dataset](https://drive.google.com/drive/folders/1SJlRi0xyDxghbIf87Us7G2Q8C1Baoc34?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
-| Player | ~2.43MB | [Download NBA Dataset](https://drive.google.com/drive/folders/1SJlRi0xyDxghbIf87Us7G2Q8C1Baoc34?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
-| Legal | ~304MB | [Download LCR Dataset](https://drive.google.com/drive/folders/1blpgfHjoXlz_Jl6EboqN-657IpxBL81c?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
+| Art | ~379MB | [Download Art Dataset](https://drive.google.com/drive/folders/1BlymFgt_ft0qKaylae5v2HvoXZ8iM5lY?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
+| CSPaper | ~678.3MB | [Download CSPaper Dataset](https://drive.google.com/drive/folders/1SJlRi0xyDxghbIf87Us7G2Q8C1Baoc34?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
+| Player | ~2.43MB | [Download Player Dataset](https://drive.google.com/drive/folders/1SJlRi0xyDxghbIf87Us7G2Q8C1Baoc34?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
+| Legal | ~304MB | [Download Legal Dataset](https://drive.google.com/drive/folders/1blpgfHjoXlz_Jl6EboqN-657IpxBL81c?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
 | Finance | ~413.6MB | [Download Finance Dataset](https://drive.google.com/drive/folders/1cW1iIBqTsUm_r5NexLJ4FCIeuGGJ8D6S?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
 | Healthcare | ~5.16MB | [Download Healthcare Dataset](https://drive.google.com/drive/folders/1jv29X8I9VZAbrsTfWa13rqC2QvSY3C0V?usp=drive_link) | [Download Ground Truth](https://drive.google.com/drive/folders/11BLcF42xbshAMTGkq6yjtsn_PWo3xvei?usp=drive_link) |
 

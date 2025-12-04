@@ -1,8 +1,8 @@
 {
-  "finance": [
+  "Finan": [
     {
       "name": "company_name",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -11,7 +11,7 @@
     },
     {
       "name": "registered_office",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -20,7 +20,7 @@
     },
     {
       "name": "exchange_code",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -29,16 +29,16 @@
     },
     {
       "name": "principal_activities",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "main business activities or industry classification; choose one or more from ['Mining', 'Finance', 'Healthcare', 'Manufacturing', 'Technology', 'Retail', 'Energy', 'Utilities', 'Real Estate', 'Transportation', 'Agriculture', 'Telecommunications', 'Media', 'Other'], seperated by `||` (e.g. Mining || Finance)."
+      "description": "main business activities or industry classification; choose one or more from ['Mining', 'Finan', 'Healthcare', 'Manufacturing', 'Technology', 'Retail', 'Energy', 'Utilities', 'Real Estate', 'Transportation', 'Agriculture', 'Telecommunications', 'Media', 'Other'], seperated by `||` (e.g. Mining || Finan)."
     },
     {
       "name": "board_members",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -47,88 +47,88 @@
     },
     {
       "name": "executive_profiles",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "str",
-      "usage": "numerical",
+      "usage": "general",
       "modality": "text",
       "is_nullable": false,
       "description": "profiles of executive management team members."
     },
     {
       "name": "revenue",
-      "table": "Finance",
-      "value_type": "str",
-      "usage": "general",
+      "table": "Finan",
+      "value_type": "int",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "total operating revenue recognized during the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
     },
     {
       "name": "net_profit_or_loss",
-      "table": "Finance",
-      "value_type": "str",
-      "usage": "general",
+      "table": "Finan",
+      "value_type": "int",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "net profit or loss amount for the reporting period (enter a negative number for loss). Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
     },
     {
       "name": "total_Debt",
-      "table": "Finance",
-      "value_type": "str",
-      "usage": "general",
+      "table": "Finan",
+      "value_type": "int",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "total debt outstanding at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
     },
     {
       "name": "total_assets",
-      "table": "Finance",
-      "value_type": "str",
-      "usage": "general",
+      "table": "Finan",
+      "value_type": "int",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "total assets held by the company at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
     },
     {
       "name": "cash_reserves",
-      "table": "Finance",
-      "value_type": "str",
-      "usage": "general",
+      "table": "Finan",
+      "value_type": "int",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "total cash and cash equivalents held at period-end. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
     },
     {
       "name": "net_assets",
-      "table": "Finance",
-      "value_type": "str",
-      "usage": "general",
+      "table": "Finan",
+      "value_type": "int",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "net asset value at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
     },
     {
       "name": "earnings_per_share",
-      "table": "Finance",
-      "value_type": "str",
-      "usage": "general",
+      "table": "Finan",
+      "value_type": "float",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "earnings per share (EPS) for the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
     },
     {
       "name": "dividend_per_share",
-      "table": "Finance",
-      "value_type": "str",
-      "usage": "general",
+      "table": "Finan",
+      "value_type": "float",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "dividends paid per share for the period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
     },
     {
       "name": "largest_shareholder",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -137,8 +137,8 @@
     },
     {
       "name": "the_highest_ownership_stake",
-      "table": "Finance",
-      "value_type": "str",
+      "table": "Finan",
+      "value_type": "float",
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
@@ -146,7 +146,7 @@
     },
     {
       "name": "major_equity_changes",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "int",
       "usage": "categorical",
       "modality": "text",
@@ -155,7 +155,7 @@
     },
     {
       "name": "major_events",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -164,34 +164,34 @@
     },
     {
       "name": "bussiness_sales",
-      "table": "Finance",
-      "value_type": "str",
-      "usage": "general",
+      "table": "Finan",
+      "value_type": "int",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "total operating revenue from all major business lines or segments. If the document reports revenue for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
     },
     {
       "name": "bussiness_profit",
-      "table": "Finance",
-      "value_type": "str",
-      "usage": "general",
+      "table": "Finan",
+      "value_type": "int",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "total profit contributed by all major business lines or projects. If the document reports profit for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
     },
     {
       "name": "bussiness_cost",
-      "table": "Finance",
-      "value_type": "str",
-      "usage": "general",
+      "table": "Finan",
+      "value_type": "int",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "total cost associated with all main business lines or projects. If the document reports cost for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
     },
     {
       "name": "business_segments_num",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -200,7 +200,7 @@
     },
     {
       "name": "business_risks",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -209,7 +209,7 @@
     },
     {
       "name": "remuneration_policy",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -218,9 +218,9 @@
     },
     {
       "name": "auditor",
-      "table": "Finance",
+      "table": "Finan",
       "value_type": "str",
-      "usage": "general",
+      "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
       "description": "name of the external audit firm."

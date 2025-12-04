@@ -25,7 +25,7 @@
       "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
-      "description": "nationality of the player (e.g., USA, France)."
+      "description": "nationality of the player (e.g., American, France)."
     },
     {
       "name": "age",

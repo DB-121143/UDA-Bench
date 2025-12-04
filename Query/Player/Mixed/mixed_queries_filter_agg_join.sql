@@ -23,7 +23,7 @@ SELECT player.position, AVG(player.fiba_world_cup) AS avg_player_fiba_world_cup 
 SELECT player.position, AVG(player.olympic_gold_medals) AS avg_player_olympic_gold_medals FROM player JOIN team ON player.team = team.team_name JOIN manager ON team.ownership = manager.name JOIN city ON team.location = city.city_name WHERE manager.nationality = 'Israeli-American' AND team.founded_year > 1989 GROUP BY player.position;
 
 -- Query 9: filter3_agg1_join1 (player, team)
-SELECT player.nationality, COUNT(player.nationality) AS count_player_nationality FROM player JOIN team ON player.team = team.team_name WHERE player.nationality = 'Cameroonian-American' OR player.birth_date = '1972/3/6' GROUP BY player.nationality;
+SELECT player.nationality, COUNT(*) AS count_all FROM player JOIN team ON player.team = team.team_name WHERE player.nationality = 'Cameroonian-American' OR player.birth_date = '1972/3/6' GROUP BY player.nationality;
 
 -- Query 10: filter4_agg1_join2 (player, team, city, manager)
 SELECT player.nationality, SUM(team.championships) AS sum_team_championships FROM player JOIN team ON player.team = team.team_name JOIN manager ON team.ownership = manager.name JOIN city ON team.location = city.city_name WHERE player.draft_year <= 1990 AND player.position = 'Backcourt' AND player.draft_pick <= 35 GROUP BY player.nationality;

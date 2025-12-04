@@ -1,0 +1,278 @@
+[
+  {
+    "sql": "SELECT auditor, AVG(bussiness_profit) AS avg_bussiness_profit FROM Finan WHERE remuneration_policy = 'Performance-based' GROUP BY auditor;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter1_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 1,
+        "agg": 1
+      },
+      "tables": [
+        "Finan"
+      ],
+      "filter_subcategory": 1,
+      "filter_metadata": {
+        "filter_combination": "single",
+        "num_filters": 1,
+        "predicates": [
+          "remuneration_policy = 'Performance-based'"
+        ],
+        "selectivity_ratios": [
+          0.17218543046357615
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "AVG",
+          "attribute": "bussiness_profit",
+          "alias": "avg_bussiness_profit"
+        }
+      ],
+      "group_by_attributes": [
+        "auditor"
+      ],
+      "selected_attributes": [
+        "auditor"
+      ],
+      "combination_name": "filter1_agg1"
+    }
+  },
+  {
+    "sql": "SELECT remuneration_policy, MIN(bussiness_profit) AS min_bussiness_profit FROM Finan WHERE dividend_per_share > 0.00 AND revenue <= 12857200000 GROUP BY remuneration_policy;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter2_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 2,
+        "agg": 1
+      },
+      "tables": [
+        "Finan"
+      ],
+      "filter_subcategory": 2,
+      "filter_metadata": {
+        "filter_combination": "AND",
+        "num_filters": 2,
+        "predicates": [
+          "dividend_per_share > 0.00",
+          "revenue <= 12857200000"
+        ],
+        "selectivity_ratios": [
+          0.5,
+          0.1
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "MIN",
+          "attribute": "bussiness_profit",
+          "alias": "min_bussiness_profit"
+        }
+      ],
+      "group_by_attributes": [
+        "remuneration_policy"
+      ],
+      "selected_attributes": [
+        "remuneration_policy"
+      ],
+      "combination_name": "filter2_agg1"
+    }
+  },
+  {
+    "sql": "SELECT remuneration_policy, AVG(the_highest_ownership_stake) AS avg_the_highest_ownership_stake FROM Finan WHERE net_assets <= 249398000 OR total_assets = 1358991000 GROUP BY remuneration_policy;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter3_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 3,
+        "agg": 1
+      },
+      "tables": [
+        "Finan"
+      ],
+      "filter_subcategory": 3,
+      "filter_metadata": {
+        "filter_combination": "OR",
+        "num_filters": 2,
+        "predicates": [
+          "net_assets <= 249398000",
+          "total_assets = 1358991000"
+        ],
+        "selectivity_ratios": [
+          0.5,
+          0.5
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "AVG",
+          "attribute": "the_highest_ownership_stake",
+          "alias": "avg_the_highest_ownership_stake"
+        }
+      ],
+      "group_by_attributes": [
+        "remuneration_policy"
+      ],
+      "selected_attributes": [
+        "remuneration_policy"
+      ],
+      "combination_name": "filter3_agg1"
+    }
+  },
+  {
+    "sql": "SELECT auditor, MAX(earnings_per_share) AS max_earnings_per_share FROM Finan WHERE major_events != 'Litigation' AND remuneration_policy != 'Not Disclosed' AND total_Debt < '258804000' GROUP BY auditor;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter4_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 4,
+        "agg": 1
+      },
+      "tables": [
+        "Finan"
+      ],
+      "filter_subcategory": 4,
+      "filter_metadata": {
+        "filter_combination": "AND",
+        "num_filters": 3,
+        "predicates": [
+          "major_events != 'Litigation'",
+          "remuneration_policy != 'Not Disclosed'",
+          "total_Debt < '258804000'"
+        ],
+        "selectivity_ratios": [
+          0.1286549707602339,
+          0.046357615894039736,
+          0.011363636363636364
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "earnings_per_share",
+          "alias": "max_earnings_per_share"
+        }
+      ],
+      "group_by_attributes": [
+        "auditor"
+      ],
+      "selected_attributes": [
+        "auditor"
+      ],
+      "combination_name": "filter4_agg1"
+    }
+  },
+  {
+    "sql": "SELECT auditor, MIN(earnings_per_share) AS min_earnings_per_share FROM Finan WHERE remuneration_policy = 'Performance-based' OR registered_office != '22 Bishopsgate, London, EC2N 4BQ, United Kingdom' OR registered_office != '901 W Walnut Hill Lane, Irving, TX 75038' GROUP BY auditor;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter5_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 5,
+        "agg": 1
+      },
+      "tables": [
+        "Finan"
+      ],
+      "filter_subcategory": 5,
+      "filter_metadata": {
+        "filter_combination": "OR",
+        "num_filters": 3,
+        "predicates": [
+          "remuneration_policy = 'Performance-based'",
+          "registered_office != '22 Bishopsgate, London, EC2N 4BQ, United Kingdom'",
+          "registered_office != '901 W Walnut Hill Lane, Irving, TX 75038'"
+        ],
+        "selectivity_ratios": [
+          0.17218543046357615,
+          0.010101010101010102,
+          0.010101010101010102
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "MIN",
+          "attribute": "earnings_per_share",
+          "alias": "min_earnings_per_share"
+        }
+      ],
+      "group_by_attributes": [
+        "auditor"
+      ],
+      "selected_attributes": [
+        "auditor"
+      ],
+      "combination_name": "filter5_agg1"
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, SUM(dividend_per_share) AS sum_dividend_per_share FROM Finan WHERE (executive_profiles = 'Michael A. Marks' AND net_assets != 1362019954) OR (bussiness_sales != '42984000' AND board_members = 'John Reizenstein') GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Mixed",
+      "subcategory": "filter6_agg1",
+      "operators": [
+        "filter",
+        "agg"
+      ],
+      "subcategories": {
+        "filter": 6,
+        "agg": 1
+      },
+      "tables": [
+        "Finan"
+      ],
+      "filter_subcategory": 6,
+      "filter_metadata": {
+        "filter_combination": "AND_OR_mixed",
+        "num_filters": 4,
+        "predicates": [
+          "executive_profiles = 'Michael A. Marks'",
+          "net_assets != 1362019954",
+          "bussiness_sales != '42984000'",
+          "board_members = 'John Reizenstein'"
+        ],
+        "selectivity_ratios": [
+          0.002145922746781116,
+          0.25,
+          0.011111111111111112,
+          0.0014044943820224719
+        ]
+      },
+      "aggregations": [
+        {
+          "function": "SUM",
+          "attribute": "dividend_per_share",
+          "alias": "sum_dividend_per_share"
+        }
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "selected_attributes": [
+        "major_equity_changes"
+      ],
+      "combination_name": "filter6_agg1"
+    }
+  }
+]

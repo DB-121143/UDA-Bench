@@ -26,7 +26,7 @@
         "founded_year: founded_year is the year of this team team founded (e.g. 1947).",
         "location: location is the lastest city the team team located (e.g. Los Angeles).",
         "ownership: ownership is the name of the team's owner (e.g. Jeanie Buss).",
-        "championships: championships is the number of this team getting championships (e.g. 5)."
+        "championship: championship is the number of this team getting championships (e.g. 5)."
     ],
     "city": [
         "city_name: city_name is the name of the city (e.g. Boston)",

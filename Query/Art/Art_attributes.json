@@ -76,7 +76,7 @@
       "name": "birth_country",
       "table": "Art",
       "value_type": "str",
-      "usage": "numerical",
+      "usage": "general",
       "modality": "text",
       "is_nullable": false,
       "description": "country where the artist was born (e.g., netherlands)"
@@ -103,7 +103,7 @@
       "name": "death_country",
       "table": "Art",
       "value_type": "str",
-      "usage": "numerical",
+      "usage": "general",
       "modality": "text",
       "is_nullable": true,
       "description": "country where the artist died, or leave empty if not applicable (e.g., switzerland)"
@@ -157,7 +157,7 @@
       "name": "teaching",
       "table": "Art",
       "value_type": "int",
-      "usage": "numerical",
+      "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
       "description": "whether the artist taught at an institution (1 if yes, 0 if none)"
@@ -194,7 +194,7 @@
       "table": "Art",
       "value_type": "str",
       "usage": "general",
-      "modality": "categorical",
+      "modality": "image",
       "is_nullable": false,
       "description": "the main idea, message, or subject matter conveyed by the image (e.g., nature, war, love, spirituality, identity, urban life, social criticism). Describe it briefly in free-form text, not limited to any fixed list."
     },

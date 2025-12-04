@@ -1,0 +1,178 @@
+[
+  {
+    "sql": "SELECT remuneration_policy, MIN(business_segments_num) AS min_business_segments_num FROM Finan GROUP BY remuneration_policy;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan"
+      ],
+      "group_by_attributes": [
+        "remuneration_policy"
+      ],
+      "aggregations": [
+        {
+          "function": "MIN",
+          "attribute": "business_segments_num",
+          "alias": "min_business_segments_num"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT auditor, COUNT(company_name) AS count_company_name FROM Finan GROUP BY auditor;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan"
+      ],
+      "group_by_attributes": [
+        "auditor"
+      ],
+      "aggregations": [
+        {
+          "function": "COUNT",
+          "attribute": "company_name",
+          "alias": "count_company_name"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT auditor, AVG(business_segments_num) AS avg_business_segments_num FROM Finan GROUP BY auditor;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan"
+      ],
+      "group_by_attributes": [
+        "auditor"
+      ],
+      "aggregations": [
+        {
+          "function": "AVG",
+          "attribute": "business_segments_num",
+          "alias": "avg_business_segments_num"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT auditor, MAX(revenue) AS max_revenue FROM Finan GROUP BY auditor;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan"
+      ],
+      "group_by_attributes": [
+        "auditor"
+      ],
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "revenue",
+          "alias": "max_revenue"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT auditor, COUNT(major_equity_changes) AS count_major_equity_changes FROM Finan GROUP BY auditor;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan"
+      ],
+      "group_by_attributes": [
+        "auditor"
+      ],
+      "aggregations": [
+        {
+          "function": "COUNT",
+          "attribute": "major_equity_changes",
+          "alias": "count_major_equity_changes"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT remuneration_policy, MIN(revenue) AS min_revenue FROM Finan GROUP BY remuneration_policy;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan"
+      ],
+      "group_by_attributes": [
+        "remuneration_policy"
+      ],
+      "aggregations": [
+        {
+          "function": "MIN",
+          "attribute": "revenue",
+          "alias": "min_revenue"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT auditor, MAX(revenue) AS max_revenue FROM Finan GROUP BY auditor;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan"
+      ],
+      "group_by_attributes": [
+        "auditor"
+      ],
+      "aggregations": [
+        {
+          "function": "MAX",
+          "attribute": "revenue",
+          "alias": "max_revenue"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  },
+  {
+    "sql": "SELECT major_equity_changes, SUM(revenue) AS sum_revenue FROM Finan GROUP BY major_equity_changes;",
+    "metadata": {
+      "category": "Agg",
+      "subcategory": "aggregation",
+      "tables": [
+        "Finan"
+      ],
+      "group_by_attributes": [
+        "major_equity_changes"
+      ],
+      "aggregations": [
+        {
+          "function": "SUM",
+          "attribute": "revenue",
+          "alias": "sum_revenue"
+        }
+      ],
+      "num_group_by": 1,
+      "num_aggregations": 1
+    }
+  }
+]

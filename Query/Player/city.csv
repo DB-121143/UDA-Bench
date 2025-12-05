@@ -1,4 +1,4 @@
-city_name,state_name,population,area,gdp,ID
+city_name,state_name,population,area,gdp,id
 Denver,Colorado,715522,400.739,,1
 Boston,Massachusetts,675647,125.0,,2
 Indianapolis,Indiana,887642,953.0,,3

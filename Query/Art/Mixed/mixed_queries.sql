@@ -8,7 +8,7 @@ SELECT nationality, COUNT(birth_continent) AS count_birth_continent FROM art WHE
 SELECT genre, AVG(age) AS avg_age FROM art WHERE birth_country = 'British India' OR teaching != 0 GROUP BY genre;
 
 -- Query 4: filter4_agg1 (art)
-SELECT genre, MAX(awards) AS max_awards FROM art WHERE art_institution != 'National Academy of Design' AND name != 'Emma Amos' AND birth_date = '1905/5/11' GROUP BY genre;
+SELECT image_genre, MAX(awards) AS max_awards FROM art WHERE art_institution != 'National Academy of Design' AND name != 'Emma Amos' AND birth_date = '1905/5/11' GROUP BY image_genre;
 
 -- Query 5: filter5_agg1 (art)
 SELECT color, MAX(awards) AS max_awards FROM art WHERE awards > 0 OR birth_country = 'Kingdom of Hungary' OR birth_country = 'Italy' GROUP BY color;

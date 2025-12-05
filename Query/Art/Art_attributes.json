@@ -181,7 +181,7 @@
       "description": "the overall artistic style of the image, described in a short phrase (e.g., abstract expressionism, geometric abstraction, minimalist line drawing). Use free-form text; if multiple styles are clearly present, separate them with `||`."
     },
     {
-      "name": "genre",
+      "name": "image_genre",
       "table": "art",
       "value_type": "str",
       "usage": "categorical",

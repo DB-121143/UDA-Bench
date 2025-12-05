@@ -5,7 +5,7 @@ SELECT teaching, MAX(awards) AS max_awards FROM art GROUP BY teaching;
 SELECT zodiac, COUNT(name) AS count_name FROM art GROUP BY zodiac;
 
 -- Query 3: aggregation (art)
-SELECT genre, AVG(age) AS avg_age FROM art GROUP BY genre;
+SELECT image_genre, AVG(age) AS avg_age FROM art GROUP BY image_genre;
 
 -- Query 4: aggregation (art)
 SELECT color, AVG(age) AS avg_age FROM art GROUP BY color;

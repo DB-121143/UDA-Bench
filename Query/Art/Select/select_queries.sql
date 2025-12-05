@@ -20,7 +20,7 @@ SELECT name, death_city, Color FROM art;
 SELECT name, tone, birth_city FROM art;
 
 -- Query 8: select (art)
-SELECT nationality, marriage, genre FROM art;
+SELECT nationality, marriage, image_genre FROM art;
 
 -- Query 9: select (art)
 SELECT century, teaching, style FROM art;

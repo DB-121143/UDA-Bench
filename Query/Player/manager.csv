@@ -1,4 +1,4 @@
-name,age,nationality,nba_team,own_year,"ID"
+name,age,nationality,nba_team,own_year,id
 Tom Gores  ,60,American  ,Detroit Pistons  ,2011.0,1
 Daniel Gilbert,62,American,Cleveland Cavaliers,,2
 Steven Anthony Ballmer,68,American,Los Angeles Clippers,,3

@@ -2,7 +2,7 @@
 SELECT death_city, color, birth_date FROM art WHERE field != 'Sculpture';
 
 -- Query 2: 1 (art)
-SELECT death_country, death_date, genre FROM art WHERE zodiac = 'Libra';
+SELECT death_country, death_date, image_genre FROM art WHERE zodiac = 'Libra';
 
 -- Query 3: 1 (art)
 SELECT composition, field, nationality FROM art WHERE nationality != 'Russian';

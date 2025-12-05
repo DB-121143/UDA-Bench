@@ -40,7 +40,7 @@
       "name": "team",
       "table": "player",
       "value_type": "str",
-      "usage": "general",
+      "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
       "description": "the current NBA team the player belongs to, or the last NBA team the player joined if not currently active (e.g., Los Angeles Lakers)."
@@ -158,7 +158,7 @@
     {
       "name": "own_year",
       "table": "manager",
-      "value_type": "str",
+      "value_type": "int",
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
@@ -234,8 +234,8 @@
     {
       "name": "population",
       "table": "city",
-      "value_type": "str",
-      "usage": "general",
+      "value_type": "int",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "population is the population of the city (e.g. 7000000)."
@@ -243,8 +243,8 @@
     {
       "name": "area",
       "table": "city",
-      "value_type": "str",
-      "usage": "general",
+      "value_type": "float",
+      "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
       "description": "area is the area of the city in square kilometers (e.g. 89.64)."

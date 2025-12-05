@@ -1,8 +1,8 @@
 {
-  "Finan": [
+  "finance": [
     {
       "name": "company_name",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -11,7 +11,7 @@
     },
     {
       "name": "registered_office",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -20,7 +20,7 @@
     },
     {
       "name": "exchange_code",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -29,16 +29,16 @@
     },
     {
       "name": "principal_activities",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "main business activities or industry classification; choose one or more from ['Mining', 'Finan', 'Healthcare', 'Manufacturing', 'Technology', 'Retail', 'Energy', 'Utilities', 'Real Estate', 'Transportation', 'Agriculture', 'Telecommunications', 'Media', 'Other'], seperated by `||` (e.g. Mining || Finan)."
+      "description": "main business activities or industry classification; choose one or more from ['Mining', 'finance', 'Healthcare', 'Manufacturing', 'Technology', 'Retail', 'Energy', 'Utilities', 'Real Estate', 'Transportation', 'Agriculture', 'Telecommunications', 'Media', 'Other'], seperated by `||` (e.g. Mining || finance)."
     },
     {
       "name": "board_members",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -47,7 +47,7 @@
     },
     {
       "name": "executive_profiles",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -56,7 +56,7 @@
     },
     {
       "name": "revenue",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -65,7 +65,7 @@
     },
     {
       "name": "net_profit_or_loss",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -74,7 +74,7 @@
     },
     {
       "name": "total_Debt",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -83,7 +83,7 @@
     },
     {
       "name": "total_assets",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -92,7 +92,7 @@
     },
     {
       "name": "cash_reserves",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -101,7 +101,7 @@
     },
     {
       "name": "net_assets",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -110,7 +110,7 @@
     },
     {
       "name": "earnings_per_share",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "float",
       "usage": "numerical",
       "modality": "text",
@@ -119,7 +119,7 @@
     },
     {
       "name": "dividend_per_share",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "float",
       "usage": "numerical",
       "modality": "text",
@@ -128,7 +128,7 @@
     },
     {
       "name": "largest_shareholder",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -137,7 +137,7 @@
     },
     {
       "name": "the_highest_ownership_stake",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "float",
       "usage": "numerical",
       "modality": "text",
@@ -146,7 +146,7 @@
     },
     {
       "name": "major_equity_changes",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "int",
       "usage": "categorical",
       "modality": "text",
@@ -155,7 +155,7 @@
     },
     {
       "name": "major_events",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -164,7 +164,7 @@
     },
     {
       "name": "bussiness_sales",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -173,7 +173,7 @@
     },
     {
       "name": "bussiness_profit",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -182,7 +182,7 @@
     },
     {
       "name": "bussiness_cost",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -191,7 +191,7 @@
     },
     {
       "name": "business_segments_num",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -200,7 +200,7 @@
     },
     {
       "name": "business_risks",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -209,7 +209,7 @@
     },
     {
       "name": "remuneration_policy",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -218,7 +218,7 @@
     },
     {
       "name": "auditor",
-      "table": "Finan",
+      "table": "finance",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",

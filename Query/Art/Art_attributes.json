@@ -2,7 +2,7 @@
   "Wiki_Text": [
     {
       "name": "name",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -11,7 +11,7 @@
     },
     {
       "name": "nationality",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -20,7 +20,7 @@
     },
     {
       "name": "art_movement",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -29,7 +29,7 @@
     },
     {
       "name": "birth_date",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -38,7 +38,7 @@
     },
     {
       "name": "death_date",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -47,7 +47,7 @@
     },
     {
       "name": "age",
-      "table": "Art",
+      "table": "art",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -56,7 +56,7 @@
     },
     {
       "name": "century",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -65,7 +65,7 @@
     },
     {
       "name": "zodiac",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -74,7 +74,7 @@
     },
     {
       "name": "birth_country",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -83,7 +83,7 @@
     },
     {
       "name": "birth_city",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -92,7 +92,7 @@
     },
     {
       "name": "birth_continent",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -101,7 +101,7 @@
     },
     {
       "name": "death_country",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -110,7 +110,7 @@
     },
     {
       "name": "death_city",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -119,25 +119,25 @@
     },
     {
       "name": "field",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
-      "description": "primary artistic field, choose one or more from: [Painting, Sculpture, Printmaking, Drawing, Photography, Illustration, Collage, Textile Art, Installation, Performance, Ceramics, Digital Art, Architecture, Mosaic, Graphic Design, Calligraphy], seperated by `||` (e.g. Collage || Illustration || Textile Art)."
+      "description": "primary artistic field, choose one or more from: [Painting, Sculpture, Printmaking, Drawing, Photography, Illustration, Collage, Textile art, Installation, Performance, Ceramics, Digital art, Architecture, Mosaic, Graphic Design, Calligraphy], seperated by `||` (e.g. Collage || Illustration || Textile art)."
     },
     {
       "name": "genre",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
-      "description": "primary genre of work, choose one or more from: [Portrait, Landscape, Still Life, Religious, Mythological, History, Genre, Nude, Animal, Illustration, Allegorical, Abstract, Fantasy, Sketch, Figurative, Conceptual, Surrealist, Symbolic, Political, Social Realism, Pop Art, Narrative, Environmental, Sculpture, Architecture, Music, Film, Digital Art, Literature, Other], seperated by `||` (e.g. Portrait || Political)."
+      "description": "primary genre of work, choose one or more from: [Portrait, Landscape, Still Life, Religious, Mythological, History, genre, Nude, Animal, Illustration, Allegorical, Abstract, Fantasy, Sketch, Figurative, Conceptual, Surrealist, Symbolic, Political, Social Realism, Pop art, Narrative, Environmental, Sculpture, Architecture, Music, Film, Digital art, Literature, Other], seperated by `||` (e.g. Portrait || Political)."
     },
     {
       "name": "marriage",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -146,16 +146,16 @@
     },
     {
       "name": "art_institution",
-      "table": "Art",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "Art academies, schools, organizations, associations, or exhibition societies the artist was affiliated with, taught at, or participated in (e.g., national art academies, artist unions, art schools, exhibition societies)."
+      "description": "art academies, schools, organizations, associations, or exhibition societies the artist was affiliated with, taught at, or participated in (e.g., national art academies, artist unions, art schools, exhibition societies)."
     },
     {
       "name": "teaching",
-      "table": "Art",
+      "table": "art",
       "value_type": "int",
       "usage": "categorical",
       "modality": "text",
@@ -164,7 +164,7 @@
     },
     {
       "name": "awards",
-      "table": "Art",
+      "table": "art",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -172,8 +172,8 @@
       "description": "Number of significant and clearly documented awards the artist received (enter an integer; use 0 if none; exclude medals, scholarships, or honorary mentions)."
     },
     {
-      "name": "Style",
-      "table": "Art",
+      "name": "style",
+      "table": "art",
       "value_type": "str",
       "usage": "categorical",
       "modality": "image",
@@ -181,8 +181,8 @@
       "description": "the overall artistic style of the image, described in a short phrase (e.g., abstract expressionism, geometric abstraction, minimalist line drawing). Use free-form text; if multiple styles are clearly present, separate them with `||`."
     },
     {
-      "name": "Genre",
-      "table": "Art",
+      "name": "genre",
+      "table": "art",
       "value_type": "str",
       "usage": "categorical",
       "modality": "image",
@@ -190,8 +190,8 @@
       "description": "the artistic genre or type of the image, described in a short phrase (e.g., landscape, portrait, still life, historical scene, narrative scene, conceptual work). Use free-form text; if multiple genres are relevant, separate them with `||`."
     },
     {
-      "name": "Theme",
-      "table": "Art",
+      "name": "theme",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "image",
@@ -199,8 +199,8 @@
       "description": "the main idea, message, or subject matter conveyed by the image (e.g., nature, war, love, spirituality, identity, urban life, social criticism). Describe it briefly in free-form text, not limited to any fixed list."
     },
     {
-      "name": "Object",
-      "table": "Art",
+      "name": "object",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "image",
@@ -208,8 +208,8 @@
       "description": "the primary visible objects or subjects depicted in the image (e.g., woman, tree, city skyline, animals, abstract shapes). List the key visual elements as nouns or short noun phrases; if there are several, separate them with `||`."
     },
     {
-      "name": "Color",
-      "table": "Art",
+      "name": "color",
+      "table": "art",
       "value_type": "str",
       "usage": "categorical",
       "modality": "image",
@@ -217,8 +217,8 @@
       "description": "the dominant or characteristic colors of the image (e.g., red and black, muted earth tones, bright multicolored palette, monochrome blue). Describe the color usage in free-form text; if multiple color groups are important, separate them with `||`."
     },
     {
-      "name": "Tone",
-      "table": "Art",
+      "name": "tone",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "image",
@@ -226,8 +226,8 @@
       "description": "the overall tonal and emotional quality of the image (e.g., bright and cheerful, dark and dramatic, calm and neutral, cold and somber). Use a short free-form description that captures both visual tone and mood."
     },
     {
-      "name": "Composition",
-      "table": "Art",
+      "name": "composition",
+      "table": "art",
       "value_type": "str",
       "usage": "general",
       "modality": "image",

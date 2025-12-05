@@ -2,7 +2,7 @@
   "legal_case": [
     {
       "name": "judge_name",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -11,7 +11,7 @@
     },
     {
       "name": "plaintiff",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -20,7 +20,7 @@
     },
     {
       "name": "defendant",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -29,7 +29,7 @@
     },
     {
       "name": "hearing_year",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -38,7 +38,7 @@
     },
     {
       "name": "judgment_year",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -47,7 +47,7 @@
     },
     {
       "name": "charges",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -56,7 +56,7 @@
     },
     {
       "name": "case_type",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -65,7 +65,7 @@
     },
     {
       "name": "verdict",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -74,7 +74,7 @@
     },
     {
       "name": "legal_basis_num",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -83,7 +83,7 @@
     },
     {
       "name": "case_number",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -92,7 +92,7 @@
     },
     {
       "name": "counsel_for_applicant",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -101,7 +101,7 @@
     },
     {
       "name": "counsel_for_respondent",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -110,7 +110,7 @@
     },
     {
       "name": "nationality_for_applicant",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -119,7 +119,7 @@
     },
     {
       "name": "fine_amount",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -128,7 +128,7 @@
     },
     {
       "name": "legal_fees",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -137,7 +137,7 @@
     },
     {
       "name": "plaintiff_current_status",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -146,7 +146,7 @@
     },
     {
       "name": "defendant_current_status",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -155,7 +155,7 @@
     },
     {
       "name": "evidence",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "int",
       "usage": "general",
       "modality": "text",
@@ -164,7 +164,7 @@
     },
     {
       "name": "first_judge",
-      "table": "Legal",
+      "table": "legal",
       "value_type": "int",
       "usage": "general",
       "modality": "text",

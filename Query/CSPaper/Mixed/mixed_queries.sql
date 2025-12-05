@@ -1,18 +1,18 @@
 -- Query 1: filter1_agg1 (cspaper)
-SELECT uses_reranker, AVG(data_modality) AS avg_data_modality FROM cspaper WHERE evaluation_metric != 'F1' GROUP BY uses_reranker;
+SELECT uses_knowledge_graph, COUNT(evaluation_metric) AS count_evaluation_metric FROM cspaper WHERE reasoning_depth = 'multi-hop' GROUP BY uses_knowledge_graph;
 
 -- Query 2: filter2_agg1 (cspaper)
-SELECT topic, COUNT(agent_framework) AS count_agent_framework FROM cspaper WHERE topic != 'Retrieval-Augmented Generation' AND uses_reranker > 'Yes' GROUP BY topic;
+SELECT reasoning_depth, SUM(baseline_amount) AS sum_baseline_amount FROM cspaper WHERE retrieval_method = 'Web Search; Dense Retrieval' AND use_agent = 'No' GROUP BY reasoning_depth;
 
 -- Query 3: filter3_agg1 (cspaper)
-SELECT agent_framework, MAX(data_modality) AS max_data_modality FROM cspaper WHERE performance_on_hotpotqa = 'EM: 43.75 (with Llama-3.1-8B-Instruct)' OR agent_framework >= 'Other' GROUP BY agent_framework;
+SELECT data_modality, AVG(baseline_amount) AS avg_baseline_amount FROM cspaper WHERE application_domain != 'Education' OR use_agent = 'Yes' GROUP BY data_modality;
 
 -- Query 4: filter4_agg1 (cspaper)
-SELECT use_agent, MAX(data_modality) AS max_data_modality FROM cspaper WHERE application_domain != 'Art' AND evaluation_metric = 'FactScore' AND uses_knowledge_graph > 'Yes' GROUP BY use_agent;
+SELECT data_modality, AVG(baseline_amount) AS avg_baseline_amount FROM cspaper WHERE use_agent = 'Yes' AND retrieval_method != 'Web Search; Dense Retrieval' AND data_modality != 'Table; Text' GROUP BY data_modality;
 
 -- Query 5: filter5_agg1 (cspaper)
-SELECT retrieval_method, SUM(data_modality) AS sum_data_modality FROM cspaper WHERE data_modality = 'Table' OR evaluation_metric != 'Coherence' OR topic = 'Information Retrieval' GROUP BY retrieval_method;
+SELECT retrieval_method, SUM(baseline_amount) AS sum_baseline_amount FROM cspaper WHERE uses_reranker = 'No' OR performance_on_hotpotqa = 'KILT-EM: 27.3 (T5-Base); KILT-EM: 31.1 (T5-XL)' OR baseline = 'Traditional RAG' GROUP BY retrieval_method;
 
 -- Query 6: filter6_agg1 (cspaper)
-SELECT uses_reranker, MAX(data_modality) AS max_data_modality FROM cspaper WHERE (evaluation_dataset != 'InfoSeek' AND data_modality = 'proprietary enterprise dataset') OR (baseline != 'No RAG' AND baseline != 'PoisonedRAG') GROUP BY uses_reranker;
+SELECT uses_knowledge_graph, COUNT(reasoning_depth) AS count_reasoning_depth FROM cspaper WHERE (baseline = 'e5-base-v2; gpt-2' AND topic = 'SFT') OR (data_modality = 'Image; Table; Text' AND topic != 'SFT') GROUP BY uses_knowledge_graph;
 

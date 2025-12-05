@@ -704,7 +704,7 @@ def print_combination_summary():
 
 if __name__ == "__main__":
     # Configuration
-    base_path = "/data/dengqiyan/UDA-Bench/Query/CSPaper"
+    base_path = "/data2/jproject/OpenQuestProject/UDA-Bench/Query/CSPaper"
     output_path = f"{base_path}/Mixed"
     
     # Create output directory

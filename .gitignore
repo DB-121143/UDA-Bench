@@ -1,3 +1,13 @@
+
+*
+!*/
+!*.py
+!*.ipynb
+!*.md
+!*.json
+!*.csv
+!*.sql
 .DS_Store
 **/result/
 **/sql_eval/
+.vscode/

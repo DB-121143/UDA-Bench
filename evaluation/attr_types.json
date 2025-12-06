@@ -1,5 +1,5 @@
 {
-    "Wiki_Text": {
+    "Art": {
         "name": ["single", "unfixed"],
         "nationality": ["multi", "unfixed"],
         "art_movement": ["multi", "unfixed"],
@@ -18,9 +18,15 @@
         "marriage": ["single", "fixed"],
         "art_institution": ["multi", "unfixed"],
         "teaching": ["single", "fixed"],
-        "awards": ["single", "fixed"]
+        "awards": ["single", "fixed"],
+        "style": ["multi", "unfixed"],
+        "image_genre": ["multi", "unfixed"],
+        "object": ["multi", "unfixed"],
+        "color": ["multi", "unfixed"],
+        "tone": ["multi", "unfixed"],
+        "composition": ["multi", "unfixed"]
     },
-    "legal_case": {
+    "Legal": {
         "judge_name": ["single", "unfixed"],
         "plaintiff": ["multi", "unfixed"],
         "defendant": ["multi", "unfixed"],
@@ -41,7 +47,7 @@
         "evidence": ["single", "fixed"],
         "first_judge": ["single", "fixed"]
     },
-    "player":{
+    "Player":{
         "name": ["single", "unfixed"],                         
         "birth_date": ["single", "unfixed"],                   
         "nationality": ["multi", "unfixed"],                   
@@ -136,32 +142,5 @@
         "business_risks": ["multi", "fixed"],
         "remuneration_policy": ["single", "fixed"],
         "auditor": ["single", "unfixed"]
-    },
-"Wiki_Image": {
-        "name": ["single", "unfixed"],
-        "nationality": ["multi", "unfixed"],
-        "art_movement": ["multi", "unfixed"],
-        "birth_date": ["single", "unfixed"],
-        "death_date": ["single", "unfixed"],
-        "age": ["single", "fixed"],
-        "century": ["single", "unfixed"],
-        "zodiac": ["single", "fixed"],
-        "birth_country": ["single", "unfixed"],
-        "birth_city": ["single", "unfixed"],
-        "birth_continent": ["single", "unfixed"],
-        "death_country": ["single", "unfixed"],
-        "death_city": ["single", "unfixed"],
-        "field": ["multi", "fixed"],
-        "genre": ["multi", "fixed"],
-        "marriage": ["single", "fixed"],
-        "art_institution": ["multi", "unfixed"],
-        "teaching": ["single", "fixed"],
-        "awards": ["single", "fixed"],
-        "style":["multi", "unfixed"],
-        "image_genre":["multi", "unfixed"], 
-        "object":["multi", "unfixed"], 
-        "color":["multi", "unfixed"], 
-        "tone":["multi", "unfixed"], 
-        "composition":["multi", "unfixed"]
     }
 }

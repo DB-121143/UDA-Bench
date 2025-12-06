@@ -10,4 +10,5 @@
 .DS_Store
 **/result/
 **/sql_eval/
+**/evaluation/demo_acc_result/
 .vscode/

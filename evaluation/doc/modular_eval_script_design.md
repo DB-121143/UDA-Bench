@@ -33,7 +33,8 @@
   - 全局参数：数值容忍度（默认 0）、多值分隔符（`||`）、LLM 重试与缓存路径。
 - **SQL 与元数据解析层**  
   - `SqlParser`: 使用 sqlglot，输出列清单（含是否聚合、聚合类型、别名）、group by、join on、涉及表。  
-  - `QueryManifest`: 汇总 SQL 文本、列的 `description/value_type`、停用列。
+  - `QueryManifest`: 汇总 SQL 文本、列的 `description/value_type`、停用列，供评测与预处理共用。  
+  - `SqlPreprocessor`: 读取多 SQL 文件，分割语句，提取相关属性，生成 per-query 目录与 `sql.json`。
 - **GT 执行层**  
   - `GtRunner`: 在 duckdb 中注册数据集 CSV（自动用文件名作表名），执行 SQL，返回 DataFrame。  
   - 类型规范化：依据 attributes.json 将列转换为 int/float/str。
@@ -56,35 +57,32 @@
   - 单元测试：SQL 解析、主键匹配、多值拆分、聚合精度计算。  
   - 集成冒烟：对少量示例 SQL 运行全链路，校验输出文件结构与指标。
 
-## 实现计划（供审阅）
-0. @todo，给出1个sql预处理功能，从具体的包含多个sql语句的文件中逐个提取sql，并且将该sql种涉及到的相应表格的属性信息提取到对应的属性信息文件中 ， 比如 sql文件： Query/Player/Select/select_queries_player.sql ； 提取出的sql中的相关属性文件： evaluation/demo_acc_result/Player/Select/select_queries_player/1/sql.json 中。
-其中 sql.json 的格式如下：
+## SQL 预处理（拆分与属性落盘）
+- 目标：给定包含多条 SQL 的文件（如 `Query/Player/Select/select_queries_player.sql`），逐条编号拆分，生成评测所需的 `sql.json` 并创建对应目录，便于随后放置 `result.csv`。  
+- 输出目录：`evaluation/demo_acc_result/{Dataset}/{Task}/{sql_file_stem}/{idx}/sql.json`，`idx` 从 1 递增；同时创建同级 `result.csv` 占位（可选，若不存在则跳过）。  
+- 属性收集：解析 SQL 中涉及的表与列，结合 `*_attributes.json` 仅保留相关列，格式示例如下：
 ```
 {
-  "sql": "{sql语句字符串}",
+  "sql": "{SQL 语句字符串}",
   "table1": {
-    "attr1":{
-      "value_type": "{该属性的类型}",
-      "description": "{该属性的文字描述}"
-    },
-    "attr2":{
-      "value_type": "{该属性的类型}",
-      "description": "{该属性的文字描述}"      
-    }
+    "attr1": {"value_type": "int|float|str|multi-str", "description": "..."},
+    "attr2": {"value_type": "...", "description": "..."}
   },
   "table2": {
-    "attrx":{
-      "value_type": "{该属性的类型}",
-      "description": "{该属性的文字描述}"
-    },
-    ...
+    "attrx": {"value_type": "...", "description": "..."}
   }
 }
-
 ```
+- 逻辑：  
+  1) 读取 SQL 文件并用 sqlglot 分割出完整语句；  
+  2) 调用 `SqlParser` 提取涉及表/列；  
+  3) 从 attributes.json 过滤对应字段，缺失列记录告警；  
+  4) 生成目录与 `sql.json`，存储sql与sql中涉及到的属性信息。  
+  5) 返回生成的 query 列表，供后续评测 CLI 批量运行。
 
+## 实现计划（供审阅）
 1. 搭建 `evaluation` 下的 Python 包骨架与入口 CLI，配置依赖（duckdb、sqlglot、pydantic/attrs、pandas，litellm LLM 客户端可插拔）。  
-2. 完成 `SqlParser` 与 `QueryManifest`，支持 select/filter/agg/join 的关键信息抽取。  
+2. 完成 `SqlParser` 与 `QueryManifest`，支持 select/filter/agg/join 的关键信息抽取，同时实现 SQL 预处理器生成 per-query `sql.json`。  
 3. 实现 `GtRunner`，自动注册数据集 CSV，支持别名与路径映射，输出 `gold_result.csv`。  
 4. 构建 `ResultLoader` + `RowMatcher`，覆盖主键逻辑（ID/group by/join/primary_key），生成 matched 结果。  
 5. 编写 `CellComparator` 系列与 `MetricCalculator`，实现单值、多值、聚合的指标计算，产出 per-column 与平均指标。  
@@ -92,7 +90,7 @@
 7. 添加单元测试与一个最小示例 SQL 的端到端冒烟脚本，验证指标与输出结构。  
 8. 文档更新：在 `evaluation/doc` 补充使用说明、LLM 配置示例、可选阈值/主键参数说明。
 
-## 待确认/假设
+## tips
 - LLM 提供方式：默认走环境变量密钥的 OpenAI 兼容接口，如需自定义需提供 API endpoint。 参考 evaluation/ref_code/eval_on_multiEntity.py代码中 batch_completion 和环境变量的设置方法。
 - 多实体场景的 `primary_key` 需由任务配置或命令行传入，如果没有传入，默认使用select后面的第1个属性列作为`primary_key`并给出log。  
 - 输出文件格式沿用 demo 结构，不新增额外文件（除日志）。

@@ -160,8 +160,8 @@ def ensure_from_medical(sql: str, table_name: str = "medical") -> str:
 
 def ensure_id_selected(sql: str) -> str:
     """
-    确保 SELECT 列表里包含 ID。
-    简单启发式：在开头 SELECT（或 SELECT DISTINCT）后面直接插入 'ID, '。
+    确保 SELECT 列表里包含 id。
+    简单启发式：在开头 SELECT（或 SELECT DISTINCT）后面直接插入 'id, '。
     """
     if re.search(r"(?i)\bID\b", sql):
         return sql
@@ -170,10 +170,10 @@ def ensure_id_selected(sql: str) -> str:
     m = select_pattern.search(sql)
     if m:
         insert_pos = m.end()
-        return sql[:insert_pos] + "ID, " + sql[insert_pos:]
+        return sql[:insert_pos] + "id, " + sql[insert_pos:]
 
-    # 极端情况：未匹配到 SELECT，直接前置 ID, 保持原 SQL 结构
-    return f"SELECT ID, {sql.lstrip()}"
+    # 极端情况：未匹配到 SELECT，直接前置 id, 保持原 SQL 结构
+    return f"SELECT id, {sql.lstrip()}"
 
 
 def normalize_sql(sql: str, table_name: str = "medical") -> str:
@@ -461,7 +461,7 @@ def evaluate_columns(
 ) -> Tuple[Dict[str, Dict[str, float]], Dict[str, float]]:
     common_cols = sorted(set(matched_gt.columns) & set(matched_pred.columns))
 
-    exclude_cols = {"ID", "file_name", "file_id"}
+    exclude_cols = {"id", "file_name", "file_id"}
     eval_cols = [c for c in common_cols if c not in exclude_cols]
 
     if unfixed_columns is None or len(unfixed_columns) == 0:
@@ -520,8 +520,8 @@ def run_sql_on_gt(
     filtered_gt = con.execute(sql).df()
     con.close()
 
-    if "ID" not in filtered_gt.columns:
-        raise ValueError("SQL 结果中必须包含 'ID' 列，请检查 SQL 构造逻辑。")
+    if "id" not in filtered_gt.columns:
+        raise ValueError("SQL 结果中必须包含 'id' 列，请检查 SQL 构造逻辑。")
 
     return filtered_gt
 
@@ -530,8 +530,8 @@ def add_file_id_columns(df_gt: pd.DataFrame, df_pred: pd.DataFrame) -> Tuple[pd.
     df_gt = df_gt.copy()
     df_pred = df_pred.copy()
 
-    df_gt["ID"] = df_gt["ID"].apply(normalize_empty_cell)
-    df_gt["file_id"] = df_gt["ID"].str.split("_", n=1, expand=True)[0]
+    df_gt["id"] = df_gt["id"].apply(normalize_empty_cell)
+    df_gt["file_id"] = df_gt["id"].str.split("_", n=1, expand=True)[0]
 
     df_pred["file_name"] = df_pred["file_name"].apply(normalize_empty_cell)
     df_pred["file_id"] = df_pred["file_name"].str.replace(".txt", "", regex=False)
@@ -661,7 +661,7 @@ def extract_first_select_column(sql: str) -> Optional[str]:
 
 def determine_primary_key(sql_raw: str, override: Optional[str]) -> str:
     """
-    优先使用命令行 override；否则取原始 SQL（补 ID 之前）里 SELECT 的第一个字段。
+    优先使用命令行 override；否则取原始 SQL（补 id 之前）里 SELECT 的第一个字段。
     """
     if override:
         return override

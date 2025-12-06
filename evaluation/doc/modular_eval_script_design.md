@@ -12,11 +12,11 @@
 
 ## 核心流程
 1. 加载 SQL+元数据：从 SQL 文件分割语句，关联 attributes.json 得到列的描述/类型。
-2. 解析 SQL：用 sqlglot 提取表名、select 列、聚合函数、group by、join 键、停用列（ID 或 `{table}.ID`）。
+2. 解析 SQL：用 sqlglot 提取表名、select 列、聚合函数、group by、join 键、停用列（id 或 `{table}.id`）。
 3. 运行 GT：将对应数据集 CSV 注册到 duckdb，执行 SQL 得到 `gold_result`。
 4. 结果读取：加载 `result.csv`，按解析出的列规范化列名与类型。
 5. 行匹配：根据算子确定主键  
-   - Select/Filter：ID；Join：参与 join 的 `{table}.ID`；Aggregation：group by 列；多实体：用户指定 `primary_key` 进一步拆分。  
+   - Select/Filter：id；Join：参与 join 的 `{table}.id`；Aggregation：group by 列；多实体：用户指定 `primary_key` 进一步拆分。  
    排序对齐，输出 `matched_result` / `matched_gold_result`。
 6. 单元格评测：按列类型/算子分支  
    - 单值 int/float：数值比对（阈值或绝对相等,int要绝对相等，float给一个默认的阈值）。  
@@ -42,7 +42,7 @@
   - `ResultLoader`: 读取 `result.csv`，补充缺失列为 `None`，校验停用列存在。  
   - 列名标准化（去反引号、大小写统一）。
 - **行匹配与多实体处理**  
-  - `RowMatcher`: 基于主键列进行 inner join；支持主键缺失/重复告警；可传 `primary_key` 在同一 ID 组内做二次匹配。  
+  - `RowMatcher`: 基于主键列进行 inner join；支持主键缺失/重复告警；可传 `primary_key` 在同一 id 组内做二次匹配。  
   - 输出对齐后的两个 DataFrame。
 - **单元格比对器**  
   - 基类 `CellComparator`；具体实现：`NumericComparator`、`StringLLMComparator`、`MultiValueComparator`、`AggComparator`。  
@@ -84,7 +84,7 @@
 1. 搭建 `evaluation` 下的 Python 包骨架与入口 CLI，配置依赖（duckdb、sqlglot、pydantic/attrs、pandas，litellm LLM 客户端可插拔）。  
 2. 完成 `SqlParser` 与 `QueryManifest`，支持 select/filter/agg/join 的关键信息抽取，同时实现 SQL 预处理器生成 per-query `sql.json`。  
 3. 实现 `GtRunner`，自动注册数据集 CSV，支持别名与路径映射，输出 `gold_result.csv`。  
-4. 构建 `ResultLoader` + `RowMatcher`，覆盖主键逻辑（ID/group by/join/primary_key），生成 matched 结果。  
+4. 构建 `ResultLoader` + `RowMatcher`，覆盖主键逻辑（id/group by/join/primary_key），生成 matched 结果。  
 5. 编写 `CellComparator` 系列与 `MetricCalculator`，实现单值、多值、聚合的指标计算，产出 per-column 与平均指标。  
 6. 打通 `ResultWriter` 与 CLI，按约定目录落盘全部中间/最终文件。  
 7. 添加单元测试与一个最小示例 SQL 的端到端冒烟脚本，验证指标与输出结构。  

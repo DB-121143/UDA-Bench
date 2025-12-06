@@ -72,17 +72,17 @@ def normalize_file_id(value: Any) -> str:
 
 def normalize_file_name_columns(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Convert file_name/filename columns to ID columns by stripping suffix.
+    Convert file_name/filename columns to id columns by stripping suffix.
     Supports {table}.file_name style.
     """
     rename_map: MutableMapping[str, str] = {}
     for col in list(df.columns):
         lower = str(col).lower()
         if lower in {"file_name", "filename"}:
-            rename_map[col] = "ID"
+            rename_map[col] = "id"
         elif lower.endswith(".file_name") or lower.endswith(".filename"):
             prefix = col.split(".", 1)[0]
-            rename_map[col] = f"{prefix}.ID"
+            rename_map[col] = f"{prefix}.id"
     if rename_map:
         df = df.rename(columns=rename_map)
         for new_col in rename_map.values():

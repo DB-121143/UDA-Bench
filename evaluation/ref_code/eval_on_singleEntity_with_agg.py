@@ -702,7 +702,7 @@ def detect_key_columns_from_df(
     group_by_cols: List[str],
 ) -> List[str]:
     """
-    优先使用 GROUP BY 列名的交集；若为空，尝试 *.ID 或 ID；仍为空则使用所有公共列。
+    优先使用 GROUP BY 列名的交集；若为空，尝试 *.id 或 id；仍为空则使用所有公共列。
     """
     normalized_group_by = []
     for col in group_by_cols:
@@ -721,8 +721,8 @@ def detect_key_columns_from_df(
         if dot_keys:
             keys = dot_keys
 
-    if not keys and "ID" in filtered_gt.columns and "ID" in result_df.columns:
-        keys = ["ID"]
+    if not keys and "id" in filtered_gt.columns and "id" in result_df.columns:
+        keys = ["id"]
 
     if not keys:
         common_cols = sorted(set(filtered_gt.columns) & set(result_df.columns))

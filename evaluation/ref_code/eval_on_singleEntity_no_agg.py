@@ -3,7 +3,7 @@
 单文档单实体（Extract-Filter-Join，无聚合）结果评测脚本。
 核心思路：
 - 用同一份大 GT 表集合执行 SQL，生成该 SQL 的“小 GT”（sql_{id}_on_gt.csv）。
-- 读取系统输出的 sql_{id}_result.csv，与小 GT 按 ID 对齐后逐列评估。
+- 读取系统输出的 sql_{id}_result.csv，与小 GT 按 id 对齐后逐列评估。
 
 路径尚未固定，便于后续手动调整，以下几个大写变量需要按实际数据位置修改：
 - GT_TABLE_DIR: 存放所有 GT 表格的目录（每个表 1 个 CSV，文件名=表名）。
@@ -180,7 +180,7 @@ def load_sql_payload(path: Path) -> Tuple[str, Dict[str, str]]:
 def extract_table_aliases(sql: str) -> List[TableAlias]:
     """
     从 FROM / JOIN 捕获表名与别名（如果未写别名，则 alias=table）。
-    仅用于补 ID，不做 SQL 语法完整解析。
+    仅用于补 id，不做 SQL 语法完整解析。
     """
     pattern = re.compile(
         r"(?i)\b(from|join)\s+([a-zA-Z_][\w]*)\s*(?:as\s+)?(?:([a-zA-Z_][\w]*))?"
@@ -210,14 +210,14 @@ def _select_contains_identifier(select_part: str, candidates: Sequence[str]) -> 
 
 def ensure_id_columns(sql: str, table_aliases: List[TableAlias]) -> Tuple[str, List[str]]:
     """
-    自动在 SELECT 列表前补齐 ID 列：
-    - 单表：补 ID
-    - 多表 JOIN：为每个表补 {table}.ID，列名明确别名为 "table.ID"
+    自动在 SELECT 列表前补齐 id 列：
+    - 单表：补 id
+    - 多表 JOIN：为每个表补 {table}.id，列名明确别名为 "table.id"
     返回补齐后的 SQL 以及用于对齐的 key 列名列表。
     """
     select_match = re.match(r"(?is)^\s*select\s+(distinct\s+)?", sql)
     if not select_match:
-        return sql, ["ID"]
+        return sql, ["id"]
 
     from_match = re.search(r"(?is)\bfrom\b", sql)
     select_part = sql[select_match.end(): from_match.start()] if from_match else sql[select_match.end():]
@@ -232,16 +232,16 @@ def ensure_id_columns(sql: str, table_aliases: List[TableAlias]) -> Tuple[str, L
         table = table_aliases[0].table if table_aliases else None
         if not _select_contains_identifier(select_part, ["id", f"{table}.id" if table else "", f"{alias}.id" if alias else ""]):
             prefix = f"{alias}." if alias else ""
-            new_cols.append(f"{prefix}ID AS ID")
-        key_cols = ["ID"]
+            new_cols.append(f"{prefix}id AS id")
+        key_cols = ["id"]
     else:
         for ta in table_aliases:
-            col_name = f"{ta.table}.ID"
+            col_name = f"{ta.table}.id"
             if col_name in key_cols:
                 continue
             candidates = [col_name, f"{ta.alias}.id", f"{ta.table}.id"]
             if not _select_contains_identifier(select_part, candidates):
-                new_cols.append(f'{ta.alias}.ID AS "{col_name}"')
+                new_cols.append(f'{ta.alias}.id AS "{col_name}"')
             key_cols.append(col_name)
 
     if not new_cols:
@@ -257,7 +257,7 @@ def detect_key_columns_from_df(
     preferred_keys: Optional[List[str]] = None,
 ) -> List[str]:
     """
-    优先使用补 ID 时推断的 key 列，其次使用 *.ID 样式，再退回单列 ID。
+    优先使用补 id 时推断的 key 列，其次使用 *.id 样式，再退回单列 id。
     """
     keys: List[str] = []
 
@@ -271,11 +271,11 @@ def detect_key_columns_from_df(
         if dot_keys:
             keys = dot_keys
 
-    if not keys and "ID" in gt_df.columns and "ID" in result_df.columns:
-        keys = ["ID"]
+    if not keys and "id" in gt_df.columns and "id" in result_df.columns:
+        keys = ["id"]
 
     if not keys:
-        raise ValueError("无法找到用于对齐的 ID 列，请检查 SQL 或结果表的列名。")
+        raise ValueError("无法找到用于对齐的 id 列，请检查 SQL 或结果表的列名。")
 
     return keys
 

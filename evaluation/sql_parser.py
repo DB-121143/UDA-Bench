@@ -110,11 +110,11 @@ class SqlParser:
             if source.endswith(".id") and item.output_name not in stop_cols:
                 stop_cols.append(item.output_name)
         for table in tables:
-            candidate = f"{table}.ID"
+            candidate = f"{table}.id"
             if candidate not in stop_cols:
                 stop_cols.append(candidate)
-        if "ID" not in stop_cols:
-            stop_cols.append("ID")
+        if "id" not in stop_cols:
+            stop_cols.append("id")
         return sorted(set(stop_cols))
 
     def _detect_query_type(self, group_by: Sequence[str], items: Sequence[SelectItem], tables: Sequence[str]) -> str:
@@ -128,12 +128,12 @@ class SqlParser:
         self, query_type: str, group_by: Sequence[str], tables: Sequence[str], join_keys: Sequence[str]
     ) -> List[str]:
         if query_type == "aggregation":
-            return list(group_by) if group_by else ["ID"]
+            return list(group_by) if group_by else ["id"]
         if query_type == "join":
             if join_keys:
                 return list(join_keys)
-            return [f"{table}.ID" for table in tables]
-        return ["ID"]
+            return [f"{table}.id" for table in tables]
+        return ["id"]
 
     def _parse_select_item(self, node: exp.Expression) -> SelectItem:
         if isinstance(node, exp.Alias):

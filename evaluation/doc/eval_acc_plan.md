@@ -23,7 +23,7 @@ JOIN: 分别给定2个文档及其对应的Join列，按照Join列相等把它�
 我现在需要为类SQL的非结构化文档抽取系统设计一套评测系统，要能够根据ground truth表(下简称gt)、sql语句、属性描述和result表 计算出select后面所有召回属性列的列级准确率以及最后的平均准确率。
 
 已知在gt表上用关系型数据库执行SQL得到的结果是gold_result表，我们要将它与我们的文档抽取系统(比如quest)抽取得到的结果result表进行比较，从而测出准确率。
-result表和gold_result表中具有停用列，不需要去算准确率，是ID列或者`f"{table_name}.ID"` 列。
+result表和gold_result表中具有停用列，不需要去算准确率，是ID列或者`f"{table_name}.id"` 列。
 
 已知不同类型的算子和不同的属性类型数据类型对评测的逻辑会产生不同的影响，下面我来详细讲解一下：
 基本属性类型：int, float, str

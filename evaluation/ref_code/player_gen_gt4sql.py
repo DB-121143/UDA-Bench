@@ -89,7 +89,7 @@ def load_tables(con: duckdb.DuckDBPyConnection, attr_lookup: Dict[str, Dict[str,
 
 
 def extract_query_id(comment_text: str) -> Optional[str]:
-    """Return the numeric ID after 'Query' in the comment, if present."""
+    """Return the numeric id after 'Query' in the comment, if present."""
     match = re.search(r"Query\s*([0-9]+)", comment_text, flags=re.IGNORECASE)
     if match:
         return match.group(1)
@@ -97,7 +97,7 @@ def extract_query_id(comment_text: str) -> Optional[str]:
 
 
 def extract_category_id(comment_text: str) -> Optional[str]:
-    """Return the numeric ID after 'Category' in the comment, if present."""
+    """Return the numeric id after 'Category' in the comment, if present."""
     match = re.search(r"Category\s*([0-9]+)", comment_text, flags=re.IGNORECASE)
     if match:
         return match.group(1)
@@ -239,20 +239,20 @@ def prepend_columns_after_select(sql: str, columns: List[str]) -> str:
 
 def add_id_columns(sql: str) -> str:
     """
-    Add ID columns to the SELECT list when appropriate.
+    Add id columns to the SELECT list when appropriate.
 
     - Skip queries that contain GROUP BY (aggregated results).
-    - For single-table queries (Select/Filter), prepend a bare ID column.
-    - For joins, prepend per-table ID columns named as `{table}.ID`.
+    - For single-table queries (Select/Filter), prepend a bare id column.
+    - For joins, prepend per-table id columns named as `{table}.id`.
     """
     if has_groupby_clause(sql):
         return sql
 
     tables = extract_tables(sql)
     if len(tables) <= 1:
-        return prepend_columns_after_select(sql, ["ID"])
+        return prepend_columns_after_select(sql, ["id"])
 
-    id_columns = [f'{table}.ID AS "{table}.ID"' for table in tables]
+    id_columns = [f'{table}.id AS "{table}.id"' for table in tables]
     return prepend_columns_after_select(sql, id_columns)
 
 

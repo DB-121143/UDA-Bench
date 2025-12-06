@@ -42,7 +42,8 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
-from typing import Optional
+
+from sqlglot import exp, parse_one
 
 from .config import EvalSettings, Paths
 from .gt_runner import GtRunner
@@ -53,6 +54,7 @@ from .result_loader import ResultLoader
 from .result_writer import ResultWriter
 from .row_matcher import RowMatcher
 from .sql_parser import SqlParser
+from .utils import standardize_column_name
 
 
 def infer_result_path(dataset: str, task: str, sql_file: Path, query_id: int) -> Path:
@@ -76,6 +78,53 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--llm-model", help="LLM model name")
     parser.add_argument("--log-level", default="INFO", help="Logging level")
     return parser
+
+
+def _inject_id_columns(manifest: QueryManifest, logger) -> str:
+    """
+    Ensure non-aggregation GT SQL always returns id columns for alignment.
+    For joins we add {table}.id, otherwise add id, unless already selected.
+    """
+    parsed = manifest.parsed
+    if parsed.query_type == "aggregation":
+        return manifest.sql
+
+    existing: set[str] = set()
+    for item in parsed.select_items:
+        if item.output_name:
+            existing.add(standardize_column_name(item.output_name).lower())
+        if item.source_name:
+            existing.add(standardize_column_name(item.source_name).lower())
+
+    required: list[str] = []
+    for col in parsed.stop_columns:
+        normalized = standardize_column_name(col).lower()
+        if normalized == "id" or normalized.endswith(".id"):
+            if normalized not in existing:
+                required.append(col)
+
+    if not required:
+        return manifest.sql
+
+    try:
+        expr = parse_one(manifest.sql, error_level="ignore")
+    except Exception as exc:  # pragma: no cover - defensive fallback
+        logger.warning("Failed to parse SQL for id injection: %s", exc)
+        return manifest.sql
+    if expr is None:  # pragma: no cover - defensive fallback
+        logger.warning("Failed to parse SQL for id injection: empty expression")
+        return manifest.sql
+
+    for col in required:
+        if "." in col:
+            table, column = col.split(".", 1)
+            expr = expr.select(exp.alias_(exp.column(column, table=table), col, quoted=True))
+        else:
+            expr = expr.select(exp.alias_(exp.column(col), col))
+
+    patched_sql = expr.sql(dialect="duckdb")
+    logger.debug("Injected id columns into GT SQL: %s", required)
+    return patched_sql
 
 
 def main():
@@ -109,7 +158,8 @@ def main():
     manifest = QueryManifest.from_files(sql_file=sql_file, attributes_file=paths.resolve_attributes(), parser=parser)
 
     gt_runner = GtRunner(gt_dir=paths.resolve_gt_dir(), attributes=manifest.attributes)
-    gold_df = gt_runner.run(manifest.sql)
+    gt_sql = _inject_id_columns(manifest, logger)
+    gold_df = gt_runner.run(gt_sql)
 
     loader = ResultLoader(
         expected_columns=manifest.parsed.output_columns,

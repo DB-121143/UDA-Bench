@@ -130,9 +130,7 @@ class SqlParser:
         if query_type == "aggregation":
             return list(group_by) if group_by else ["id"]
         if query_type == "join":
-            if join_keys:
-                return list(join_keys)
-            return [f"{table}.id" for table in tables]
+            return [f"{table}.id" for table in tables] if tables else ["id"]
         return ["id"]
 
     def _parse_select_item(self, node: exp.Expression) -> SelectItem:

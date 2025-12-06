@@ -19,6 +19,11 @@ python3 -m evaluation.run_eval \
   --result-csv evaluation/demo_acc_result/Player/Filter/filter_queries_player/1/result.csv
 
 # Player Agg 
+python3 -m evaluation.run_eval \
+  --dataset Player \
+  --task Agg \
+  --sql-file evaluation/demo_acc_result/Player/Agg/agg_queries/2/sql.json \
+  --result-csv evaluation/demo_acc_result/Player/Agg/agg_queries/2/result.csv
 
 常用参数：
 - --dataset：数据集名称，对应 Query/{dataset} 下的 GT CSV 和 attributes。
@@ -78,7 +83,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--primary-key", help="Optional secondary key for multi-entity alignment")
     parser.add_argument("--float-tolerance", type=float, default=0.0, help="Absolute tolerance for float comparison")
     parser.add_argument("--multi-value-sep", default="||", help="Separator for multi-str attributes")
-    parser.add_argument("--llm-provider", default="none", help="LLM provider name, set to 'none' to disable")
+    parser.add_argument("--llm-provider", default="openai", help="LLM provider name, set to 'none' to disable")
     parser.add_argument("--llm-model", help="LLM model name")
     parser.add_argument("--log-level", default="INFO", help="Logging level")
     return parser
@@ -172,12 +177,14 @@ def main():
     )
     pred_df = loader.load(result_csv)
 
-    matcher = RowMatcher()
+    matcher = RowMatcher(settings=settings)
     match_result = matcher.match(
         gold_df=gold_df,
         pred_df=pred_df,
         primary_keys=manifest.primary_keys,
         secondary_key=args.primary_key,
+        attr_descriptions=manifest.attributes,
+        query_type=manifest.parsed.query_type,
     )
 
     metric_calculator = MetricCalculator(manifest, settings)

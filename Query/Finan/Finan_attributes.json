@@ -7,7 +7,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "the full legal name of the company as disclosed in the annual report."
+      "description": "the full legal name of the company as disclosed in the annual report.",
+      "is_fixed": false
     },
     {
       "name": "registered_office",
@@ -16,43 +17,48 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "the registered address or main office location of the company."
+      "description": "the registered address or main office location of the company.",
+      "is_fixed": false
     },
     {
       "name": "exchange_code",
       "table": "finance",
-      "value_type": "str",
+      "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "The code of the stock exchange where the company is listed (e.g., ASX, SUN)."
+      "description": "The code of the stock exchange where the company is listed (e.g., ASX, SUN).",
+      "is_fixed": false
     },
     {
       "name": "principal_activities",
       "table": "finance",
-      "value_type": "str",
+      "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "main business activities or industry classification; choose one or more from ['Mining', 'finance', 'Healthcare', 'Manufacturing', 'Technology', 'Retail', 'Energy', 'Utilities', 'Real Estate', 'Transportation', 'Agriculture', 'Telecommunications', 'Media', 'Other'], seperated by `||` (e.g. Mining || finance)."
+      "description": "main business activities or industry classification; choose one or more from ['Mining', 'finance', 'Healthcare', 'Manufacturing', 'Technology', 'Retail', 'Energy', 'Utilities', 'Real Estate', 'Transportation', 'Agriculture', 'Telecommunications', 'Media', 'Other'], seperated by `||` (e.g. Mining || finance).",
+      "is_fixed": true
     },
     {
       "name": "board_members",
       "table": "finance",
-      "value_type": "str",
+      "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "profiles of board members."
+      "description": "profiles of board members.",
+      "is_fixed": false
     },
     {
       "name": "executive_profiles",
       "table": "finance",
-      "value_type": "str",
+      "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "profiles of executive management team members."
+      "description": "profiles of executive management team members.",
+      "is_fixed": false
     },
     {
       "name": "revenue",
@@ -61,7 +67,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "total operating revenue recognized during the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
+      "description": "total operating revenue recognized during the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+      "is_fixed": false
     },
     {
       "name": "net_profit_or_loss",
@@ -70,7 +77,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "net profit or loss amount for the reporting period (enter a negative number for loss). Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
+      "description": "net profit or loss amount for the reporting period (enter a negative number for loss). Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+      "is_fixed": false
     },
     {
       "name": "total_Debt",
@@ -79,7 +87,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "total debt outstanding at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
+      "description": "total debt outstanding at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+      "is_fixed": false
     },
     {
       "name": "total_assets",
@@ -88,7 +97,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "total assets held by the company at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
+      "description": "total assets held by the company at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+      "is_fixed": false
     },
     {
       "name": "cash_reserves",
@@ -97,7 +107,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "total cash and cash equivalents held at period-end. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
+      "description": "total cash and cash equivalents held at period-end. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+      "is_fixed": false
     },
     {
       "name": "net_assets",
@@ -106,7 +117,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "net asset value at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
+      "description": "net asset value at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+      "is_fixed": false
     },
     {
       "name": "earnings_per_share",
@@ -115,7 +127,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "earnings per share (EPS) for the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
+      "description": "earnings per share (EPS) for the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+      "is_fixed": false
     },
     {
       "name": "dividend_per_share",
@@ -124,16 +137,18 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "dividends paid per share for the period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
+      "description": "dividends paid per share for the period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+      "is_fixed": false
     },
     {
       "name": "largest_shareholder",
       "table": "finance",
-      "value_type": "str",
+      "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "the name of the largest shareholder."
+      "description": "the name of the largest shareholder.",
+      "is_fixed": false
     },
     {
       "name": "the_highest_ownership_stake",
@@ -142,7 +157,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "the highest percentage of ownership held by a single shareholder. Enter a number, unit: percent (%)."
+      "description": "the highest percentage of ownership held by a single shareholder. Enter a number, unit: percent (%).",
+      "is_fixed": false
     },
     {
       "name": "major_equity_changes",
@@ -151,16 +167,18 @@
       "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
-      "description": "whether there were major equity changes during the period; choose one from ['Yes', 'No']."
+      "description": "whether there were major equity changes during the period; choose one from ['Yes', 'No'].",
+      "is_fixed": true
     },
     {
       "name": "major_events",
       "table": "finance",
-      "value_type": "str",
+      "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "type(s) of major events; choose one or more from ['M&A', 'Litigation', 'Major Contract', 'Leadership Change', 'Restructuring', 'Delisting', 'Other'], seperated by `||` (e.g. Litigation)."
+      "description": "type(s) of major events; choose one or more from ['M&A', 'Litigation', 'Major Contract', 'Leadership Change', 'Restructuring', 'Delisting', 'Other'], seperated by `||` (e.g. Litigation).",
+      "is_fixed": true
     },
     {
       "name": "bussiness_sales",
@@ -169,7 +187,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "total operating revenue from all major business lines or segments. If the document reports revenue for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
+      "description": "total operating revenue from all major business lines or segments. If the document reports revenue for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+      "is_fixed": false
     },
     {
       "name": "bussiness_profit",
@@ -178,7 +197,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "total profit contributed by all major business lines or projects. If the document reports profit for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
+      "description": "total profit contributed by all major business lines or projects. If the document reports profit for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+      "is_fixed": false
     },
     {
       "name": "bussiness_cost",
@@ -187,7 +207,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "total cost associated with all main business lines or projects. If the document reports cost for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate."
+      "description": "total cost associated with all main business lines or projects. If the document reports cost for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
+      "is_fixed": false
     },
     {
       "name": "business_segments_num",
@@ -196,25 +217,28 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "number of business segments reported. Enter a number."
+      "description": "number of business segments reported. Enter a number.",
+      "is_fixed": false
     },
     {
       "name": "business_risks",
       "table": "finance",
-      "value_type": "str",
+      "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "main types of business risks; choose one or more from ['Market Risk', 'Credit Risk', 'Operational Risk', 'Legal/Compliance Risk', 'Environmental Risk', 'Strategic Risk', 'Other'], seperated by `||` (e.g. Credit Risk || Market Risk)."
+      "description": "main types of business risks; choose one or more from ['Market Risk', 'Credit Risk', 'Operational Risk', 'Legal/Compliance Risk', 'Environmental Risk', 'Strategic Risk', 'Other'], seperated by `||` (e.g. Credit Risk || Market Risk).",
+      "is_fixed": true
     },
     {
       "name": "remuneration_policy",
       "table": "finance",
-      "value_type": "str",
+      "value_type": "multi_str",
       "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
-      "description": "executive remuneration policy type; choose only one from ['Fixed', 'Performance-based', 'Stock Option', 'Mixed', 'Not Disclosed']."
+      "description": "executive remuneration policy type; choose only one from ['Fixed', 'Performance-based', 'Stock Option', 'Mixed', 'Not Disclosed'].",
+      "is_fixed": true
     },
     {
       "name": "auditor",
@@ -223,7 +247,8 @@
       "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
-      "description": "name of the external audit firm."
+      "description": "name of the external audit firm.",
+      "is_fixed": false
     }
   ]
 }

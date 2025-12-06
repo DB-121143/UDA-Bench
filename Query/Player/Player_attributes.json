@@ -7,7 +7,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "full name of the NBA player (e.g., LeBron James)."
+      "description": "full name of the NBA player (e.g., LeBron James).",
+      "is_fixed": false
     },
     {
       "name": "birth_date",
@@ -16,7 +17,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "birth date of the player; use format YYYY/%-m/%-d (e.g., 1984/2/30)."
+      "description": "birth date of the player; use format YYYY/%-m/%-d (e.g., 1984/2/30).",
+      "is_fixed": false
     },
     {
       "name": "nationality",
@@ -25,7 +27,8 @@
       "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
-      "description": "nationality of the player (e.g., American, France)."
+      "description": "nationality of the player (e.g., American, France).",
+      "is_fixed": false
     },
     {
       "name": "age",
@@ -34,7 +37,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "age of the player (if death_date is given, compute as death_date - birth_date; otherwise, compute as 2025/1/1 - birth_date)."
+      "description": "age of the player (if death_date is given, compute as death_date - birth_date; otherwise, compute as 2025/1/1 - birth_date).",
+      "is_fixed": false
     },
     {
       "name": "team",
@@ -43,7 +47,8 @@
       "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
-      "description": "the current NBA team the player belongs to, or the last NBA team the player joined if not currently active (e.g., Los Angeles Lakers)."
+      "description": "the current NBA team the player belongs to, or the last NBA team the player joined if not currently active (e.g., Los Angeles Lakers).",
+      "is_fixed": false
     },
     {
       "name": "position",
@@ -52,7 +57,8 @@
       "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
-      "description": "player's primary position on the team; choose one from ['Frontcourt', 'Backcourt']."
+      "description": "player's primary position on the team; choose one from ['Frontcourt', 'Backcourt'].",
+      "is_fixed": true
     },
     {
       "name": "draft_pick",
@@ -61,7 +67,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "the pick number at which the player was selected in the NBA draft (e.g., 1)."
+      "description": "the pick number at which the player was selected in the NBA draft (e.g., 1).",
+      "is_fixed": false
     },
     {
       "name": "draft_year",
@@ -70,7 +77,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "the year the player was selected in the NBA draft; use format YYYY (e.g., 2003)."
+      "description": "the year the player was selected in the NBA draft; use format YYYY (e.g., 2003).",
+      "is_fixed": false
     },
     {
       "name": "college",
@@ -79,7 +87,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "the college the player attended, if applicable (e.g., Duke University)."
+      "description": "the college the player attended, if applicable (e.g., Duke University).",
+      "is_fixed": false
     },
     {
       "name": "nba_championships",
@@ -88,7 +97,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "number of NBA championships the player has won (e.g., 4)."
+      "description": "number of NBA championships the player has won (e.g., 4).",
+      "is_fixed": false
     },
     {
       "name": "mvp_awards",
@@ -97,7 +107,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "number of NBA MVP awards the player has won; use 0 if none (e.g., 2)."
+      "description": "number of NBA MVP awards the player has won; use 0 if none (e.g., 2).",
+      "is_fixed": false
     },
     {
       "name": "olympic_gold_medals",
@@ -106,7 +117,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "number of Olympic gold medals the player has won (e.g., 3)."
+      "description": "number of Olympic gold medals the player has won (e.g., 3).",
+      "is_fixed": false
     },
     {
       "name": "fiba_world_cup",
@@ -115,7 +127,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "number of FIBA World Cup titles the player has won (e.g., 1)."
+      "description": "number of FIBA World Cup titles the player has won (e.g., 1).",
+      "is_fixed": false
     }
   ],
   "manager": [
@@ -126,7 +139,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "name is the full name of the team owner (e.g. Jeanie Buss)."
+      "description": "name is the full name of the team owner (e.g. Jeanie Buss).",
+      "is_fixed": false
     },
     {
       "name": "age",
@@ -135,7 +149,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "age is the age of the team owner, a integer (e.g. 45)."
+      "description": "age is the age of the team owner, a integer (e.g. 45).",
+      "is_fixed": false
     },
     {
       "name": "nationality",
@@ -144,7 +159,8 @@
       "usage": "categorical",
       "modality": "text",
       "is_nullable": false,
-      "description": "nationality is the nationality of the team owner (e.g. American)."
+      "description": "nationality is the nationality of the team owner (e.g. American).",
+      "is_fixed": false
     },
     {
       "name": "nba_team",
@@ -153,7 +169,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "NBA_team is the NBA team's name the owner own, (e.g. Los Angeles Lakers)."
+      "description": "NBA_team is the NBA team's name the owner own, (e.g. Los Angeles Lakers).",
+      "is_fixed": false
     },
     {
       "name": "own_year",
@@ -162,7 +179,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "own_year is year the owner have this NBA team (e.g. 2010)."
+      "description": "own_year is year the owner have this NBA team (e.g. 2010).",
+      "is_fixed": false
     }
   ],
   "team": [
@@ -173,7 +191,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "team_name is the full name of the team (e.g. Los Angeles Lakers)."
+      "description": "team_name is the full name of the team (e.g. Los Angeles Lakers).",
+      "is_fixed": false
     },
     {
       "name": "founded_year",
@@ -182,7 +201,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "founded_year is the year of this team team founded (e.g. 1947)."
+      "description": "founded_year is the year of this team team founded (e.g. 1947).",
+      "is_fixed": false
     },
     {
       "name": "location",
@@ -191,7 +211,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "location is the lastest city the team team located (e.g. Los Angeles)."
+      "description": "location is the lastest city the team team located (e.g. Los Angeles).",
+      "is_fixed": false
     },
     {
       "name": "ownership",
@@ -200,7 +221,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "ownership is the name of the team's owner (e.g. Jeanie Buss)."
+      "description": "ownership is the name of the team's owner (e.g. Jeanie Buss).",
+      "is_fixed": false
     },
     {
       "name": "championships",
@@ -209,7 +231,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "championships is the number of this team getting championships (e.g. 5)."
+      "description": "championships is the number of this team getting championships (e.g. 5).",
+      "is_fixed": false
     }
   ],
   "city": [
@@ -220,7 +243,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "city_name is the name of the city (e.g. Boston)"
+      "description": "city_name is the name of the city (e.g. Boston)",
+      "is_fixed": false
     },
     {
       "name": "state_name",
@@ -229,7 +253,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "state_name is the name of the state the city is located in (e.g. California)."
+      "description": "state_name is the name of the state the city is located in (e.g. California).",
+      "is_fixed": false
     },
     {
       "name": "population",
@@ -238,7 +263,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "population is the population of the city (e.g. 7000000)."
+      "description": "population is the population of the city (e.g. 7000000).",
+      "is_fixed": false
     },
     {
       "name": "area",
@@ -247,7 +273,8 @@
       "usage": "numerical",
       "modality": "text",
       "is_nullable": false,
-      "description": "area is the area of the city in square kilometers (e.g. 89.64)."
+      "description": "area is the area of the city in square kilometers (e.g. 89.64).",
+      "is_fixed": false
     },
     {
       "name": "gdp",
@@ -256,7 +283,8 @@
       "usage": "general",
       "modality": "text",
       "is_nullable": false,
-      "description": "gdp is the gross domestic product of the city in millions (e.g. 7.2)."
+      "description": "gdp is the gross domestic product of the city in millions (e.g. 7.2).",
+      "is_fixed": false
     }
   ]
 }

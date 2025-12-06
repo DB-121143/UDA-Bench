@@ -1,8 +1,6 @@
 {
-  "CSPaper": [
-    {
-      "name": "topic",
-      "table": "cspaper",
+  "paper": {
+    "topic": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -10,9 +8,7 @@
       "description": "the main research area or technique discussed in the paper, choose one from ['Information Retrieval', 'Retrieval-Augmented Generation', 'Data Selection', 'SFT'].",
       "is_fixed": true
     },
-    {
-      "name": "uses_knowledge_graph",
-      "table": "cspaper",
+    "uses_knowledge_graph": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -20,9 +16,7 @@
       "description": "whether the method explicitly incorporates a knowledge graph as part of retrieval or reasoning choose one from ['Yes', 'No'].",
       "is_fixed": true
     },
-    {
-      "name": "reasoning_depth",
-      "table": "cspaper",
+    "reasoning_depth": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -30,9 +24,7 @@
       "description": "reasoning path length in the application scenarios of the method by the main task or benchmark, choose one from ['single-hop', 'multi-hop'].",
       "is_fixed": true
     },
-    {
-      "name": "baseline",
-      "table": "cspaper",
+    "baseline": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -40,9 +32,7 @@
       "description": "baseline model or system used for comparison in the experiments, list all the baselines mentioned in the text.",
       "is_fixed": false
     },
-    {
-      "name": "retrieval_method",
-      "table": "cspaper",
+    "retrieval_method": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -50,9 +40,7 @@
       "description": "primary retrieval method used to obtain supporting information, choose one from ['Dense Retrieval', 'Graph-based Retrieval', 'Hybrid Retrieval', 'Sparse Retrieval', 'Web Search', 'other'].",
       "is_fixed": true
     },
-    {
-      "name": "generator_model",
-      "table": "cspaper",
+    "generator_model": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -60,9 +48,7 @@
       "description": "name of the generation models used in the system (e.g., GPT-4o-mini, LLaMa2-7B-Chat), list all the baselines mentioned in the text.",
       "is_fixed": false
     },
-    {
-      "name": "uses_reranker",
-      "table": "cspaper",
+    "uses_reranker": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -70,9 +56,7 @@
       "description": "whether the system uses an explicit reranker stage to re-score retrieved candidates before generation, choose one from ['Yes', 'No'].",
       "is_fixed": true
     },
-    {
-      "name": "data_modality",
-      "table": "cspaper",
+    "data_modality": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -80,9 +64,7 @@
       "description": "all modality of the input data handled by the system, choose one or more from ['Audio', 'Image', 'Table', 'Text', 'Code'], e.g. Text; Table; Image.",
       "is_fixed": true
     },
-    {
-      "name": "evaluation_dataset",
-      "table": "cspaper",
+    "evaluation_dataset": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -90,9 +72,7 @@
       "description": "name of the dataset(s) used for evaluation in the experiments, list all the datasets mentioned in the text.",
       "is_fixed": false
     },
-    {
-      "name": "evaluation_metric",
-      "table": "cspaper",
+    "evaluation_metric": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -100,9 +80,7 @@
       "description": "all the evaluation metric(s) reported in the experiments (e.g.,  Perplexity; BLEU; ROUGE; F1; recall@1).",
       "is_fixed": false
     },
-    {
-      "name": "application_domain",
-      "table": "cspaper",
+    "application_domain": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -110,9 +88,7 @@
       "description": "primary real-world domain or application scenario targeted by the paper, choose one or more from ['General', 'Education', 'Finance', 'Sports', 'Government', 'Legal', 'Medical', 'Academic', 'Art', 'Other'], e.g. Education; Finance",
       "is_fixed": true
     },
-    {
-      "name": "use_agent",
-      "table": "cspaper",
+    "use_agent": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -120,9 +96,7 @@
       "description": "whether the system explicitly adopts an agent-style architecture (e.g., tool-calling or multi-step planning) rather than a single forward pass, choose one from ['Yes', 'No'].",
       "is_fixed": true
     },
-    {
-      "name": "agent_framework",
-      "table": "cspaper",
+    "agent_framework": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text|image",
@@ -130,9 +104,7 @@
       "description": "main agent-style reasoning framework used by the system, choose one from ['CoT', 'ToT', 'Multi-Agent Collaboration', 'Other'], if the system does not use agent, leave it empty.",
       "is_fixed": true
     },
-    {
-      "name": "performance_on_hotpotqa",
-      "table": "cspaper",
+    "performance_on_hotpotqa": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text|table",
@@ -140,9 +112,7 @@
       "description": "the result or performance of the method on the HotpotQA benchmark. Extract any reported metric(s) such as F1, EM, accuracy, or other values. If multiple metrics are provided, separate them with `||`. If only qualitative descriptions are given (e.g., 'outperforms baseline'), extract them in short free text.",
       "is_fixed": false
     },
-    {
-      "name": "performance_on_NQ",
-      "table": "cspaper",
+    "performance_on_NQ": {
       "value_type": "str",
       "usage": "general",
       "modality": "text|table",
@@ -150,9 +120,7 @@
       "description": "the result or performance of the method on the Natural Questions (NQ) benchmark. Extract any reported metric(s) or qualitative descriptions. Use short free-form text if no specific numbers are given.",
       "is_fixed": false
     },
-    {
-      "name": "multi_turn_retrieval",
-      "table": "cspaper",
+    "multi_turn_retrieval": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text|image",
@@ -160,9 +128,7 @@
       "description": "whether the method explicitly supports multi-turn retrieval. Only choose one from ['Yes', 'No'].",
       "is_fixed": true
     },
-    {
-      "name": "baseline_amount",
-      "table": "cspaper",
+    "baseline_amount": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -170,5 +136,5 @@
       "description": "the number of baselines in this paper.",
       "is_fixed": false
     }
-  ]
+  }
 }

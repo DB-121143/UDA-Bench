@@ -1,8 +1,6 @@
 {
-  "Art": [
-    {
-      "name": "name",
-      "table": "art",
+  "Art": {
+    "name": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -10,9 +8,7 @@
       "description": "full name of the artist",
       "is_fixed": false
     },
-    {
-      "name": "nationality",
-      "table": "art",
+    "nationality": {
       "value_type": "multi_str",
       "usage": "categorical",
       "modality": "text",
@@ -20,9 +16,7 @@
       "description": "artist's nationality (e.g., french, japanese)",
       "is_fixed": false
     },
-    {
-      "name": "art_movement",
-      "table": "art",
+    "art_movement": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
@@ -30,9 +24,7 @@
       "description": "art movement contributed to (e.g., impressionism)",
       "is_fixed": false
     },
-    {
-      "name": "birth_date",
-      "table": "art",
+    "birth_date": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -40,9 +32,7 @@
       "description": "date in %Y/%-m/%-d format (e.g., 1839/1/9), or leave empty if not applicable",
       "is_fixed": false
     },
-    {
-      "name": "death_date",
-      "table": "art",
+    "death_date": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -50,9 +40,7 @@
       "description": "date in %Y/%-m/%-d format (e.g., 1836/1/1), or leave empty if not applicable",
       "is_fixed": false
     },
-    {
-      "name": "age",
-      "table": "art",
+    "age": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -60,9 +48,7 @@
       "description": "age of the artist (if death_date is given, compute as death_date - birth_date; otherwise, compute as 2025/1/1 - birth_date)",
       "is_fixed": false
     },
-    {
-      "name": "century",
-      "table": "art",
+    "century": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -70,9 +56,7 @@
       "description": "century when the artist was active or influential (e.g., 19th or 19th\u201320th; can span multiple centuries)",
       "is_fixed": false
     },
-    {
-      "name": "zodiac",
-      "table": "art",
+    "zodiac": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -80,9 +64,7 @@
       "description": "western zodiac sign based on birth date, choose only one from [Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces]",
       "is_fixed": true
     },
-    {
-      "name": "birth_country",
-      "table": "art",
+    "birth_country": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
@@ -90,9 +72,7 @@
       "description": "country where the artist was born (e.g., netherlands)",
       "is_fixed": false
     },
-    {
-      "name": "birth_city",
-      "table": "art",
+    "birth_city": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
@@ -100,9 +80,7 @@
       "description": "city where the artist was born",
       "is_fixed": false
     },
-    {
-      "name": "birth_continent",
-      "table": "art",
+    "birth_continent": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -110,9 +88,7 @@
       "description": "continent where the artist was born, select one from [Africa, Asia, Europe, North America, South America, Oceania]",
       "is_fixed": true
     },
-    {
-      "name": "death_country",
-      "table": "art",
+    "death_country": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -120,9 +96,7 @@
       "description": "country where the artist died, or leave empty if not applicable (e.g., switzerland)",
       "is_fixed": false
     },
-    {
-      "name": "death_city",
-      "table": "art",
+    "death_city": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -130,9 +104,7 @@
       "description": "city where the artist died, or leave empty if not applicable",
       "is_fixed": false
     },
-    {
-      "name": "field",
-      "table": "art",
+    "field": {
       "value_type": "multi_str",
       "usage": "categorical",
       "modality": "text",
@@ -140,9 +112,7 @@
       "description": "primary artistic field, choose one or more from: [Painting, Sculpture, Printmaking, Drawing, Photography, Illustration, Collage, Textile art, Installation, Performance, Ceramics, Digital art, Architecture, Mosaic, Graphic Design, Calligraphy], seperated by `||` (e.g. Collage || Illustration || Textile art).",
       "is_fixed": true
     },
-    {
-      "name": "genre",
-      "table": "art",
+    "genre": {
       "value_type": "multi_str",
       "usage": "categorical",
       "modality": "text",
@@ -150,9 +120,7 @@
       "description": "primary genre of work, choose one or more from: [Portrait, Landscape, Still Life, Religious, Mythological, History, genre, Nude, Animal, Illustration, Allegorical, Abstract, Fantasy, Sketch, Figurative, Conceptual, Surrealist, Symbolic, Political, Social Realism, Pop art, Narrative, Environmental, Sculpture, Architecture, Music, Film, Digital art, Literature, Other], seperated by `||` (e.g. Portrait || Political).",
       "is_fixed": true
     },
-    {
-      "name": "marriage",
-      "table": "art",
+    "marriage": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -160,9 +128,7 @@
       "description": "marital status of the artist, reflecting the artist\u2019s latest (final) marital status as mentioned in the biography. Choose one from: [Cohabiting, Divorced, Married, Remarried, Separated, Unmarried, Widowed]. Only extract and fill in the last marital status referenced in the text.",
       "is_fixed": true
     },
-    {
-      "name": "art_institution",
-      "table": "art",
+    "art_institution": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
@@ -170,9 +136,7 @@
       "description": "art academies, schools, organizations, associations, or exhibition societies the artist was affiliated with, taught at, or participated in (e.g., national art academies, artist unions, art schools, exhibition societies).",
       "is_fixed": false
     },
-    {
-      "name": "teaching",
-      "table": "art",
+    "teaching": {
       "value_type": "int",
       "usage": "categorical",
       "modality": "text",
@@ -180,9 +144,7 @@
       "description": "whether the artist taught at an institution (1 if yes, 0 if none)",
       "is_fixed": false
     },
-    {
-      "name": "awards",
-      "table": "art",
+    "awards": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -190,9 +152,7 @@
       "description": "Number of significant and clearly documented awards the artist received (enter an integer; use 0 if none; exclude medals, scholarships, or honorary mentions).",
       "is_fixed": false
     },
-    {
-      "name": "style",
-      "table": "art",
+    "style": {
       "value_type": "multi_str",
       "usage": "categorical",
       "modality": "image",
@@ -200,9 +160,7 @@
       "description": "the overall artistic style of the image, described in a short phrase (e.g., abstract expressionism, geometric abstraction, minimalist line drawing). Use free-form text; if multiple styles are clearly present, separate them with `||`.",
       "is_fixed": false
     },
-    {
-      "name": "image_genre",
-      "table": "art",
+    "image_genre": {
       "value_type": "multi_str",
       "usage": "categorical",
       "modality": "image",
@@ -210,9 +168,7 @@
       "description": "the artistic genre or type of the image, described in a short phrase (e.g., landscape, portrait, still life, historical scene, narrative scene, conceptual work). Use free-form text; if multiple genres are relevant, separate them with `||`.",
       "is_fixed": false
     },
-    {
-      "name": "theme",
-      "table": "art",
+    "theme": {
       "value_type": "str",
       "usage": "general",
       "modality": "image",
@@ -220,9 +176,7 @@
       "description": "the main idea, message, or subject matter conveyed by the image (e.g., nature, war, love, spirituality, identity, urban life, social criticism). Describe it briefly in free-form text, not limited to any fixed list.",
       "is_fixed": false
     },
-    {
-      "name": "object",
-      "table": "art",
+    "object": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "image",
@@ -230,9 +184,7 @@
       "description": "the primary visible objects or subjects depicted in the image (e.g., woman, tree, city skyline, animals, abstract shapes). List the key visual elements as nouns or short noun phrases; if there are several, separate them with `||`.",
       "is_fixed": false
     },
-    {
-      "name": "color",
-      "table": "art",
+    "color": {
       "value_type": "multi_str",
       "usage": "categorical",
       "modality": "image",
@@ -240,9 +192,7 @@
       "description": "the dominant or characteristic colors of the image (e.g., red and black, muted earth tones, bright multicolored palette, monochrome blue). Describe the color usage in free-form text; if multiple color groups are important, separate them with `||`.",
       "is_fixed": false
     },
-    {
-      "name": "tone",
-      "table": "art",
+    "tone": {
       "value_type": "str",
       "usage": "general",
       "modality": "image",
@@ -250,9 +200,7 @@
       "description": "the overall tonal and emotional quality of the image (e.g., bright and cheerful, dark and dramatic, calm and neutral, cold and somber). Use a short free-form description that captures both visual tone and mood.",
       "is_fixed": false
     },
-    {
-      "name": "composition",
-      "table": "art",
+    "composition": {
       "value_type": "str",
       "usage": "general",
       "modality": "image",
@@ -260,5 +208,5 @@
       "description": "the way visual elements are arranged in the image (e.g., asymmetrical with central focus, symmetrical and balanced, dynamic diagonal composition, crowded and layered, minimal with large negative space). Describe the composition style in one short free-form phrase.",
       "is_fixed": false
     }
-  ]
+  }
 }

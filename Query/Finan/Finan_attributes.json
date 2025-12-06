@@ -1,8 +1,6 @@
 {
-  "Finan": [
-    {
-      "name": "company_name",
-      "table": "finance",
+  "finance": {
+    "company_name": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -10,9 +8,7 @@
       "description": "the full legal name of the company as disclosed in the annual report.",
       "is_fixed": false
     },
-    {
-      "name": "registered_office",
-      "table": "finance",
+    "registered_office": {
       "value_type": "str",
       "usage": "general",
       "modality": "text",
@@ -20,9 +16,7 @@
       "description": "the registered address or main office location of the company.",
       "is_fixed": false
     },
-    {
-      "name": "exchange_code",
-      "table": "finance",
+    "exchange_code": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
@@ -30,9 +24,7 @@
       "description": "The code of the stock exchange where the company is listed (e.g., ASX, SUN).",
       "is_fixed": false
     },
-    {
-      "name": "principal_activities",
-      "table": "finance",
+    "principal_activities": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
@@ -40,9 +32,7 @@
       "description": "main business activities or industry classification; choose one or more from ['Mining', 'finance', 'Healthcare', 'Manufacturing', 'Technology', 'Retail', 'Energy', 'Utilities', 'Real Estate', 'Transportation', 'Agriculture', 'Telecommunications', 'Media', 'Other'], seperated by `||` (e.g. Mining || finance).",
       "is_fixed": true
     },
-    {
-      "name": "board_members",
-      "table": "finance",
+    "board_members": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
@@ -50,9 +40,7 @@
       "description": "profiles of board members.",
       "is_fixed": false
     },
-    {
-      "name": "executive_profiles",
-      "table": "finance",
+    "executive_profiles": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
@@ -60,9 +48,7 @@
       "description": "profiles of executive management team members.",
       "is_fixed": false
     },
-    {
-      "name": "revenue",
-      "table": "finance",
+    "revenue": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -70,9 +56,7 @@
       "description": "total operating revenue recognized during the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
       "is_fixed": false
     },
-    {
-      "name": "net_profit_or_loss",
-      "table": "finance",
+    "net_profit_or_loss": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -80,9 +64,7 @@
       "description": "net profit or loss amount for the reporting period (enter a negative number for loss). Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
       "is_fixed": false
     },
-    {
-      "name": "total_Debt",
-      "table": "finance",
+    "total_Debt": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -90,9 +72,7 @@
       "description": "total debt outstanding at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
       "is_fixed": false
     },
-    {
-      "name": "total_assets",
-      "table": "finance",
+    "total_assets": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -100,9 +80,7 @@
       "description": "total assets held by the company at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
       "is_fixed": false
     },
-    {
-      "name": "cash_reserves",
-      "table": "finance",
+    "cash_reserves": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -110,9 +88,7 @@
       "description": "total cash and cash equivalents held at period-end. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
       "is_fixed": false
     },
-    {
-      "name": "net_assets",
-      "table": "finance",
+    "net_assets": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -120,9 +96,7 @@
       "description": "net asset value at the end of the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
       "is_fixed": false
     },
-    {
-      "name": "earnings_per_share",
-      "table": "finance",
+    "earnings_per_share": {
       "value_type": "float",
       "usage": "numerical",
       "modality": "text",
@@ -130,9 +104,7 @@
       "description": "earnings per share (EPS) for the reporting period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
       "is_fixed": false
     },
-    {
-      "name": "dividend_per_share",
-      "table": "finance",
+    "dividend_per_share": {
       "value_type": "float",
       "usage": "numerical",
       "modality": "text",
@@ -140,9 +112,7 @@
       "description": "dividends paid per share for the period. Enter a number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
       "is_fixed": false
     },
-    {
-      "name": "largest_shareholder",
-      "table": "finance",
+    "largest_shareholder": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
@@ -150,9 +120,7 @@
       "description": "the name of the largest shareholder.",
       "is_fixed": false
     },
-    {
-      "name": "the_highest_ownership_stake",
-      "table": "finance",
+    "the_highest_ownership_stake": {
       "value_type": "float",
       "usage": "numerical",
       "modality": "text",
@@ -160,9 +128,7 @@
       "description": "the highest percentage of ownership held by a single shareholder. Enter a number, unit: percent (%).",
       "is_fixed": false
     },
-    {
-      "name": "major_equity_changes",
-      "table": "finance",
+    "major_equity_changes": {
       "value_type": "int",
       "usage": "categorical",
       "modality": "text",
@@ -170,9 +136,7 @@
       "description": "whether there were major equity changes during the period; choose one from ['Yes', 'No'].",
       "is_fixed": true
     },
-    {
-      "name": "major_events",
-      "table": "finance",
+    "major_events": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
@@ -180,9 +144,7 @@
       "description": "type(s) of major events; choose one or more from ['M&A', 'Litigation', 'Major Contract', 'Leadership Change', 'Restructuring', 'Delisting', 'Other'], seperated by `||` (e.g. Litigation).",
       "is_fixed": true
     },
-    {
-      "name": "bussiness_sales",
-      "table": "finance",
+    "bussiness_sales": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -190,9 +152,7 @@
       "description": "total operating revenue from all major business lines or segments. If the document reports revenue for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
       "is_fixed": false
     },
-    {
-      "name": "bussiness_profit",
-      "table": "finance",
+    "bussiness_profit": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -200,9 +160,7 @@
       "description": "total profit contributed by all major business lines or projects. If the document reports profit for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
       "is_fixed": false
     },
-    {
-      "name": "bussiness_cost",
-      "table": "finance",
+    "bussiness_cost": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -210,9 +168,7 @@
       "description": "total cost associated with all main business lines or projects. If the document reports cost for multiple segments separately, sum all segments to obtain the total. Enter a single number. If the original currency is not USD, convert to USD according to the latest available exchange rate.",
       "is_fixed": false
     },
-    {
-      "name": "business_segments_num",
-      "table": "finance",
+    "business_segments_num": {
       "value_type": "int",
       "usage": "numerical",
       "modality": "text",
@@ -220,9 +176,7 @@
       "description": "number of business segments reported. Enter a number.",
       "is_fixed": false
     },
-    {
-      "name": "business_risks",
-      "table": "finance",
+    "business_risks": {
       "value_type": "multi_str",
       "usage": "general",
       "modality": "text",
@@ -230,9 +184,7 @@
       "description": "main types of business risks; choose one or more from ['Market Risk', 'Credit Risk', 'Operational Risk', 'Legal/Compliance Risk', 'Environmental Risk', 'Strategic Risk', 'Other'], seperated by `||` (e.g. Credit Risk || Market Risk).",
       "is_fixed": true
     },
-    {
-      "name": "remuneration_policy",
-      "table": "finance",
+    "remuneration_policy": {
       "value_type": "multi_str",
       "usage": "categorical",
       "modality": "text",
@@ -240,9 +192,7 @@
       "description": "executive remuneration policy type; choose only one from ['Fixed', 'Performance-based', 'Stock Option', 'Mixed', 'Not Disclosed'].",
       "is_fixed": true
     },
-    {
-      "name": "auditor",
-      "table": "finance",
+    "auditor": {
       "value_type": "str",
       "usage": "categorical",
       "modality": "text",
@@ -250,5 +200,5 @@
       "description": "name of the external audit firm.",
       "is_fixed": false
     }
-  ]
+  }
 }

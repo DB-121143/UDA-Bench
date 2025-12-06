@@ -92,5 +92,10 @@
 
 ## tips
 - LLM 提供方式：默认走环境变量密钥的 OpenAI 兼容接口，如需自定义需提供 API endpoint。 参考 evaluation/ref_code/eval_on_multiEntity.py代码中 batch_completion 和环境变量的设置方法。
+- 相关实现逻辑可以参考evaluation/ref_code 中的代码，但是不能直接复用或者复制其中的代码，必须按照新的计划文档重构成合理的形式。
 - 多实体场景的 `primary_key` 需由任务配置或命令行传入，如果没有传入，默认使用select后面的第1个属性列作为`primary_key`并给出log。  
 - 输出文件格式沿用 demo 结构，不新增额外文件（除日志）。
+
+- 额外补丁(修复当前系统存在的格式小问题)： 
+ - 当前非结构化文档抽取系统的抽取结果中ID列以file_name的形式存在（如果是多表的场景下的话就是以{table_name}.file_name的形式存在的），请你额外加一个normalize_result模块，专门将result中的file_name清洗成ID的形式，当前默认使用去除文件名后缀的形式来进行清洗，清洗后的ID使用str格式。
+ - GT和result对应的csv在读入后,需要额外增加一个clean模块，都应该对str类型的属性进行清洗，去除首尾多余空白符，并且让单词之间统一用一个空格分隔(`||` 也算1个单词)

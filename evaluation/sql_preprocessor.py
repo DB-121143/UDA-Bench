@@ -20,6 +20,13 @@ python3 -m evaluation.sql_preprocessor \
   --output-root evaluation/demo_acc_result \
   --create-placeholder  
 
+python3 -m evaluation.sql_preprocessor \
+  --dataset Player \
+  --task Agg \
+  --sql-file Query/Player/Agg/agg_queries.sql \
+  --attributes-file Query/Player/Player_attributes.json \
+  --output-root evaluation/demo_acc_result 
+
 主要参数：
 - --dataset：数据集名称，对应 Query/{dataset}。
 - --task：任务名（Select/Filter/Agg/Join/Mixed），用于输出路径拼接。

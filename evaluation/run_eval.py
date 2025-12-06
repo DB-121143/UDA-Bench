@@ -4,17 +4,21 @@
 用途：对单条 SQL 的预测结果与 GT 执行对齐和准确率评估，生成 gold/matched CSV 及 acc.json。
 
 最小示例：
+# Player Select
 python3 -m evaluation.run_eval \
   --dataset Player \
   --task Select \
   --sql-file evaluation/demo_acc_result/Player/Select/select_queries_player/1/sql.json \
   --result-csv evaluation/demo_acc_result/Player/Select/select_queries_player/1/result.csv
 
+# Player Filter
 python3 -m evaluation.run_eval \
   --dataset Player \
   --task Filter \
   --sql-file evaluation/demo_acc_result/Player/Filter/filter_queries_player/1/sql.json \
   --result-csv evaluation/demo_acc_result/Player/Filter/filter_queries_player/1/result.csv
+
+# Player Agg 
 
 常用参数：
 - --dataset：数据集名称，对应 Query/{dataset} 下的 GT CSV 和 attributes。
